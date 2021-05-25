@@ -31,7 +31,7 @@ Buildings
 		cost:10 money
 		passive:yield 0.2 money
 		
-	*cyrptocurrency
+	*cryptocurrency
 		name:investing cyrptocurrency
 		desc:i don't know how this work! i Buy, then wait for price to up? it earn me money every 10 seconds, YES!!!!!!!
 		cost:50 money
