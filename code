@@ -1,11 +1,76 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.01<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
 Settings
-	building cost increase:100%
-	building cost refund:0%
+	building cost increase:120%
+	building cost refund:10%
 // add background
+
+Buttons
+	*moneybag
+		name:Work !
+		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
+		on click:yield clickpower money
+		
+Resources
+	*money
+		name:money
+		desc:this is how much rich you are! wow!
+
+Buildings
+	*dirt
+		name:Sell dirt!
+		desc:wows, dirt give money! gives 1 every 20 second!
+		cost:10 money
+		passive:yield 0.05 money
+		
+	*cyrptocurrency
+		name:investing cyrptocurrency
+		desc:i don't know how this work! i Buy, then wait for price to up? it earn me money every 100 seconds, YES!!!!!!!
+		cost:50 money
+		passive:yield 0.01 money
+		cost increase:175%
+		req:have dirt
+		
+	*dog
+		name:walking the Dog
+		desc:you just take puppy and follow it around the street! 1 money per 5 second sounds free money, yes?!!?!?!?
+		cost:150 money
+		passive:yield 0.2 money
+		req:5 dirt
+		
+	*cookie
+		name:Cookie clicking
+		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!
+		cost:200 money
+		req:10 dirt
+		
+	*stock
+		name:Stocking Markets!
+		desc:well, it's called stock market but i don't see any markets here. oh.........................................................
+		cost:500 money
+		passive:lose 1 money
+		req:15 dirt
+		
+	*paperclips
+		name:Paperclip
+		desc:We buy some from office store, then sell it at higher price. is this how shopping works??
+		cost:700 money
+		passive:yield 1 money
+		cost increase:130%
+		req:20 dirt
+		
+	*stealing
+		name:stealing?!!?!?
+		desc:well. maybe this is how we rich. we can earn thousands of money, but, we can get CAUGHT. ohhoohoho!!!!
+		cost:701 money
+		on earn:lose 5000 money
+		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
+		req:22 dirt
+		
+		
+		
