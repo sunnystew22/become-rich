@@ -14,7 +14,7 @@ Buttons
 	*moneybag
 		name:Work !
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
-		on click:yield clickpower money
+		on click:yield 1 money
 		
 Resources
 	*money
