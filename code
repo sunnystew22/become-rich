@@ -82,6 +82,17 @@ Buildings
 		on earn:toast well, better luck next time. Guess we didn't get money
 		req:25 dirt
 		cost increase:101%
+		
+	*landscape
+		name:landscaping job  .
+		desc:go to yard and mess around with it for 15 per second! why do people pay that much!
+		cost:2000 money
+		passive:yield 15 money
+		req:30 dirt
+	*school
+		name:skool
+		desc:go to skools to increase 1 smartness every seconds. W0W!
+		
 Upgrades
 	*dirtup
 		name:Dirt Working
@@ -132,7 +143,13 @@ Upgrades
 		desc:We Make the Loterys so We can Get a Moneys For 1 clicking Work Moneys?
 		cost:1500 money
 		passive:increase yield of moneybag by 1
-		req:200 lottery
+		req:50 lottery
+	*landscapeup	
+		name:scaping The Land.
+		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes 1 more work money thoough !
+		cost:2500 money
+		passive:increase yield of moneybag by 1
+		req:5 landscape
 		
 Achievements
 	*money1
@@ -151,6 +168,14 @@ Achievements
 		name:really not rich.
 		desc:you only have 10000 money. that's not rich.
 		req:10000 money
+	*money5
+		name:too not rich.
+		desc:you only have 100000 money. that's not rich.
+		req:100000 money
+	*money6
+		name:WOAH DUDE! LET'S BE MILLION!!!!!!!!!
+		desc:WE MILLIONARE@
+		req:1000000 money
 		
 
 
