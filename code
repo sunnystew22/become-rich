@@ -23,6 +23,7 @@ Buttons
 			converttimer = pow(convertcost,0.5)
 			lose convertcost smartness
 			yield 100 convertcost
+			end
 		end	
 		tag:researchtag
 		hidden
