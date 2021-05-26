@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.05<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.07<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -34,12 +34,14 @@ Resources
 	*money
 		name:money
 		desc:this is how much rich you are! wow!
+		passive:multiply yield of this by 1+(0.02*book1)
 	*ep
 		name:EVIL points.
 		desc:No, Im not Evil!!!#@@!#!#!@#!!!@!!!!!}! STOTP#@P#@P@!PP!@!@#P!@O#P@O@
 	*smartness
 		name:smartness!
 		desc:i can be smart to do BIG Money!1
+		passive:multiply yield of this by 1+(0.05*book2)
 	*research
 		name:researching pointers
 		desc:called research point, used to get bIg smart!
@@ -133,7 +135,6 @@ Buildings
 		name:How2Rich!!!!
 		desc:a book, That gives me tips on being RICH!!!!! 2% more Moneying per level!
 		cost:6000 money
-		passive:multiply yield of money by 1+(0.02*this)
 		req:37 dirt
 		req:50 smartness:earned
 	*coding
@@ -222,16 +223,19 @@ Upgrades
 		name:reading glass.
 		desc:so. WE geT reading glasses to read more better. 2 more click works now ! why is this so expesnive
 		cost:20000 money
+		passive:increase yield of moneybag by 2
 		req:5 book1
 	*codingup	
 		name:MEGA coding!
 		desc:we can mega the codings to are make better coding yes and ad making for including more money! 2 click work.
 		cost:30000 money
+		passive:increase yield of moneybag by 2
 		req:5 coding
 	*book2up	
 		name:second reading glass.
 		desc:so, nOW WE geT reading MORE glassses to read EVEN more bettEr. 2 more click works nows1@!@!!!@!@!#!@}132$!@$!
 		cost:450000 money
+		passive:increase yield of moneybag by 2
 		req:5 book2
 		
 		
