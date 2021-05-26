@@ -47,7 +47,7 @@ Resources
 		desc:called research point, used to get bIg smart!
 	*convertcost
 		start with:100
-//make hidden
+		hidden
 	*converttimer
 		start with:1e300
 		passive:lose this
@@ -57,7 +57,7 @@ Resources
 				this is 1e300
 			end
 		end
-//make hidden
+		hidden
 
 Buildings
 	*dirt
@@ -233,7 +233,7 @@ Upgrades
 	*book2up	
 		name:second reading glass.
 		desc:so, nOW WE geT reading MORE glassses to read EVEN more bettEr. 2 more click works nows1@!@!!!@!@!#!@}132$!@$!
-		cost:450000 money
+		cost:45000 money
 		passive:increase yield of moneybag by 2
 		req:5 book2
 		
