@@ -19,10 +19,11 @@ Buttons
 	*researchbutton
 		name:makeing RESEARCH!
 		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness into RESEARCH!
-		on click:if (smartness >= convertcost and converttimer > 1e250)
-			converttimer = pow(convertcost,0.5)
-			lose convertcost smartness
-			yield 100 convertcost
+		on click:
+			if (smartness >= convertcost and converttimer > 1e250)
+				converttimer = pow(convertcost,0.5)
+				lose convertcost smartness
+				yield 100 convertcost
 			end
 		end	
 		tag:researchtag
