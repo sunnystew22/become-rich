@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.04<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.05<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -19,6 +19,7 @@ Buttons
 	*researchbutton
 		name:makeing RESEARCH!
 		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness into RESEARCH!]
+		desc:turn smartness into researches here!!! NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		on click:
 			if (smartness >= convertcost and converttimer > 1e250)
 				converttimer = pow(convertcost,0.5)
@@ -128,6 +129,25 @@ Buildings
 		cost increase:130%
 		passive:yield 1 smartness
 		req:35 dirt
+	*book1
+		name:How2Rich!!!!
+		desc:a book, That gives me tips on being RICH!!!!! 2% more Moneying per level!
+		cost:6000 money
+		passive:multiply yield of money by 1+(0.02*this)
+		req:37 dirt
+		req:50 smartness:earned
+	*coding
+		name:coding making.
+		desc:make code stuff, put ads, RICH as much as 35 per SECOND!
+		cost:10000 money, 500 smartness
+		passive:yield 35 money
+		req:40 dirt
+		req:1000 smartness:earned
+	*book2
+		name:How2Smart!!!!!!!!!
+		desc:Books That Gives Me Smarters! 5% Smarting per LEvel.!
+		cost:14000
+		passive:multiply yield of smartness by 1+(0.05*this)
 		
 Upgrades
 	*dirtup
@@ -196,8 +216,22 @@ Upgrades
 		desc:convert intellegence into RESEARCH !
 		cost:15000 money
 		on earn:show tag:researchtag
-		req:10 school
-		
+		req:20 school
+	*book1up	
+		name:reading glass.
+		desc:so. WE geT reading glasses to read more better. 2 more click works now ! why is this so expesnive
+		cost:20000 money
+		req:5 book1
+	*codingup	
+		name:MEGA coding!
+		desc:we can mega the codings to are make better coding yes and ad making for including more money! 2 click work.
+		cost:30000 money
+		req:5 coding
+	*book2up	
+		name:second reading glass.
+		desc:so, nOW WE geT reading MORE glassses to read EVEN more bettEr. 2 more click works nows1@!@!!!@!@!#!@}132$!@$!
+		cost:450000 money
+		req:5 book2
 		
 		
 	*TEMPLATE
