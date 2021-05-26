@@ -18,12 +18,13 @@ Buttons
 		on click:if (have schoolup) yield 1 smartness
 	*researchbutton
 		name:makeing RESEARCH!
-		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness into RESEARCH!]
+		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness and [convertcost*10] money into RESEARCH!]
 		desc:turn smartness into researches here!!! NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		on click:
-			if (smartness >= convertcost and converttimer > 1e250)
+			if (smartness >= convertcost and money >= convertcost*10 and converttimer > 1e250)
 				converttimer = pow(convertcost,0.5)
 				lose convertcost smartness
+				lose convertcost*10 money
 				yield 100 convertcost
 			end
 		end	
@@ -45,6 +46,8 @@ Resources
 	*research
 		name:researching pointers
 		desc:called research point, used to get bIg smart!
+		hidden
+		tag:researchtag
 	*convertcost
 		start with:100
 		hidden
@@ -60,6 +63,8 @@ Resources
 		hidden
 
 Buildings
+	*TEMPLATE
+		limit:(this+1)
 	*dirt
 		name:Sell dirt!
 		desc:wows, dirt give money! gives 1 every 5 second!
@@ -106,7 +111,7 @@ Buildings
 		name:stealing?!!?!?
 		desc:well. maybe this is how we rich. we can earn thousands of money, but, we can get CAUGHT. ohhoohoho!!!!
 		cost:701 money
-		on earn:lose 5000 money
+		on earn:lose 2000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
 		req:22 dirt
 		
@@ -124,6 +129,7 @@ Buildings
 		cost:2000 money
 		passive:yield 15 money
 		req:30 dirt
+		
 	*school|skool
 		name:skool
 		desc:go to skools to increase 1 smartness every seconds. W0W!
@@ -131,12 +137,14 @@ Buildings
 		cost increase:130%
 		passive:yield 1 smartness
 		req:35 dirt
+		
 	*book1
 		name:How2Rich!!!!
 		desc:a book, That gives me tips on being RICH!!!!! 2% more Moneying per level!
 		cost:6000 money
 		req:37 dirt
 		req:50 smartness:earned
+		
 	*coding
 		name:coding making.
 		desc:make code stuff, put ads, RICH as much as 35 per SECOND!
@@ -144,6 +152,7 @@ Buildings
 		passive:yield 35 money
 		req:40 dirt
 		req:1000 smartness:earned
+		
 	*book2
 		name:How2Smart!!!!!!!!!
 		desc:Books That Gives Me Smarters! 5% Smarting per LEvel.!
@@ -217,7 +226,7 @@ Upgrades
 		desc:convert intellegence into RESEARCH !
 		cost:15000 money
 		on earn:show tag:researchtag
-		req:20 school
+		req:15 school
 	*book1up	
 		name:reading glass.
 		desc:so. WE geT reading glasses to read more better. 2 more click works now ! why is this so expesnive
