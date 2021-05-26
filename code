@@ -48,9 +48,11 @@ Resources
 	*converttimer
 		start with:1e300
 		passive:lose this
-		passive:if (this=0)
-			yield research
-			this is 1e300
+		passive:
+			if (this=0)
+				yield research
+				this is 1e300
+			end
 		end
 //make hidden
 
