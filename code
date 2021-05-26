@@ -1,20 +1,31 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.02<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.03<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
 Settings
 	building cost increase:120%
-	building cost refund:10%
-// add background
+	building cost refund:0%
+//add background
 
 Buttons
 	*moneybag
 		name:Work !
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
 		on click:yield 1 money
+		on click:if (have schoolup) yield 1 smartness
+	*researchbutton
+		name:makeing RESEARCH!
+		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness into RESEARCH!
+		on click:if (smartness >= convertcost and converttimer > 1e250)
+			converttimer is pow(convertcost,0.5)
+			lose convertcost smartness
+			yield 100 convertcost
+		end	
+		tag:researchtag
+		hidden
 		
 Resources
 	*money
@@ -23,6 +34,23 @@ Resources
 	*ep
 		name:EVIL points.
 		desc:No, Im not Evil!!!#@@!#!#!@#!!!@!!!!!}! STOTP#@P#@P@!PP!@!@#P!@O#P@O@
+	*smartness
+		name:smartness!
+		desc:i can be smart to do BIG Money!1
+	*research
+		name:researching pointers
+		desc:called research point, used to get bIg smart!
+	*convertcost
+		start with:100
+//make hidden
+	*converttimer
+		start with:1e300
+		passive:lose this
+		passive:if (this=0)
+			yield research
+			this is 1e300
+		end
+//make hidden
 
 Buildings
 	*dirt
@@ -81,7 +109,7 @@ Buildings
 		cost:5 money
 		on earn:toast well, better luck next time. Guess we didn't get money
 		req:25 dirt
-		cost increase:101%
+		cost increase:105%
 		
 	*landscape
 		name:landscaping job  .
@@ -89,9 +117,13 @@ Buildings
 		cost:2000 money
 		passive:yield 15 money
 		req:30 dirt
-	*school
+	*school|skool
 		name:skool
 		desc:go to skools to increase 1 smartness every seconds. W0W!
+		cost:5000 money
+		cost increase:130%
+		passive:yield 1 smartness
+		req:35 dirt
 		
 Upgrades
 	*dirtup
@@ -150,7 +182,25 @@ Upgrades
 		cost:2500 money
 		passive:increase yield of moneybag by 1
 		req:5 landscape
+	*schoolup	
+		name:bigger brain.s
+		desc:well. You gets 1 smart for every moneys you get from click work.
+		cost:8000 money
+		req:5 school
+	*researchup
+		name:reaserch lab!
+		desc:convert intellegence into RESEARCH !
+		cost:15000 money
+		on earn:show tag:researchtag
+		req:10 school
 		
+		
+		
+	*TEMPLATE
+		tag:researchtag
+		hidden
+	
+	
 Achievements
 	*money1
 		name:not rich.
