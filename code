@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.03<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.04<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -18,7 +18,7 @@ Buttons
 		on click:if (have schoolup) yield 1 smartness
 	*researchbutton
 		name:makeing RESEARCH!
-		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness into RESEARCH!
+		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness into RESEARCH!]
 		on click:
 			if (smartness >= convertcost and converttimer > 1e250)
 				converttimer = pow(convertcost,0.5)
