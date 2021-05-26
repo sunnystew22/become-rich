@@ -7,7 +7,7 @@ Let's make a game!
 
 Settings
 	building cost increase:120%
-	building cost refund:0%
+	building cost refund:0.01%
 //add background
 
 Buttons
