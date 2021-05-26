@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.07<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.08<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -63,8 +63,6 @@ Resources
 		hidden
 
 Buildings
-	*TEMPLATE
-		limit:(this+1)
 	*dirt
 		name:Sell dirt!
 		desc:wows, dirt give money! gives 1 every 5 second!
