@@ -146,8 +146,9 @@ Buildings
 	*book2
 		name:How2Smart!!!!!!!!!
 		desc:Books That Gives Me Smarters! 5% Smarting per LEvel.!
-		cost:14000
+		cost:14000 money
 		passive:multiply yield of smartness by 1+(0.05*this)
+		req:5000 smartness:earned
 		
 Upgrades
 	*dirtup
