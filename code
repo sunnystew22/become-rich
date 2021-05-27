@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.08<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.09<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -30,6 +30,14 @@ Buttons
 		end	
 		tag:researchtag
 		hidden
+		
+		
+	*debug1
+		name:x2 money
+		on click:yield money money
+	*debug2
+		name:x2 smartness
+		on click:yield smartness smartness
 		
 Resources
 	*money
@@ -157,6 +165,14 @@ Buildings
 		cost:14000 money
 		req:5000 smartness:earned
 		
+	*wheel
+		name:reinventing the wheel
+		desc:is this how i can strike rich. 1 less smartness per two second but 50 moneys per second. investeors say no, but i say yEs.
+		cost:4000 money, 2500 smartness
+		passive:yield 50 money
+		passive:lose 0.5 smartness
+		req:have research2
+		
 Upgrades
 	*dirtup
 		name:Dirt Working
@@ -202,6 +218,11 @@ Upgrades
 		on earn:yield 1 ep
 		on earn:toast success! we stole 1100 worth of moneys! That's a profit right???
 		req:5 stealing
+	*evil1
+		name:EVIL Working.!
+		desc:be evil and scam for 3 click moneys!
+		cost:1800 money
+		passive:multiply money yield of moneybag by 2
 	*lotteryup	
 		name:lottery Making
 		desc:We Make the Loterys so We can Get a Moneys For 1 clicking Work Moneys?
@@ -222,9 +243,9 @@ Upgrades
 	*researchup
 		name:reaserch lab!
 		desc:convert intellegence into RESEARCH !
-		cost:15000 money
+		cost:50000 money
 		on earn:show tag:researchtag
-		req:15 school
+		req:10 school
 	*book1up	
 		name:reading glass.
 		desc:so. WE geT reading glasses to read more better. 2 more click works now ! why is this so expesnive
@@ -243,7 +264,23 @@ Upgrades
 		cost:45000 money
 		passive:increase yield of moneybag by 2
 		req:5 book2
-		
+	*research1
+		name:smart works.
+		desc:we use our smart research to make smart works. x2 click work moneys.
+		cost:1 research, 20000 money
+		passive:multiply money yield of moneybag by 2
+		req:1 research
+	*research2
+		name:wheel inventions.
+		desc:People say "reinventing the wheel,," what's that mean?
+		cost:3 research, 30000 money
+		req:have research1
+	*research3
+		name:research works.
+		desc:we use smarter research to make more intellegent works. x2 click work moneying.
+		cost:5 research, 40000 money
+		passive:multiply money yield of moneybag by 2
+		req:have research2
 		
 	*TEMPLATE
 		tag:researchtag
