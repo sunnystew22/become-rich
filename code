@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.09<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.10<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -222,7 +222,7 @@ Upgrades
 		name:EVIL Working.!
 		desc:be evil and scam for 3 click moneys!
 		cost:1800 money, 1 ep
-		passive:multiply money yield of moneybag by 2
+		passive:increase yield of moneybag by 3
 		req:1 ep
 	*lotteryup	
 		name:lottery Making
@@ -278,9 +278,9 @@ Upgrades
 		req:have research1
 	*research3
 		name:research works.
-		desc:we use smarter research to make more intellegent works. x2 click work moneying.
+		desc:we use smarter research to make more intellegent works. x3 click work moneying.
 		cost:5 research, 40000 money
-		passive:multiply money yield of moneybag by 2
+		passive:multiply money yield of moneybag by 3
 		req:have research2
 		
 	*TEMPLATE
