@@ -173,16 +173,23 @@ Buildings
 		passive:lose 0.5 smartness
 		req:have research2
 		
+	*sus
+		name:among Us rip Off.
+		desc:it's popular game, i ripoff and make popular game again. i charge extra moneys. as much moneys as 125 per sec. seems kinda evil?
+		cost:50000 money
+		passive:yield 125 money
+		req:have research4
+		
 Upgrades
 	*dirtup
 		name:Dirt Working
-		desc:use the power Of dirt to boost work money by 1! YeSSSS!
+		desc:use the power Of dirt to boost click work by 1! YeSSSS!
 		cost:25 money
 		passive:increase yield of moneybag by 1
 		req:5 dirt
 	*cryptoup
 		name:Cryptcurency work
-		desc:sell your cyrtoping currencys for 1 more click money! YeSSSS!
+		desc:sell your cyrtoping currencys for 1 more click work! YeSSSS!
 		cost:75 money
 		passive:increase yield of moneybag by 1
 		req:5 cryptocurrency
@@ -194,7 +201,7 @@ Upgrades
 		req:5 dog
 	*cookieup
 		name:cookie Sell!
-		desc:cookie clicking didn't work. let's sell the cookie instead for 1 more click money! YESSSSSS
+		desc:cookie clicking didn't work. let's sell the cookie instead for 1 more click work! YESSSSSS
 		cost:100 money
 		passive:increase yield of moneybag by 1
 		req:5 cookie
@@ -220,19 +227,19 @@ Upgrades
 		req:5 stealing
 	*evil1
 		name:EVIL Working.!
-		desc:be evil and scam for 3 click moneys!
+		desc:be evil and scam for 3 click works!
 		cost:1800 money, 1 ep
 		passive:increase yield of moneybag by 3
 		req:1 ep
 	*lotteryup	
 		name:lottery Making
-		desc:We Make the Loterys so We can Get a Moneys For 1 clicking Work Moneys?
+		desc:We Make the Loterys so We can Get a Moneys For 1 clicking Works?
 		cost:1500 money
 		passive:increase yield of moneybag by 1
 		req:50 lottery
 	*landscapeup	
 		name:scaping The Land.
-		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes 1 more work money thoough !
+		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes 1 more click work thoough !
 		cost:2500 money
 		passive:increase yield of moneybag by 1
 		req:5 landscape
@@ -276,18 +283,26 @@ Upgrades
 		desc:People say "reinventing the wheel,," what's that mean?
 		cost:3 research, 30000 money
 		req:have research1
+	*wheelup
+		name:WHEEL 2.0.
+		desc:THE BETTER WHEEL. IT GIVES 5 CLICK MONEYS AND 50 THOUSANDS BUCKS.
+		cost:8000 smartness
+		on earn:yield 50000 money
+		passive:increase money yield of moneybag by 5
+		req:5 wheel
 	*research3
 		name:research works.
 		desc:we use smarter research to make more intellegent works. x3 click work moneying.
 		cost:5 research, 40000 money
 		passive:multiply money yield of moneybag by 3
 		req:have research2
-		
-	*TEMPLATE
-		tag:researchtag
-		hidden
-	
-	
+	*research4
+		name:The Sus.
+		desc:We're sus, and we make Amongus.
+		cost:7 research, 50000 money
+		on earn:toast amogus sUs!
+		req:have research3
+
 Achievements
 	*money1
 		name:not rich.
