@@ -221,8 +221,9 @@ Upgrades
 	*evil1
 		name:EVIL Working.!
 		desc:be evil and scam for 3 click moneys!
-		cost:1800 money
+		cost:1800 money, 1 ep
 		passive:multiply money yield of moneybag by 2
+		req:1 ep
 	*lotteryup	
 		name:lottery Making
 		desc:We Make the Loterys so We can Get a Moneys For 1 clicking Work Moneys?
