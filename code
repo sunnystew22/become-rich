@@ -10,6 +10,14 @@ Settings
 	building cost refund:0.01%
 //add background
 
+
+
+
+//MAKE SURE TO ADD RESEARCH TIME DECREASE FROM UPGRADES AND FACTORY
+
+
+
+
 Buttons
 	*moneybag
 		name:Work !
