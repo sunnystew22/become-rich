@@ -22,7 +22,7 @@ Buttons
 		desc:turn smartness into researches here!!! NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		on click:
 			if (smartness >= convertcost and money >= convertcost*10 and converttimer > 1e250)
-				converttimer = pow(convertcost,0.5)
+				converttimer is pow(convertcost,0.5)
 				lose convertcost smartness
 				lose convertcost*10 money
 				yield 100 convertcost
@@ -63,7 +63,7 @@ Resources
 		start with:1e300
 		passive:lose this
 		passive:
-			if (this=0)
+			if (this<=0)
 				yield research
 				this is 1e300
 			end
@@ -115,7 +115,7 @@ Buildings
 		
 	*stealing
 		name:stealing?!!?!?
-		desc:well. maybe this is how we rich. we can earn thousands of money, but, we can get CAUGHT. ohhoohoho!!!!
+		desc:well. maybe this is how we rich. we can earn thousands of money, but, we can get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!!
 		cost:701 money
 		on earn:lose 2000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
@@ -136,7 +136,7 @@ Buildings
 		passive:yield 15 money
 		req:30 dirt
 		
-	*school|skool
+	*school1
 		name:skool
 		desc:go to skools to increase 1 smartness every seconds. W0W!
 		cost:5000 money
@@ -175,11 +175,24 @@ Buildings
 		
 	*sus
 		name:among Us rip Off.
-		desc:it's popular game, i ripoff and make popular game again. i charge extra moneys. as much moneys as 125 per sec. seems kinda evil?
+		desc:it's popular game, i ripoff and make popular game again. i charge extra moneys. as much moneys as 125 per sec. they're problem if they're getting ideas stolen from.
 		cost:50000 money
 		passive:yield 125 money
 		req:have research4
-		
+
+	*school2
+		name:cool skool.
+		desc:new skool is pretty cool. it gives 3 smartness per second, but it costs 25 money per second. :sunglasses:
+		cost:75000 money, 500 smartness
+		passive:yield 3 smartness
+		passive:if (have school2up) lose 10 money else lose 50 money
+		req:50000 smartness:earned
+	*factory
+		name:Research Factory
+		desc:Mass produce for all of research. This will yes. Makes 2 less seconds for research per factory. Very expensiving, though .
+		cost:150000 money
+		req:have research6
+
 Upgrades
 	*dirtup
 		name:Dirt Working
@@ -243,17 +256,17 @@ Upgrades
 		cost:2500 money
 		passive:increase yield of moneybag by 1
 		req:5 landscape
-	*schoolup	
+	*school1up	
 		name:bigger brain.s
 		desc:well. You gets 1 smart for every moneys you get from click work.
 		cost:8000 money
-		req:5 school
+		req:5 school1
 	*researchup
 		name:reaserch lab!
 		desc:convert intellegence into RESEARCH !
 		cost:50000 money
 		on earn:show tag:researchtag
-		req:10 school
+		req:10 school1
 	*book1up	
 		name:reading glass.
 		desc:so. WE geT reading glasses to read more better. 2 more click works now ! why is this so expesnive
@@ -302,6 +315,30 @@ Upgrades
 		cost:7 research, 50000 money
 		on earn:toast amogus sUs!
 		req:have research3
+	*susup
+		name:ripoff Pro skills.
+		desc:we better at ripping, so we off. 3 clicks works .
+		cost:70000 money, 5000 smartness
+		on earn:yield 2 ep
+		passive:increase yield of moneybag by 3
+		req:5 sus
+	*research5
+		name:factory works.
+		desc:We have research factory to make. first, we will getting more clicking working moneying, x4 to being exacting. and, from basic setting uping, we get 10 less seconds of researches.
+		cost:9 research, 60000 money
+		passive:multiply money yield of moneybag by 4
+		req:have research4
+	*school2up
+		name:cooler skool's scholarship
+		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.
+		cost:20000 smartness
+		passive:increase smartness yield of school2 by 1
+		req:5 school2
+	*research6
+		name:Research. Factories.
+		desc:This is a new era of re-search. We will search for all of the re.
+		cost:15 research, 100000 money
+		req:have research5
 
 Achievements
 	*money1
