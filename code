@@ -1,14 +1,14 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.11<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.12<#ffee00>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
 Settings
 	building cost increase:120%
 	building cost refund:0.01%
-//add background
+	background:https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1142839776%2F960x0.jpg%3Ffit%3Dscale
 
 
 
@@ -30,7 +30,7 @@ Buttons
 		desc:turn smartness into researches here!!! NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		on click:
 			if (smartness >= convertcost and money >= convertcost*10 and converttimer > 1e250)
-				converttimer is pow(convertcost,0.5)
+				converttimer is (pow(convertcost,0.5)-(speedup+(2*factory)
 				lose convertcost smartness
 				lose convertcost*10 money
 				yield 100 convertcost
@@ -77,6 +77,7 @@ Resources
 			end
 		end
 		hidden
+	*speedup
 
 Buildings
 	*dirt
@@ -123,7 +124,7 @@ Buildings
 		
 	*stealing
 		name:stealing?!!?!?
-		desc:well. maybe this is how we rich. we can earn thousands of money, but, we can get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!!
+		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.!
 		cost:701 money
 		on earn:lose 2000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
@@ -190,7 +191,7 @@ Buildings
 
 	*school2
 		name:cool skool.
-		desc:new skool is pretty cool. it gives 3 smartness per second, but it costs 25 money per second. :sunglasses:
+		desc:new skool is pretty cool. it gives 3 smartness per second, but it costs 50 money per second. :sunglasses:
 		cost:75000 money, 500 smartness
 		passive:yield 3 smartness
 		passive:if (have school2up) lose 10 money else lose 50 money
@@ -334,6 +335,7 @@ Upgrades
 		name:factory works.
 		desc:We have research factory to make. first, we will getting more clicking working moneying, x4 to being exacting. and, from basic setting uping, we get 10 less seconds of researches.
 		cost:9 research, 60000 money
+		on earn:yield 10 speedup
 		passive:multiply money yield of moneybag by 4
 		req:have research4
 	*school2up
