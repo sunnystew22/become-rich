@@ -1,28 +1,49 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.12<#ffee00>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.12<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
+
+
+
+
+
+
+//         finish making code for the factory upgrade
+
+
+
+
+
+
 
 Settings
 	building cost increase:120%
 	building cost refund:0.01%
 	background:https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1142839776%2F960x0.jpg%3Ffit%3Dscale
 
-
-
-
-//MAKE SURE TO ADD RESEARCH TIME DECREASE FROM UPGRADES AND FACTORY
-
-
-
+CSS
+	.glowgreen
+	{
+		color: green;
+		text-shadow: 0 0 5px green;
+		box-shadow: 0px 0px 15px green;
+		border-color: green;
+	}
+	.colorgreen
+	{
+		color: green;
+		border-color: green;
+	}
 
 Buttons
 	*moneybag
 		name:Work !
+		text:[?(have factoryup)|<b><#00d90e>Work For Research boost !</#></b>|Work !]
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
 		on click:yield 1 money
+		on click:if (have school1up) yield 1 smartness
 		on click:if (have school1up) yield 1 smartness
 	*researchbutton
 		name:makeing RESEARCH!
@@ -343,12 +364,18 @@ Upgrades
 		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.
 		cost:20000 smartness
 		passive:increase smartness yield of school2 by 1
-		req:5 school2
+		req:5 factory
 	*research6
 		name:Research. Factories.
 		desc:This is a new era of re-search. We will search for all of the re.
 		cost:15 research, 100000 money
 		req:have research5
+	*factoryup
+		name:Moneying The REsearch.
+		desc:This can making the Work ! button green. When it green, that means if you click on it, it give 1 permenant less research second, but stops being green. it's rebecomes green after 30 minute though. Also it gives has 15 less researc seond/ SO, Yeah.
+		cost:20 research, 500000 money, 50000 smartness
+		on earn:yield 15 speedup
+		req:5 school2
 
 Achievements
 	*money1
