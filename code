@@ -44,7 +44,7 @@ Buttons
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
 		on click:yield 1 money
 		on click:if (have school1up) yield 1 smartness
-		on click:if (have school1up) yield 1 smartness
+		on click:if (have factoryup) yield 1 smartness
 	*researchbutton
 		name:makeing RESEARCH!
 		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness and [convertcost*10] money into RESEARCH!]
@@ -99,6 +99,8 @@ Resources
 		end
 		hidden
 	*speedup
+	*worktimer
+		start with
 
 Buildings
 	*dirt
@@ -364,7 +366,7 @@ Upgrades
 		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.
 		cost:20000 smartness
 		passive:increase smartness yield of school2 by 1
-		req:5 factory
+		req:5 school2
 	*research6
 		name:Research. Factories.
 		desc:This is a new era of re-search. We will search for all of the re.
@@ -375,7 +377,7 @@ Upgrades
 		desc:This can making the Work ! button green. When it green, that means if you click on it, it give 1 permenant less research second, but stops being green. it's rebecomes green after 30 minute though. Also it gives has 15 less researc seond/ SO, Yeah.
 		cost:20 research, 500000 money, 50000 smartness
 		on earn:yield 15 speedup
-		req:5 school2
+		req:5 factory
 
 Achievements
 	*money1
