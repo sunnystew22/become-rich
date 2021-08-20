@@ -44,7 +44,12 @@ Buttons
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
 		on click:yield 1 money
 		on click:if (have school1up) yield 1 smartness
-		on click:if (have factoryup) yield 1 smartness
+		on click:
+			if (have factoryup and worktimer = 0)
+				yield 1 speedup
+				worktimer is 900
+			end
+		end
 	*researchbutton
 		name:makeing RESEARCH!
 		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness and [convertcost*10] money into RESEARCH!]
@@ -100,7 +105,7 @@ Resources
 		hidden
 	*speedup
 	*worktimer
-		start with:1800
+		start with:900
 		on tick:if (have factoryup) lose this
 
 Buildings
@@ -375,10 +380,16 @@ Upgrades
 		req:have research5
 	*factoryup
 		name:Moneying The REsearch.
-		desc:This can making the Work ! button green. When it green, that means if you click on it, it give 1 permenant less research second, but stops being green. it's rebecomes green after 30 minute though. Also it gives has 15 less researc seond/ SO, Yeah.
+		desc:This can making the Work ! button green. When it green, that means if you click on it, it give 3 permenant less research second, but stops being green. it's rebecomes green after 15 minute though. Also it gives has 15 less researc seond when buyed/ SO, Yeah.
 		cost:20 research, 500000 money, 50000 smartness
 		on earn:yield 15 speedup
+		on earn:worktimer is 900
 		req:5 factory
+	*research7
+		name:The Auto Researcher/
+		desc:It;s a button. Press it on to automatically research whnever you have the resources for it! Press it off, it stops. WARNINGS: watch out, research costs x2 money when auto researched !
+		cost:25 research, 3e6 money
+		req:have research6
 
 Achievements
 	*money1
@@ -405,10 +416,42 @@ Achievements
 		name:WOAH DUDE! LET'S BE MILLION!!!!!!!!!
 		desc:WE MILLIONARE@
 		req:1000000 money
-		
-
-
-
+	*net1
+		name:10Mil NetWorth.
+		desc:i found this thing called networth? what's it do? don't know. but im richer now, so oh yeah
+		req:1e7 money
+	*net2
+		name:100Mil NetWorth.
+		desc:well i got more net worths, it's seems fun so i will get more
+		req:1e8 money
+	*net3
+		name:1Bil NetWorth.
+		desc:ok that's a lot of moneying. maybe ishould dontate to poor? don't know.also i think im famous
+		req:1e9 money
+	*net4
+		name:10Bil NetWorth.
+		desc:im sorry that's too much
+		req:1e10 money
+	*net5
+		name:100Bil NetWorth.
+		desc:why
+		req:1e11 money
+	*net6
+		name:trilion
+		desc:Welcome to Become Rich! Here, you build your way to being a BILLIONARE in this very fun idol game! Very Wow! Such Amazing! Can't Believe! Much Yes! Super Excitement! Many Richness!
+		req:1e12 money
+	*net7
+		name:illion but the tri is replaceed with whatever word 4 is for.           i think it;s called squareillion
+		desc:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$<//>                                         $$$$
+		req:1e15 money
+	*net8
+		name:pentagonillion
+		desc:i am a such hacker i am a such pro
+		req:1e18 money
+	*net9
+		name:ok
+		desc:q
+		req:1e100 money
 
 
 
