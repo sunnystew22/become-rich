@@ -100,7 +100,8 @@ Resources
 		hidden
 	*speedup
 	*worktimer
-		start with
+		start with:1800
+		on tick:if (have factoryup) lose this
 
 Buildings
 	*dirt
@@ -147,7 +148,7 @@ Buildings
 		
 	*stealing
 		name:stealing?!!?!?
-		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.!
+		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.! hmm, huh. maybe that NOt good idea!?!?!?!?! not sur,ws but well it seems bad so acutally DON"T DO!!!!!!!!! NOO!!!!!!!!! STOPSTOPSTOPSTOPSTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		cost:701 money
 		on earn:lose 2000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
