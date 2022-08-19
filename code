@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.19<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.20<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -43,7 +43,7 @@ Buttons
 		text:[?(have factoryup and worktimer = 0)|<b><#00d90e>Work For Research boost !</#></b>|Work !]
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
 		on click:yield 2 money
-		on click:if (have school1up) yield round(0.2) smartness
+		on click:if (have school1up) yield 0.1 smartness
 		on click:
 			if (have factoryup and worktimer = 0)
 				yield 3 speedup
@@ -326,7 +326,7 @@ Upgrades
 		req:5 book2
 	*research1
 		name:smart works.
-		desc:we use our smart research to make smart works. MULTPILY x2 click work moneys.<//><q>x2 click money</q>
+		desc:we use our smart research to make smart works. MULTPILY x2 click work moneys.<//><q>x2 click money, does not boost smartness</q>
 		cost:1 research, 20000 money
 		passive:multiply money yield of moneybag by 2
 		req:1 research
@@ -340,11 +340,11 @@ Upgrades
 		desc:THE BETTER WHEEL. IT GIVES 7 CLICK MONEYS AND 50 THOUSANDS BUCKS.<//><q>+7 click money, +50,000 money</q>
 		cost:8000 smartness
 		on earn:yield 50000 money
-		passive:increase money yield of moneybag by 7
+		passive:increase yield of moneybag by 7
 		req:5 wheel
 	*research3
 		name:research works.
-		desc:we use smarter research to make more intellegent works. x3 click work moneying.<//><q>x3 click money</q>
+		desc:we use smarter research to make more intellegent works. x3 click work moneying.<//><q>x3 click money, does not boost smartness</q>
 		cost:5 research, 40000 money
 		passive:multiply money yield of moneybag by 3
 		req:have research2
@@ -370,13 +370,13 @@ Upgrades
 		req:have research4
 	*school2up
 		name:cooler skool's scholarship
-		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.
+		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4</q>
 		cost:20000 smartness
 		passive:increase smartness yield of school2 by 1
 		req:5 school2
 	*research6
 		name:Research. Factories.
-		desc:This is a new era of re-search. We will search for all of the re.
+		desc:This is a new era of re-search. We will search for all of the re.<//><q>Unlocks a new building</q>
 		cost:15 research, 100000 money
 		req:have research5
 	*factoryup
