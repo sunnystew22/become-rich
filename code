@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Become Rich !
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.14<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.15<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -117,7 +117,7 @@ Buildings
 		
 	*cryptocurrency
 		name:investing cyrptocurrency
-		desc:i don't know how this work! i Buy, then wait for price to up? it earn me one 1 moneys every 1 seconds, YES!!!!!!!<//><q>+1 MPS</q>
+		desc:i don't know how this work! i Buy, then wait for price to up? it earn me one 1 moneys every 1 seconds, YES!!!!!!!<//><q>+1 MPS<//>Upgrades unlock at: 5,</q>
 		cost:50 money
 		passive:yield 1 money
 		cost increase:175%
@@ -125,27 +125,27 @@ Buildings
 		
 	*dog
 		name:walking the Dog
-		desc:you just take puppy and follow it around the street! 2 money per second sounds free money, yes?!!?!?!?<//><q>+2 MPS</q>
+		desc:you just take puppy and follow it around the street! 2 money per second sounds free money, yes?!!?!?!?<//><q>+2 MPS<//>Upgrades unlock at: 5,</q>
 		cost:150 money
 		passive:yield 2 money
 		req:5 dirt
 		
 	*cookie
 		name:Cookie clicking
-		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS</q>
+		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS<//>Upgrades unlock at: 5,</q>
 		cost:200 money
 		req:10 dirt
 		
 	*stock
 		name:Stocking Markets!
-		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS</q>
+		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS<//>Upgrades unlock at: 10,</q>
 		cost:400 money
 		passive:lose 1 money
 		req:15 dirt
 		
 	*paperclip
 		name:Paperclip
-		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+8 MPS</q>
+		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+8 MPS<//>Upgrades unlock at: 5,</q>
 		cost:600 money
 		passive:yield 8 money
 		cost increase:130%
@@ -153,15 +153,15 @@ Buildings
 		
 	*stealing
 		name:stealing?!!?!?
-		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.! hmm, huh. maybe that NOt good idea!?!?!?!?! not sur,ws but well it seems bad so acutally DON"T DO!!!!!!!!! NOO!!!!!!!!! STOPSTOPSTOPSTOPSTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.! hmm, huh. maybe that NOt good idea!?!?!?!?! not sur,ws but well it seems bad so acutally DON"T DO!!!!!!!!! NOO!!!!!!!!! STOPSTOPSTOPSTOPSTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>+0 MPS, lose 1000 money<//>Upgrades unlock at: 5,</q>
 		cost:601 money
-		on earn:lose 2000 money
+		on earn:lose 1000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
 		req:22 dirt
 		
 	*lottery
 		name:Lotery Ticket!
-		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money</q>
+		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money<//>Upgrades unlock at: 50,</q>
 		cost:5 money
 		on earn:toast well, better luck next time. Guess we didn't get money
 		req:25 dirt
@@ -169,7 +169,7 @@ Buildings
 		
 	*landscape
 		name:landscaping job  .
-		desc:go to yard and mess around with it for 25 per second! why do people pay that much!<//><q>+25 MPS</q>
+		desc:go to yard and mess around with it for 25 per second! why do people pay that much!<//><q>+25 MPS<//>Upgrades unlock at: 5,</q>
 		cost:2000 money
 		passive:yield 25 money
 		req:30 dirt
@@ -260,7 +260,8 @@ Upgrades
 		name:Market CRASH!!
 		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>Don't do this</q>
 		cost:1000 money
-		on earn:lose 1e300 :All
+		on earn:lose 100000 money
+		on earn:toast NOOOOOOOOOOOOOOOOŒ
 		req:10 stock
 	*paperclipup	
 		name:clipping the paper !
@@ -455,6 +456,10 @@ Achievements
 		name:ok
 		desc:q
 		req:1e100 money
+	*stockcrash
+		name:Well
+		desc:the stocks are gone forever. Look what you did. i am mad and angery
+		req:stockup
 
 
 
