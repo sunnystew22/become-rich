@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.18<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.19<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -205,7 +205,7 @@ Buildings
 		
 	*wheel
 		name:reinventing the wheel
-		desc:is this how i can strike rich. 1 less smartness per two second but 50 moneys per second. investeors say no, but i say yEs.<//><q>+150 MPS, -0.5 SPS</q><//><q>Upgrades unlock at: 5</q>
+		desc:is this how i can strike rich. 1 less smartness per two second but 150 moneys per second. investeors say no, but i say yEs.<//><q>+150 MPS, -0.5 SPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:4000 money, 2500 smartness
 		passive:yield 150 money
 		passive:lose 0.5 smartness
@@ -332,12 +332,12 @@ Upgrades
 		req:1 research
 	*research2
 		name:wheel inventions.
-		desc:People say "reinventing the wheel,," what's that mean?
+		desc:People say "reinventing the wheel,," what's that mean?<//><q>Unlocks a new building</q>
 		cost:3 research, 30000 money
 		req:have research1
 	*wheelup
 		name:WHEEL 2.0.
-		desc:THE BETTER WHEEL. IT GIVES 5 CLICK MONEYS AND 50 THOUSANDS BUCKS.<//><q>+7 click money</q>
+		desc:THE BETTER WHEEL. IT GIVES 7 CLICK MONEYS AND 50 THOUSANDS BUCKS.<//><q>+7 click money, +50,000 money</q>
 		cost:8000 smartness
 		on earn:yield 50000 money
 		passive:increase money yield of moneybag by 7
@@ -350,7 +350,7 @@ Upgrades
 		req:have research2
 	*research4
 		name:The Sus.
-		desc:We're sus, and we make Amongus.
+		desc:We're sus, and we make Amongus.<//><q>Unlocks a new building (I'm sorry about the sheer amount of Amogi, this was made like over a year ago)</q>
 		cost:7 research, 50000 money
 		on earn:toast amogus sUs!
 		req:have research3
@@ -359,11 +359,11 @@ Upgrades
 		desc:we better at ripping, so we off. 7 clicks works .<//><q>+7 click money</q>
 		cost:70000 money, 5000 smartness
 		on earn:yield 2 ep
-		passive:increase yield of moneybag by 3
+		passive:increase yield of moneybag by 7
 		req:5 sus
 	*research5
 		name:factory works.
-		desc:We have research factory to make. first, we will getting more clicking working moneying, x4 to being exacting. and, from basic setting uping, we get 10 less seconds of researches.
+		desc:We have research factory to make. first, we will getting more clicking working moneying, x4 to being exacting. and, from basic setting uping, we get 10 less seconds of researches.<//><q>I have no idea what this does</q>
 		cost:9 research, 60000 money
 		on earn:yield 10 speedup
 		passive:multiply money yield of moneybag by 4
