@@ -234,31 +234,31 @@ Buildings
 Upgrades
 	*dirtup
 		name:Dirt Working
-		desc:use the power Of dirt to boost click work by 1! YeSSSS!<//><q>+1 click money. Buy 5 of any building to unlock similar upgrades.</q>
+		desc:use the power Of dirt to boost click work by 2! YeSSSS!<//><q>+2 click money. Buy multiple (usually 5) of any building to unlock similar upgrades.</q>
 		cost:25 money
-		passive:increase yield of moneybag by 1
+		passive:increase yield of moneybag by 2
 		req:5 dirt
 	*cryptoup
 		name:Cryptcurency work
-		desc:sell your cyrtoping currencys for 1 more click work! YeSSSS!
+		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!
 		cost:75 money
-		passive:increase yield of moneybag by 1
+		passive:increase yield of moneybag by 2
 		req:5 cryptocurrency
 	*dogup
 		name:Pet the dogs.
 		desc:<u>We must pet the dogs.</u>
 		cost:300 money
-		passive:increase yield of moneybag by 1
+		passive:increase yield of moneybag by 3
 		req:5 dog
 	*cookieup
 		name:cookie Sell!
-		desc:cookie clicking didn't work. let's sell the cookie instead for 1 more click work! YESSSSSS
+		desc:cookie clicking didn't work. let's sell the cookie instead for 3 more click work! YESSSSSS
 		cost:100 money
-		passive:increase yield of moneybag by 1
+		passive:increase yield of moneybag by 3
 		req:5 cookie
 	*stockup
 		name:Market CRASH!!
-		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>Don't do this</q>
 		cost:1000 money
 		on earn:lose 1e300 :All
 		req:10 stock
@@ -266,7 +266,7 @@ Upgrades
 		name:clipping the paper !
 		desc:Use paperclips for better organizing making money boost!!!
 		cost:800 money
-		passive:increase yield of moneybag by 1
+		passive:increase yield of moneybag by 4
 		req:5 paperclip
 	*stealingup
 		name:Pro stealing Plan.
@@ -278,21 +278,21 @@ Upgrades
 		req:5 stealing
 	*evil1
 		name:EVIL Working.!
-		desc:be evil and scam for 3 click works!
+		desc:be evil and scam for 8 click works!
 		cost:1800 money, 1 ep
-		passive:increase yield of moneybag by 3
+		passive:increase yield of moneybag by 8
 		req:1 ep
 	*lotteryup	
 		name:lottery Making
-		desc:We Make the Loterys so We can Get a Moneys For 1 clicking Works?
+		desc:We Make the Loterys so We can Get a Moneys For 4 clicking Works?
 		cost:1500 money
-		passive:increase yield of moneybag by 1
+		passive:increase yield of moneybag by 4
 		req:50 lottery
 	*landscapeup	
 		name:scaping The Land.
 		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes 1 more click work thoough !
 		cost:2500 money
-		passive:increase yield of moneybag by 1
+		passive:increase yield of moneybag by 5
 		req:5 landscape
 	*school1up	
 		name:bigger brain.s
