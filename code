@@ -1,7 +1,7 @@
 Let's make a game!
-	name:Become Rich!
+	name:Become Rich !
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.13<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.14<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -111,57 +111,57 @@ Resources
 Buildings
 	*dirt
 		name:Sell dirt!
-		desc:wows, dirt give money! gives 1 every 5 second!<//><q>+0.4 MPS (money per second). Buying large amounts of this is required to unlock new features and progress the game.</q>
+		desc:wows, dirt give money!  !<//><q>+0.5 MPS (money per second). Buying large amounts of this is required to unlock new features and progress the game.</q>
 		cost:10 money
-		passive:yield 0.4 money
+		passive:yield 0.5 money
 		
 	*cryptocurrency
 		name:investing cyrptocurrency
-		desc:i don't know how this work! i Buy, then wait for price to up? it earn me one 1 moneys every 10 seconds, YES!!!!!!!
+		desc:i don't know how this work! i Buy, then wait for price to up? it earn me one 1 moneys every 1 seconds, YES!!!!!!!<//><q>+1 MPS</q>
 		cost:50 money
-		passive:yield 0.1 money
+		passive:yield 1 money
 		cost increase:175%
 		req:have dirt
 		
 	*dog
 		name:walking the Dog
-		desc:you just take puppy and follow it around the street! 1 money per 2 second sounds free money, yes?!!?!?!?
+		desc:you just take puppy and follow it around the street! 2 money per second sounds free money, yes?!!?!?!?<//><q>+2 MPS</q>
 		cost:150 money
-		passive:yield 0.5 money
+		passive:yield 2 money
 		req:5 dirt
 		
 	*cookie
 		name:Cookie clicking
-		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!! 0 money per seond
+		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS</q>
 		cost:200 money
 		req:10 dirt
 		
 	*stock
 		name:Stocking Markets!
-		desc:well, it's called stock market but i don't see any markets here. oh.........................................................
-		cost:500 money
+		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS</q>
+		cost:400 money
 		passive:lose 1 money
 		req:15 dirt
 		
 	*paperclip
 		name:Paperclip
-		desc:We buy some from office store, then sell it at higher price for 4 per second. is this how shoping works??
-		cost:700 money
-		passive:yield 4 money
+		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+8 MPS</q>
+		cost:600 money
+		passive:yield 8 money
 		cost increase:130%
 		req:20 dirt
 		
 	*stealing
 		name:stealing?!!?!?
 		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.! hmm, huh. maybe that NOt good idea!?!?!?!?! not sur,ws but well it seems bad so acutally DON"T DO!!!!!!!!! NOO!!!!!!!!! STOPSTOPSTOPSTOPSTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		cost:701 money
+		cost:601 money
 		on earn:lose 2000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
 		req:22 dirt
 		
 	*lottery
 		name:Lotery Ticket!
-		desc:if we get a ticket then we have a chance of earning bIg bucks.
+		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money</q>
 		cost:5 money
 		on earn:toast well, better luck next time. Guess we didn't get money
 		req:25 dirt
@@ -169,14 +169,14 @@ Buildings
 		
 	*landscape
 		name:landscaping job  .
-		desc:go to yard and mess around with it for 15 per second! why do people pay that much!
+		desc:go to yard and mess around with it for 25 per second! why do people pay that much!<//><q>+25 MPS</q>
 		cost:2000 money
-		passive:yield 15 money
+		passive:yield 25 money
 		req:30 dirt
 		
 	*school1
 		name:skool
-		desc:go to skools to increase 1 smartness every seconds. W0W!
+		desc:go to skools to increase my smartness every seconds. W0W! <//><q>+1 SPS (smartness per second)</q>
 		cost:5000 money
 		cost increase:130%
 		passive:yield 1 smartness
@@ -184,22 +184,22 @@ Buildings
 		
 	*book1
 		name:How2Rich!!!!
-		desc:a book, That gives me tips on being RICH!!!!! 2% more Moneying per level!
+		desc:a book, That gives me tips on being RICH!!!!! Moneying<//><q>+2% more money per level</q>
 		cost:6000 money
 		req:37 dirt
 		req:50 smartness:earned
 		
 	*coding
 		name:coding making.
-		desc:make code stuff, put ads, RICH as much as 35 per SECOND!
+		desc:make code stuff, put ads, RICH as much as yes!<//><q>+70 MPS</q>
 		cost:10000 money, 500 smartness
-		passive:yield 35 money
+		passive:yield 70 money
 		req:40 dirt
 		req:1000 smartness:earned
 		
 	*book2
 		name:How2Smart!!!!!!!!!
-		desc:Books That Gives Me Smarters! 5% Smarting per LEvel.!
+		desc:Books That Gives Me Smarters! MOre Smarting per LEvel.!<//><q>+5% more smartness per level</q>
 		cost:14000 money
 		req:5000 smartness:earned
 		
@@ -234,7 +234,7 @@ Buildings
 Upgrades
 	*dirtup
 		name:Dirt Working
-		desc:use the power Of dirt to boost click work by 1! YeSSSS!
+		desc:use the power Of dirt to boost click work by 1! YeSSSS!<//><q>+1 click money. Buy 5 of any building to unlock similar upgrades.</q>
 		cost:25 money
 		passive:increase yield of moneybag by 1
 		req:5 dirt
