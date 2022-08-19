@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.17<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.18<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -43,7 +43,7 @@ Buttons
 		text:[?(have factoryup and worktimer = 0)|<b><#00d90e>Work For Research boost !</#></b>|Work !]
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
 		on click:yield 2 money
-		on click:if (have school1up) yield round(0.5) smartness
+		on click:if (have school1up) yield round(0.2) smartness
 		on click:
 			if (have factoryup and worktimer = 0)
 				yield 3 speedup
@@ -125,27 +125,27 @@ Buildings
 		
 	*dog
 		name:walking the Dog
-		desc:you just take puppy and follow it around the street! 2 money per second sounds free money, yes?!!?!?!?<//><q>+2 MPS<//>Upgrades unlock at: 5,</q>
+		desc:you just take puppy and follow it around the street! 2 money per second sounds free money, yes?!!?!?!?<//><q>+2 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:150 money
 		passive:yield 2 money
 		req:5 dirt
 		
 	*cookie
 		name:Cookie clicking
-		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS<//>Upgrades unlock at: 5,</q>
+		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:200 money
 		req:10 dirt
 		
 	*stock
 		name:Stocking Markets!
-		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS<//>Upgrades unlock at: 10,</q>
+		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS</q><//><q>Upgrades unlock at: 10,</q>
 		cost:400 money
 		passive:lose 1 money
 		req:15 dirt
 		
 	*paperclip
 		name:Paperclip
-		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+8 MPS<//>Upgrades unlock at: 5,</q>
+		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+8 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:600 money
 		passive:yield 8 money
 		cost increase:130%
@@ -153,7 +153,7 @@ Buildings
 		
 	*stealing
 		name:stealing?!!?!?
-		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.! hmm, huh. maybe that NOt good idea!?!?!?!?! not sur,ws but well it seems bad so acutally DON"T DO!!!!!!!!! NOO!!!!!!!!! STOPSTOPSTOPSTOPSTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>+0 MPS, lose 1000 money<//>Upgrades unlock at: 5,</q>
+		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.! hmm, huh. maybe that NOt good idea!?!?!?!?! not sur,ws but well it seems bad so acutally DON"T DO!!!!!!!!! NOO!!!!!!!!! STOPSTOPSTOPSTOPSTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>+0 MPS, lose 1,000 money</q><//><q>Upgrades unlock at: 5,</q>
 		cost:601 money
 		on earn:lose 1000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
@@ -161,7 +161,7 @@ Buildings
 		
 	*lottery
 		name:Lotery Ticket!
-		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money<//>Upgrades unlock at: 50,</q>
+		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money<//><q>+0 MPS</q><//><q>Upgrades unlock at: 50,</q>
 		cost:5 money
 		on earn:toast well, better luck next time. Guess we didn't get money
 		req:25 dirt
@@ -169,29 +169,29 @@ Buildings
 		
 	*landscape
 		name:landscaping job  .
-		desc:go to yard and mess around with it for 25 per second! why do people pay that much!<//><q>+25 MPS<//>Upgrades unlock at: 5,</q>
+		desc:go to yard and mess around with it for 25 per second! why do people pay that much!<//><q>+25 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:2000 money
 		passive:yield 25 money
 		req:30 dirt
 		
 	*school1
 		name:skool
-		desc:go to skools to increase my smartness every seconds. W0W! <//><q>+1 SPS (smartness per second)</q>
+		desc:go to skools to increase my smartness every seconds. W0W! <//><q>+2 SPS (smartness per second)</q><//><q>Upgrades unlock at: 5, 10</q>
 		cost:5000 money
 		cost increase:130%
-		passive:yield 1 smartness
+		passive:yield 2 smartness
 		req:35 dirt
 		
 	*book1
 		name:How2Rich!!!!
-		desc:a book, That gives me tips on being RICH!!!!! Moneying<//><q>+2% more money per level</q>
+		desc:a book, That gives me tips on being RICH!!!!! Moneying<//><q>+2% money per level</q><//><q>Upgrades unlock at: 5</q>
 		cost:6000 money
 		req:37 dirt
 		req:50 smartness:earned
 		
 	*coding
 		name:coding making.
-		desc:make code stuff, put ads, RICH as much as yes!<//><q>+70 MPS</q>
+		desc:make code stuff, put ads, RICH as much as yes!<//><q>+70 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:10000 money, 500 smartness
 		passive:yield 70 money
 		req:40 dirt
@@ -199,28 +199,28 @@ Buildings
 		
 	*book2
 		name:How2Smart!!!!!!!!!
-		desc:Books That Gives Me Smarters! MOre Smarting per LEvel.!<//><q>+5% more smartness per level</q>
+		desc:Books That Gives Me Smarters! MOre Smarting per LEvel.!<//><q>+5% smartness per level</q><//><q>Upgrades unlock at: 5</q>
 		cost:14000 money
 		req:5000 smartness:earned
 		
 	*wheel
 		name:reinventing the wheel
-		desc:is this how i can strike rich. 1 less smartness per two second but 50 moneys per second. investeors say no, but i say yEs.
+		desc:is this how i can strike rich. 1 less smartness per two second but 50 moneys per second. investeors say no, but i say yEs.<//><q>+150 MPS, -0.5 SPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:4000 money, 2500 smartness
-		passive:yield 50 money
+		passive:yield 150 money
 		passive:lose 0.5 smartness
 		req:have research2
 		
 	*sus
 		name:among Us rip Off.
-		desc:it's popular game, i ripoff and make popular game again. i charge extra moneys. as much moneys as 125 per sec. they're problem if they're getting ideas stolen from.
+		desc:it's popular game, i ripoff and make popular game again. i charge extra moneys.   they're problem if they're getting ideas stolen from.<//><q>+350 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:50000 money
-		passive:yield 125 money
+		passive:yield 350 money
 		req:have research4
 
 	*school2
 		name:cool skool.
-		desc:new skool is pretty cool. it gives 3 smartness per second, but it costs 50 money per second. :sunglasses:
+		desc:new skool is pretty cool. it gives 6 smartness per second, but it costs 50 money per second. :sunglasses:<//><q>+6 SPS, -50 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:75000 money, 500 smartness
 		passive:yield 3 smartness
 		passive:if (have school2up) lose 10 money else lose 50 money
@@ -240,38 +240,38 @@ Upgrades
 		req:5 dirt
 	*cryptoup
 		name:Cryptcurency work
-		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!
+		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>+2 click money</q>
 		cost:75 money
 		passive:increase yield of moneybag by 2
 		req:5 cryptocurrency
 	*dogup
 		name:Pet the dogs.
-		desc:<u>We must pet the dogs.</u>
+		desc:<u>We must pet the dogs.</u><//><q>+3 click money</q>
 		cost:300 money
 		passive:increase yield of moneybag by 3
 		req:5 dog
 	*cookieup
 		name:cookie Sell!
-		desc:cookie clicking didn't work. let's sell the cookie instead for 3 more click work! YESSSSSS
+		desc:cookie clicking didn't work. let's sell the cookie instead for 3 more click work! YESSSSSS<//><q>+3 click money</q>
 		cost:100 money
 		passive:increase yield of moneybag by 3
 		req:5 cookie
 	*stockup
 		name:Market CRASH!!
-		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>Don't do this</q>
+		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>Don't do this (unless you want the achievement)</q>
 		cost:1000 money
 		on earn:lose 100000 money
 		on earn:toast NOOOOOOOOOOOOOOOOŒ
 		req:10 stock
 	*paperclipup	
 		name:clipping the paper !
-		desc:Use paperclips for better organizing making money boost!!!
+		desc:Use paperclips for better organizing making money boost!!!<//><q>+4 click money</q>
 		cost:800 money
 		passive:increase yield of moneybag by 4
 		req:5 paperclip
 	*stealingup
 		name:Pro stealing Plan.
-		desc:oohohhohoohohho! this time we prepared! YES !
+		desc:oohohhohoohohho! this time we prepared! YES !<//><q>+1,100 money, +1 evil point</q>
 		cost:1200 money
 		on earn:yield 1100 money
 		on earn:yield 1 ep
@@ -279,54 +279,54 @@ Upgrades
 		req:5 stealing
 	*evil1
 		name:EVIL Working.!
-		desc:be evil and scam for 8 click works!
+		desc:be evil and scam for 6 click works!<//><q>+6 click money</q>
 		cost:1800 money, 1 ep
-		passive:increase yield of moneybag by 8
+		passive:increase yield of moneybag by 6
 		req:1 ep
 	*lotteryup	
 		name:lottery Making
-		desc:We Make the Loterys so We can Get a Moneys For 4 clicking Works?
+		desc:We Make the Loterys so We can Get a Moneys For 4 clicking Works?<//><q>What</q>
 		cost:1500 money
 		passive:increase yield of moneybag by 4
 		req:50 lottery
 	*landscapeup	
 		name:scaping The Land.
-		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes 1 more click work thoough !
+		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes   more click worth thoough !<//><q>+5 click money</q>
 		cost:2500 money
 		passive:increase yield of moneybag by 5
 		req:5 landscape
 	*school1up	
 		name:bigger brain.s
-		desc:well. You gets  smart for every moneys you get from click work.
+		desc:well. You gets  smart for every moneys you get from click work.<//><q>Earn smartness per click work equal 20% of click money (rounded)</q>
 		cost:8000 money
 		req:5 school1
 	*researchup
 		name:reaserch lab!
-		desc:convert intellegence into RESEARCH !
+		desc:convert intellegence into RESEARCH !<//><q>Unlocks researching and research points</q>
 		cost:50000 money
 		on earn:show tag:researchtag
 		req:10 school1
 	*book1up	
 		name:reading glass.
-		desc:so. WE geT reading glasses to read more better. 2 more click works now ! why is this so expesnive
+		desc:so. WE geT reading glasses to read more better. 5 more click works now ! why is this so expesnive<//><q>+5 click money</q>
 		cost:20000 money
-		passive:increase yield of moneybag by 2
+		passive:increase yield of moneybag by 5
 		req:5 book1
 	*codingup	
 		name:MEGA coding!
-		desc:we can mega the codings to are make better coding yes and ad making for including more money! 2 click work.
+		desc:we can mega the codings to are make better coding yes and ad making for including more money! more click worth.<//><q>+6 click money</q>
 		cost:30000 money
-		passive:increase yield of moneybag by 2
+		passive:increase yield of moneybag by 6
 		req:5 coding
 	*book2up	
 		name:second reading glass.
-		desc:so, nOW WE geT reading MORE glassses to read EVEN more bettEr. 2 more click works nows1@!@!!!@!@!#!@}132$!@$!
+		desc:so, nOW WE geT reading MORE glassses to read EVEN more bettEr. 2 more click works nows1@!@!!!@!@!#!@}132$!@$!<//><q>+6 click money</q>
 		cost:45000 money
-		passive:increase yield of moneybag by 2
+		passive:increase yield of moneybag by 6
 		req:5 book2
 	*research1
 		name:smart works.
-		desc:we use our smart research to make smart works. x2 click work moneys.
+		desc:we use our smart research to make smart works. MULTPILY x2 click work moneys.<//><q>x2 click money</q>
 		cost:1 research, 20000 money
 		passive:multiply money yield of moneybag by 2
 		req:1 research
@@ -337,14 +337,14 @@ Upgrades
 		req:have research1
 	*wheelup
 		name:WHEEL 2.0.
-		desc:THE BETTER WHEEL. IT GIVES 5 CLICK MONEYS AND 50 THOUSANDS BUCKS.
+		desc:THE BETTER WHEEL. IT GIVES 5 CLICK MONEYS AND 50 THOUSANDS BUCKS.<//><q>+7 click money</q>
 		cost:8000 smartness
 		on earn:yield 50000 money
-		passive:increase money yield of moneybag by 5
+		passive:increase money yield of moneybag by 7
 		req:5 wheel
 	*research3
 		name:research works.
-		desc:we use smarter research to make more intellegent works. x3 click work moneying.
+		desc:we use smarter research to make more intellegent works. x3 click work moneying.<//><q>x3 click money</q>
 		cost:5 research, 40000 money
 		passive:multiply money yield of moneybag by 3
 		req:have research2
@@ -356,7 +356,7 @@ Upgrades
 		req:have research3
 	*susup
 		name:ripoff Pro skills.
-		desc:we better at ripping, so we off. 3 clicks works .
+		desc:we better at ripping, so we off. 7 clicks works .<//><q>+7 click money</q>
 		cost:70000 money, 5000 smartness
 		on earn:yield 2 ep
 		passive:increase yield of moneybag by 3
