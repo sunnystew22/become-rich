@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.20<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.21<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -43,13 +43,14 @@ Buttons
 		text:[?(have factoryup and worktimer = 0)|<b><#00d90e>Work For Research boost !</#></b>|Work !]
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
 		on click:yield 2 money
-		on click:if (have school1up) yield 0.1 smartness
+		on click:if (have school1up) yield 2 smartness
 		on click:
 			if (have factoryup and worktimer = 0)
 				yield 3 speedup
 				worktimer is 900
 			end
 		end
+		passive:multiply smartness yield of moneybag by 0.2
 	*researchbutton
 		name:makeing RESEARCH!
 		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness and [convertcost*10] money into RESEARCH!]
@@ -72,6 +73,9 @@ Buttons
 	*debug2
 		name:x2 smartness
 		on click:yield smartness smartness
+	*debug3
+		name:Fast research
+		on click:converttimer is 0
 		
 Resources
 	*money
