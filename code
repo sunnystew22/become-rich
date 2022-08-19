@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Become Rich!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.12<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.13<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -42,7 +42,7 @@ Buttons
 		name:Work !
 		text:[?(have factoryup and worktimer = 0)|<b><#00d90e>Work For Research boost !</#></b>|Work !]
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
-		on click:yield 1 money
+		on click:yield 2 money
 		on click:if (have school1up) yield 1 smartness
 		on click:
 			if (have factoryup and worktimer = 0)
@@ -111,13 +111,13 @@ Resources
 Buildings
 	*dirt
 		name:Sell dirt!
-		desc:wows, dirt give money! gives 1 every 5 second!
+		desc:wows, dirt give money! gives 1 every 5 second!<//><q>+0.4 MPS (money per second). Buying large amounts of this is required to unlock new features and progress the game.</q>
 		cost:10 money
-		passive:yield 0.2 money
+		passive:yield 0.4 money
 		
 	*cryptocurrency
 		name:investing cyrptocurrency
-		desc:i don't know how this work! i Buy, then wait for price to up? it earn me money every 10 seconds, YES!!!!!!!
+		desc:i don't know how this work! i Buy, then wait for price to up? it earn me one 1 moneys every 10 seconds, YES!!!!!!!
 		cost:50 money
 		passive:yield 0.1 money
 		cost increase:175%
@@ -132,7 +132,7 @@ Buildings
 		
 	*cookie
 		name:Cookie clicking
-		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!
+		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!! 0 money per seond
 		cost:200 money
 		req:10 dirt
 		
@@ -441,7 +441,7 @@ Achievements
 		desc:Welcome to Become Rich! Here, you build your way to being a BILLIONARE in this very fun idol game! Very Wow! Such Amazing! Can't Believe! Much Yes! Super Excitement! Many Richness!
 		req:1e12 money
 	*net7
-		name:illion but the tri is replaceed with whatever word 4 is for.           i think it;s called squareillion
+		name:-illion but the tri is replaceed with whatever word 4 is for.           i think it;s called squareillion
 		desc:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$<//>                                         $$$$
 		req:1e15 money
 	*net8
