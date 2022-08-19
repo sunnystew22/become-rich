@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.21<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.22<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -46,7 +46,7 @@ Buttons
 		on click:if (have school1up) yield 2 smartness
 		on click:
 			if (have factoryup and worktimer = 0)
-				yield 3 speedup
+				yield 5 speedup
 				worktimer is 900
 			end
 		end
@@ -367,10 +367,10 @@ Upgrades
 		req:5 sus
 	*research5
 		name:factory works.
-		desc:We have research factory to make. first, we will getting more clicking working moneying, x4 to being exacting. and, from basic setting uping, we get 10 less seconds of researches.<//><q>I have no idea what this does</q>
+		desc:We have research factory to make. first, we will getting more clicking working moneying,. and, from basic setting uping, we get 10 less seconds of researches.<//><q>x5 click money, does not boost smartness. Reduces research time by 10 seconds. Unlocks new technology</q>
 		cost:9 research, 60000 money
 		on earn:yield 10 speedup
-		passive:multiply money yield of moneybag by 4
+		passive:multiply money yield of moneybag by 5
 		req:have research4
 	*school2up
 		name:cooler skool's scholarship
@@ -385,7 +385,7 @@ Upgrades
 		req:have research5
 	*factoryup
 		name:Moneying The REsearch.
-		desc:This can making the Work ! button green. When it green, that means if you click on it, it give 3 permenant less research second, but stops being green. it's rebecomes green after 15 minute though. Also it gives has 15 less researc seond when buyed/ SO, Yeah.
+		desc:This can making the Work ! button green. When it green, that means if you click on it, it give  permenant less research second, but   stops being green. it's rebecomes green though. Also it gives has less researc seond when buyed/ SO, Yeah.<//><q>Every 15 minutes, the work button will become green. Pressing it when it's green will reduce research time by 5 seconds, and will turn green again after another 15 minutes.</q><//><q>Reduces research time by 15 seconds</q>
 		cost:20 research, 500000 money, 50000 smartness
 		on earn:yield 15 speedup
 		on earn:worktimer is 900
