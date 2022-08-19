@@ -1,7 +1,7 @@
 Let's make a game!
-	name:Become Rich !
+	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.15<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.16<#fff700>b</#></b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -43,7 +43,7 @@ Buttons
 		text:[?(have factoryup and worktimer = 0)|<b><#00d90e>Work For Research boost !</#></b>|Work !]
 		desc:ohh! You must work to get moneys. click to earn money for investing. Investing good!!! why? because it's free Moneys! why? You Put Money In, and, If Lucky, get MONEY!!!!!!!!!
 		on click:yield 2 money
-		on click:if (have school1up) yield 1 smartness
+		on click:if (have school1up) yield round(0.5) smartness
 		on click:
 			if (have factoryup and worktimer = 0)
 				yield 3 speedup
@@ -75,7 +75,7 @@ Buttons
 		
 Resources
 	*money
-		name:money
+		name:moneys
 		desc:this is how much rich you are! wow!
 		passive:multiply yield of this by 1+(0.02*book1)
 	*ep
@@ -117,7 +117,7 @@ Buildings
 		
 	*cryptocurrency
 		name:investing cyrptocurrency
-		desc:i don't know how this work! i Buy, then wait for price to up? it earn me one 1 moneys every 1 seconds, YES!!!!!!!<//><q>+1 MPS<//>Upgrades unlock at: 5,</q>
+		desc:i don't know how this work! i Buy, then wait for price to up? it earn me one 1 moneys every 1 seconds, YES!!!!!!!<q><//>+1 MPS<//>Upgrades unlock at: 5,</q>
 		cost:50 money
 		passive:yield 1 money
 		cost increase:175%
@@ -297,7 +297,7 @@ Upgrades
 		req:5 landscape
 	*school1up	
 		name:bigger brain.s
-		desc:well. You gets 1 smart for every moneys you get from click work.
+		desc:well. You gets  smart for every moneys you get from click work.
 		cost:8000 money
 		req:5 school1
 	*researchup
