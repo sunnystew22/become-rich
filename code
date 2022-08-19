@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.22<#fff700>b</#></b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.23<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -46,7 +46,7 @@ Buttons
 		on click:if (have school1up) yield 2 smartness
 		on click:
 			if (have factoryup and worktimer = 0)
-				yield 5 speedup
+				do workboost
 				worktimer is 900
 			end
 		end
@@ -76,6 +76,13 @@ Buttons
 	*debug3
 		name:Fast research
 		on click:converttimer is 0
+		
+	
+	
+	on workboost:
+		yield 5 speedup
+		toast Research timed Descreasioned! 5second less,
+	end
 		
 Resources
 	*money
@@ -464,7 +471,10 @@ Achievements
 		name:Well
 		desc:the stocks are gone forever. Look what you did. i am mad and angery
 		req:stockup
-
+	*smartworking
+		name:brain Workering
+		desc:You can be smart and Good to create Smartness with Think
+		req:school1up
 
 
 
