@@ -172,6 +172,7 @@ Buildings
 		desc:wows, dirt give money!  !<//><q>+0.5 MPS (money per second). Buying large amounts of this is required to unlock new features and progress the game.</q>
 		cost:10 money
 		passive:yield 0.5 money
+		cost increase:115%
 		
 	*cryptocurrency
 		name:investing cyrptocurrency
@@ -179,7 +180,7 @@ Buildings
 		cost:50 money
 		passive:yield 1 money
 		passive:if (have supercomputerup2) yield 5 smartness
-		cost increase:175%
+		cost increase:160%
 		req:have dirt
 		
 	*dog
@@ -199,7 +200,8 @@ Buildings
 		name:Stocking Markets!
 		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS (+50 MPS if upgraded)</q><//><q>Upgrades unlock at: 10,</q>
 		cost:400 money
-		passive:if (have estateup2) yield 50 money else lose 1 money
+		passive:if (have estateup2) yield 51 money
+		passive:lose 1 money
 		req:15 dirt
 		
 	*paperclip
@@ -443,7 +445,7 @@ Upgrades
 		req:have research4
 	*school2up
 		name:cooler skool's scholarship
-		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4</q>
+		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4 (this may not give intended amount of SPS)</q>
 		cost:20000 smartness
 		passive:increase smartness yield of school2 by 1
 		req:5 school2
