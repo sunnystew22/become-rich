@@ -287,8 +287,8 @@ Buildings
 		name:SuperDuperComputers           .
 		desc:the computer, makes lot of thinking and proceser. this will smart us for us<//><q>+25 SPS, +800 MPS (if upgraded)</q><//><q>Upgrades unlock at: 10</q>
 		cost:750000 money, 2 research
-		passive:yield 25 smartness
-		passive:if (have supercomputerup2) yield 800 money
+		passive:yield 20 smartness
+		passive:if (have supercomputerup2) yield 500 money
 		req:have supercomputerup
 
 Upgrades
@@ -479,7 +479,7 @@ Upgrades
 	*supercomputerup2
 		name:cyprtoCurrencying
 		desc:You can use Compute to Smart. But what else?????/ You can mine bitscoin.Dont know what that is<//><q>Supercomputers will yield +800 MPS. Investing Cryptocurrency will yield +5 SPS per building.</q>
-		cost:1e7 money, 25 research
+		cost:2e7 money, 25 research
 		req:10 supercomputer
 		
 Achievements
