@@ -483,7 +483,7 @@ Achievements
 	*evilachv
 		name:We The Eil
 		desc:We got Evil, We doing eivl
-		req:ep:earned >= 1
+		req:1 ep:earned
 		
 
 
