@@ -160,6 +160,7 @@ Buildings
 		desc:wows, dirt give money!  !<//><q>+0.5 MPS (money per second). Buying large amounts of this is required to unlock new features and progress the game.</q>
 		cost:10 money
 		passive:yield 0.5 money
+		cost increase:115%
 		
 	*cryptocurrency
 		name:investing cyrptocurrency
@@ -167,7 +168,7 @@ Buildings
 		cost:50 money
 		passive:yield 1 money
 		passive:if (have supercomputerup2) yield 5 smartness
-		cost increase:175%
+		cost increase:160%
 		req:have dirt
 		
 	*dog
