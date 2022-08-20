@@ -128,7 +128,7 @@ Resources
 	*money
 		name:moneys
 		desc:this is how much rich you are! wow!
-		passive:multiply yield of this by 1+(0.02*book1)
+		passive:multiply yield of this by 1+(0.02*book1)+(0.01*estate)
 	*ep
 		name:EVIL points.
 		desc:No, Im not Evil!!!#@@!#!#!@#!!!@!!!!!}! STOTP#@P#@P@!PP!@!@#P!@O#P@O@
@@ -191,7 +191,7 @@ Buildings
 		
 	*stock
 		name:Stocking Markets!
-		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS</q><//><q>Upgrades unlock at: 10,</q>
+		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS (+50 MPS if upgraded)</q><//><q>Upgrades unlock at: 10,</q>
 		cost:400 money
 		passive:lose 1 money
 		req:15 dirt
@@ -285,11 +285,18 @@ Buildings
 		req:have research6
 	*supercomputer
 		name:SuperDuperComputers           .
-		desc:the computer, makes lot of thinking and proceser. this will smart us for us<//><q>+25 SPS, +800 MPS (if upgraded)</q><//><q>Upgrades unlock at: 10</q>
+		desc:the computer, makes lot of thinking and proceser. this will smart us for us<//><q>+25 SPS, +500 MPS (if upgraded)</q><//><q>Upgrades unlock at: 10</q>
 		cost:750000 money, 2 research
 		passive:yield 20 smartness
 		passive:if (have supercomputerup2) yield 500 money
 		req:have supercomputerup
+	*estate
+		name:pROPERTY and eSTATE!
+		desc:I love money ($)<//>+800 MPS, +1% money per level</q><//><q>Upgrades unlock at: 10</q>
+		cost:600000 money, 30000 smartness
+		passive:yield 800 money
+		req:estateup1
+		
 
 Upgrades
 	*dirtup
@@ -345,7 +352,7 @@ Upgrades
 		req:1 ep
 	*lotteryup	
 		name:lottery Making
-		desc:We Make the Loterys so We can Get a Moneys For 4 clicking Works?<//><q>What</q>
+		desc:We Make the Loterys so We can Get The a Moneys For 4 clicking Works?<//><q>What</q>
 		cost:1500 money
 		passive:increase yield of moneybag by 4
 		req:50 lottery
@@ -478,9 +485,14 @@ Upgrades
 		req:research8
 	*supercomputerup2
 		name:cyprtoCurrencying
-		desc:You can use Compute to Smart. But what else?????/ You can mine bitscoin.Dont know what that is<//><q>Supercomputers will yield +800 MPS. Investing Cryptocurrency will yield +5 SPS per building.</q>
+		desc:You can use Compute to Smart. But what else?????/ You can mine bitscoin.Dont know what that is<//><q>Supercomputers will yield +500 MPS. Investing Cryptocurrency will yield +5 SPS per building.</q>
 		cost:2e7 money, 25 research
 		req:10 supercomputer
+	*estateup1
+		name:lands and HOuse.!
+		desc:I buy property and selL it for more! WOW
+		cost:1e7 money, 5e5 smartness
+		req:research8
 		
 Achievements
 	*money1achv
@@ -510,42 +522,54 @@ Achievements
 	*net1achv
 		name:10Mil NetWorth.
 		desc:i found this thing called networth? what's it do? don't know. but im richer now, so oh yeah
-		req:1e7 money
+		req:1e7 money:earned
 	*net2achv
 		name:100Mil NetWorth.
 		desc:well i got more net worths, it's seems fun so i will get more
-		req:1e8 money
+		req:1e8 money:earned
 	*net3achv
 		name:1Bil NetWorth.
 		desc:ok that's a lot of moneying. maybe ishould dontate to poor? don't know.also i think im famous
-		req:1e9 money
+		req:1e9 money:earned
 	*net4achv
 		name:10Bil NetWorth.
 		desc:im sorry that's too much
-		req:1e10 money
+		req:1e10 money:earned
 	*net5achv
 		name:100Bil NetWorth.
 		desc:why
-		req:1e11 money
+		req:1e11 money:earned
 	*net6achv
 		name:trilion
-		desc:Welcome to Become Rich! Here, you build your way to being a BILLIONARE in this very fun idol game! Very Wow! Such Amazing! Can't Believe! Much Yes! Super Excitement! Many Richness!
-		req:1e12 money
+		desc:Welcome to Become Rich! Here, you build your way to being a BILLIONARE in this very fun idol game! Very Wow!
+		req:1e12 money:earned
 	*net7achv
 		name:-illion but the tri is replaceed with whatever word 4 is for.           i think it;s called squareillion
 		desc:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$<//>                                         $$$$
-		req:1e15 money
+		req:1e15 money:earned
 	*net8achv
 		name:pentagonillion
 		desc:i am a such hacker i am a such pro
-		req:1e18 money
+		req:1e18 money:earned
 	*longtextachv
 		name:money let's goooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-		req:1e30 money
+		req:1e30 money:earned
 	*net9achv
 		name:ok
 		desc:q
-		req:1e100 money
+		req:1e100 money:earned
+	*smart1achv
+		name:Smartereer
+		desc:Woa, we got smartness,Yea,Yeah,Lots
+		req:1000 smartness
+	*smart2achv
+		name:Intelegeint
+		desc:Our Big Brain and Cool Skool make Intellegnet Intresting
+		req:1e6 smartness
+	*smart3achv
+		name:Geniuis
+		desc:WE'RE MASTERS OF THINKIG
+		req:1e9 smartness
 	*crashachv
 		name:Well
 		desc:the stocks are gone forever. Look what you did. i am mad and angery
