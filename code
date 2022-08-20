@@ -46,7 +46,7 @@ Buttons
 		on click:if (have school1up) yield 2 smartness
 		on click:
 			if (have factoryup and worktimer = 0)
-				speedup is speedup+5
+				speedup is speedup+3
 				toast Research timed Descreasioned! 5second less,
 				worktimer is 900
 			end
@@ -160,6 +160,7 @@ Buildings
 		desc:i don't know how this work! i Buy, then wait for price to up? it earn me one 1 moneys every 1 seconds, YES!!!!!!!<//><q>+1 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:50 money
 		passive:yield 1 money
+		passive:if (have supercomputerup2) yield 5 smartness
 		cost increase:175%
 		req:have dirt
 		
@@ -262,14 +263,21 @@ Buildings
 		name:cool skool.
 		desc:new skool is pretty cool. it gives 6 smartness per second, but it costs 50 money per second. :sunglasses:<//><q>+6 SPS, -50 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:75000 money, 500 smartness
-		passive:yield 3 smartness
+		passive:yield 6 smartness
 		passive:if (have school2up) lose 10 money else lose 50 money
 		req:50000 smartness:earned
 	*factory
 		name:Research Factory
-		desc:Mass produce for all of research. This will yes. Makes 2 less seconds for research per factory. Very expensiving, though .
+		desc:Mass produce for all of research. This will yes. Makes 2 less seconds for research per factory. Very expensiving, though .<//><q>Each factory will reduce research time by 2 seconds</q><//><q>Upgrades unlock at: 5</q>
 		cost:150000 money
 		req:have research6
+	*supercomputer
+		name:SuperDuperComputers           .
+		desc:the computer, makes lot of thinking and proceser. this will smart us for us<//><q>+25 SPS, +800 MPS (if upgraded)</q><//><q>Upgrades unlock at: 10</q>
+		cost:750000 money, 2 research
+		passive:yield 25 smartness
+		passive:if (have supercomputerup2) yield 800 money
+		req:have supercomputerup
 
 Upgrades
 	*dirtup
@@ -421,18 +429,47 @@ Upgrades
 		req:have research5
 	*factoryup
 		name:Moneying The REsearch.
-		desc:This can making the Work ! button green. When it green, that means if you click on it, it give  permenant less research second, but   stops being green. it's rebecomes green though. Also it gives has less researc seond when buyed/ SO, Yeah.<//><q>Every 15 minutes, the work button will become green. Pressing it when it's green will reduce research time by 5 seconds, and will turn green again after another 15 minutes.</q><//><q>Reduces research time by 15 seconds</q>
+		desc:This can making the Work ! button green. When it green, that means if you click on it, it give  permenant less research second, but   stops being green. it's rebecomes green though. Also it gives has less researc seond when buyed/ SO, Yeah.<//><q>Every 15 minutes, the work button will become green. Pressing it when it's green will reduce research time by 3 seconds, and will turn green again after another 15 minutes.</q><//><q>Reduces research time by 15 seconds</q>
 		cost:20 research, 500000 money, 50000 smartness
 		on earn:yield 15 speedup
 		on earn:worktimer is 900
 		req:5 factory
 	*research7
 		name:The Auto Researcher/
-		desc:It;s a button. Press it on to automatically research whnever you have the resources for it! Press it off, it stops. WARNINGS: watch out, research costs x2 money when auto researched !
+		desc:It;s a button. Press it on to automatically research whnever you have the resources for it! Press it off, it stops. WARNINGS: watch out, research costs x2 money when auto researched !<//><q>Unlocks a toggle that makes research start automatically. This, however, will double the money cost of researching while enabled.</q>
 		cost:25 research, 3e6 money
 		req:have research6
 		on earn:show autoresearch
-
+	*research8
+		name:COLLeg,e..... FOR GENIUS
+		desc:We'll intellegnce from this. This School will Cool and WE WILL YES!!!!<//><q>x3 click money, affects smartness. Research time is 20 seconds shorter. Unlocks numerous buildings and upgrades. Enjoy the big numbers</q>
+		cost: 50 research, 1e7 money, 3e5 smartness
+		on earn:yield 20 speedup
+		passive:multiply yield of moneybag by 3
+		req:research7
+		
+	*TEMPLATE
+		tag:geniustag
+		
+	*madlab
+		name:MAD SCienticts' LAB!
+		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
+		cost:1e8 money, 100 research
+		req:research8
+		
+		
+	
+	*supercomputerup
+		name:Computering
+		desc:These Are FAST. I can BUy them For MAny moneys, And, THEY DO SMART FOR ME@!!!!#######<//><q>Unlocks a new building</q>
+		cost: 1.5e7 money, 25 research
+		req:research8
+	*supercomputerup2
+		name:cyprtoCurrencying
+		desc:You can use Compute to Smart. But what else?????/ You can mine bitscoin.Dont know what that is<//><q>Supercomputers will yield +800 MPS. Investing Cryptocurrency will yield +5 SPS per building.</q>
+		cost:1e7 money, 25 research
+		req:10 supercomputer
+		
 Achievements
 	*money1achv
 		name:not rich.
@@ -502,13 +539,17 @@ Achievements
 		desc:the stocks are gone forever. Look what you did. i am mad and angery
 		req:stockup
 	*smartachv
-		name:brain Workering
+		name:brain Educationing
 		desc:You can be smart and Good to create Smartness with Think
-		req:school1up
+		req:school1 > 0
 	*evilachv
 		name:We The Eil
 		desc:We got Evil, We doing eivl
 		req:1 ep:earned
+	*collegeachv
+		name:GENUSNESS
+		desc:I'm Smartest Ever!!!!!!!!!!
+		req:research8
 		
 
 
