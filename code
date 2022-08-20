@@ -193,7 +193,7 @@ Buildings
 		name:Stocking Markets!
 		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS (+50 MPS if upgraded)</q><//><q>Upgrades unlock at: 10,</q>
 		cost:400 money
-		passive:lose 1 money
+		passive:if (have estateup2) yield 50 money else lose 1 money
 		req:15 dirt
 		
 	*paperclip
@@ -292,7 +292,7 @@ Buildings
 		req:have supercomputerup
 	*estate
 		name:pROPERTY and eSTATE!
-		desc:I love money ($)<//>+800 MPS, +1% money per level</q><//><q>Upgrades unlock at: 10</q>
+		desc:I love money ($)<//><q>+800 MPS, +1% money per level</q><//><q>Upgrades unlock at: 10</q>
 		cost:600000 money, 30000 smartness
 		passive:yield 800 money
 		req:estateup1
@@ -461,7 +461,7 @@ Upgrades
 		on earn:show autoresearch
 	*research8
 		name:COLLeg,e..... FOR GENIUS
-		desc:We'll intellegnce from this. This School will Cool and WE WILL YES!!!!<//><q>x3 click money, affects smartness. Research time is 20 seconds shorter. Unlocks numerous buildings and upgrades. Enjoy the big numbers</q>
+		desc:We'll intellegnce from this. This School will Cool and WE WILL YES!!!!<//><q>x3 click money, affects smartness. Research time is 20 seconds shorter. Unlocks numerous upgrades. Enjoy the big numbers</q>
 		cost: 50 research, 1e7 money, 3e5 smartness
 		on earn:yield 20 speedup
 		passive:multiply yield of moneybag by 3
@@ -490,9 +490,15 @@ Upgrades
 		req:10 supercomputer
 	*estateup1
 		name:lands and HOuse.!
-		desc:I buy property and selL it for more! WOW
+		desc:I buy property and selL it for more! WOW<//><q>Unlocks a new building</q>
 		cost:1e7 money, 5e5 smartness
 		req:research8
+	*estateup2
+		name:Cool Market
+		desc:the stocks go up, the money go rise.<//><q>Property and estate gives +50% more money, stock markets give +50 MPS instead of -1 MPS</q>
+		cost:3e7 money, 1e6 smartness
+		req:research8
+		passive:multiply yield of estate by 1.5
 		
 Achievements
 	*money1achv
