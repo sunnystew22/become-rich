@@ -70,10 +70,11 @@ Buttons
 		name:aUTO RESEARCH
 		text:[?(autoflag = 0)|Click TO Turn On...... Auto-RESarching!|turn off autoresearch.]
 		desc:AutoResearch maeks you search for all of The re!!!!@ BUT AUTO! Wanrings: It is twice The MOney To research when auto, ,Though,
-		on click:if (autoflag = 0)
-				yield 1 speedup
+		on click:
+			if (autoflag = 0)
+				autoflag is 1
 			else if (autoflag = 1)
-				yield 1 speedup
+				autoflag is 0
 				end
 			end
 		passive:
