@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.1</b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.0</b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -86,31 +86,6 @@ Buttons
 			end
 		end
 		hidden
-		
-//debugs
-		
-	*debug1
-		name:x2 money
-		on click:yield money money
-	*debug2
-		name:x2 smartness
-		on click:yield smartness smartness
-	*debug3
-		name:Fast research
-		on click:converttimer is 0
-	*debug4
-		name:change speedup
-		on click:speedup is 25
-	*debug5
-		name:show autoresearcher
-		on click:show autoresearch
-		
-	
-	
-	on workboost:
-		yield 5 speedup
-		toast Research timed Descreasioned! 5second less,
-	end
 		
 Resources
 	*money
@@ -433,7 +408,7 @@ Upgrades
 		req:have research4
 	*school2up
 		name:cooler skool's scholarship
-		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4</q>
+		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4 (this may not give intended amount of SPS)</q>
 		cost:20000 smartness
 		passive:increase smartness yield of school2 by 1
 		req:5 school2
