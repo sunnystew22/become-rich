@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.25<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.26<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -53,7 +53,7 @@ Buttons
 		end
 		passive:multiply smartness yield of moneybag by 0.2
 	*researchbutton
-		name:makeing RESEARCH!
+		name:makeing RESERCH!
 		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness and [convertcost*10] money into RESEARCH!]
 		desc:turn smartness into researches here!!! NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		on click:
@@ -65,6 +65,20 @@ Buttons
 			end
 		end	
 		tag:researchtag
+		hidden
+	*autoresearch
+		name:aUTO RESEARCH
+		text:[?(autoflag = 0)|Click TO Turn On...... Auto-RESarching!|turn off autoresearch.]
+		desc:AutoResearch maeks you search for all of The re!!!!@ BUT AUTO! Wanrings: It is twice The MOney To research when auto, ,Though,
+		on click:if (autoflag = 0) autoflag is 1 else autoflag is 0
+		passive:
+			if (smartness >= convertcost and money >= convertcost*20 and converttimer > 1e250 and autoflag = 1)
+				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory))
+				lose convertcost smartness
+				lose convertcost*20 money
+				yield 100 convertcost
+			end
+		end
 		hidden
 		
 //debugs
@@ -123,6 +137,7 @@ Resources
 	*worktimer
 		start with:900
 		on tick:if (have factoryup) lose this
+	*autoflag
 
 Buildings
 	*dirt
