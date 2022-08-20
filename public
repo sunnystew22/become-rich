@@ -122,6 +122,7 @@ Resources
 		end
 		hidden
 	*speedup
+		hidden
 	*worktimer
 		start with:900
 		on tick:if (have factoryup) lose this
