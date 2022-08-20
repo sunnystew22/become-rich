@@ -431,7 +431,7 @@ Upgrades
 		desc:It;s a button. Press it on to automatically research whnever you have the resources for it! Press it off, it stops. WARNINGS: watch out, research costs x2 money when auto researched !
 		cost:25 research, 3e6 money
 		req:have research6
-		on earn:show autoresearcher
+		on earn:show autoresearch
 
 Achievements
 	*money1achv
