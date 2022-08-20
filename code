@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.27<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.28<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -35,6 +35,18 @@ CSS
 	{
 		color: green;
 		border-color: green;
+	}
+	.glowyellow
+	{
+		color: yellow;
+		text-shadow: 0 0 5px yellow;
+		box-shadow: 0px 0px 15px yellow;
+		border-color: yellow;
+	}
+	.coloryellow
+	{
+		color: yellow;
+		border-color: yellow;
 	}
 
 Buttons
@@ -462,7 +474,7 @@ Upgrades
 	*supercomputerup
 		name:Computering
 		desc:These Are FAST. I can BUy them For MAny moneys, And, THEY DO SMART FOR ME@!!!!#######<//><q>Unlocks a new building</q>
-		cost: 1.5e7 money, 25 research
+		cost:1.5e7 money, 25 research
 		req:research8
 	*supercomputerup2
 		name:cyprtoCurrencying
