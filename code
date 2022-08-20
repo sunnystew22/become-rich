@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.24<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.25<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -67,6 +67,7 @@ Buttons
 		tag:researchtag
 		hidden
 		
+//debugs
 		
 	*debug1
 		name:x2 money
@@ -77,6 +78,9 @@ Buttons
 	*debug3
 		name:Fast research
 		on click:converttimer is 0
+	*debug4
+		name:change speedup
+		on click:speedup is 25
 		
 	
 	
@@ -270,7 +274,7 @@ Upgrades
 		req:5 cookie
 	*stockup
 		name:Market CRASH!!
-		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>Don't do this (unless you want the achievement)</q>
+		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>You'll lose money, don't do this (unless you want the achievement)</q>
 		cost:1000 money
 		on earn:lose 100000 money
 		on earn:toast NOOOOOOOOOOOOOOOOŒ
@@ -405,77 +409,82 @@ Upgrades
 		req:have research6
 
 Achievements
-	*money1
+	*money1achv
 		name:not rich.
 		desc:you only have 10 money. that's not rich.
 		req:10 money
-	*money2
+	*money2achv
 		name:still not rich.
 		desc:you only have 100 money. that's not rich.
 		req:100 money
-	*money3
+	*money3achv
 		name:not rich at all.
 		desc:you only have 1000 money. that's not rich.
 		req:1000 money
-	*money4
+	*money4achv
 		name:really not rich.
 		desc:you only have 10000 money. that's not rich.
 		req:10000 money
-	*money5
+	*money5achv
 		name:too not rich.
 		desc:you only have 100000 money. that's not rich.
 		req:100000 money
-	*money6
+	*money6achv
 		name:WOAH DUDE! LET'S BE MILLION!!!!!!!!!
 		desc:WE MILLIONARE@
 		req:1000000 money
-	*net1
+	*net1achv
 		name:10Mil NetWorth.
 		desc:i found this thing called networth? what's it do? don't know. but im richer now, so oh yeah
 		req:1e7 money
-	*net2
+	*net2achv
 		name:100Mil NetWorth.
 		desc:well i got more net worths, it's seems fun so i will get more
 		req:1e8 money
-	*net3
+	*net3achv
 		name:1Bil NetWorth.
 		desc:ok that's a lot of moneying. maybe ishould dontate to poor? don't know.also i think im famous
 		req:1e9 money
-	*net4
+	*net4achv
 		name:10Bil NetWorth.
 		desc:im sorry that's too much
 		req:1e10 money
-	*net5
+	*net5achv
 		name:100Bil NetWorth.
 		desc:why
 		req:1e11 money
-	*net6
+	*net6achv
 		name:trilion
 		desc:Welcome to Become Rich! Here, you build your way to being a BILLIONARE in this very fun idol game! Very Wow! Such Amazing! Can't Believe! Much Yes! Super Excitement! Many Richness!
 		req:1e12 money
-	*net7
+	*net7achv
 		name:-illion but the tri is replaceed with whatever word 4 is for.           i think it;s called squareillion
 		desc:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$<//>                                         $$$$
 		req:1e15 money
-	*net8
+	*net8achv
 		name:pentagonillion
 		desc:i am a such hacker i am a such pro
 		req:1e18 money
-	*longtext
+	*longtextachv
 		name:money let's goooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 		req:1e30 money
-	*net9
+	*net9achv
 		name:ok
 		desc:q
 		req:1e100 money
-	*stockcrash
+	*crashachv
 		name:Well
 		desc:the stocks are gone forever. Look what you did. i am mad and angery
 		req:stockup
-	*smartworking
+	*smartachv
 		name:brain Workering
 		desc:You can be smart and Good to create Smartness with Think
 		req:school1up
+	*evilachv
+		name:We The Eil
+		desc:We got Evil, We doing eivl
+		req:>= 1 ep:earned
+		
 
 
 
