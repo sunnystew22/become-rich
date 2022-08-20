@@ -59,7 +59,7 @@ Buttons
 		on click:
 			if (have factoryup and worktimer = 0)
 				speedup is speedup+3
-				toast Research timed Descreasioned! 5second less,
+				toast Research timed Descreasioned! 3second less,
 				worktimer is 900
 			end
 		end
@@ -129,16 +129,20 @@ Resources
 		name:moneys
 		desc:this is how much rich you are! wow!
 		passive:multiply yield of this by 1+(0.02*book1)+(0.01*estate)
+		show earned
 	*ep
 		name:EVIL points.
 		desc:No, Im not Evil!!!#@@!#!#!@#!!!@!!!!!}! STOTP#@P#@P@!PP!@!@#P!@O#P@O@
+		show earned
 	*smartness
 		name:smartness!
 		desc:i can be smart to do BIG Money!1
 		passive:multiply yield of this by 1+(0.05*book2)
+		show earned
 	*research
 		name:researching pointers
 		desc:called research point, used to get bIg smart!
+		show earned
 		hidden
 		tag:researchtag
 	*convertcost
@@ -158,7 +162,9 @@ Resources
 	*worktimer
 		start with:900
 		on tick:if (have factoryup) lose this
+		hidden
 	*autoflag
+		hidden
 
 Buildings
 	*dirt
@@ -497,7 +503,7 @@ Upgrades
 		name:Cool Market
 		desc:the stocks go up, the money go rise.<//><q>Property and estate gives +50% more money, stock markets give +50 MPS instead of -1 MPS</q>
 		cost:3e7 money, 1e6 smartness
-		req:research8
+		req:10 estate
 		passive:multiply yield of estate by 1.5
 		
 Achievements
@@ -583,7 +589,7 @@ Achievements
 	*smartachv
 		name:brain Educationing
 		desc:You can be smart and Good to create Smartness with Think
-		req:school1 > 0
+		req:1 school1
 	*evilachv
 		name:We The Eil
 		desc:We got Evil, We doing eivl
