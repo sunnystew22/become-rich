@@ -187,7 +187,8 @@ Buildings
 		name:Stocking Markets!
 		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS (+50 MPS if upgraded)</q><//><q>Upgrades unlock at: 10,</q>
 		cost:400 money
-		passive:if (have estateup2) yield 50 money else lose 1 money
+		passive:if (have estateup2) yield 51 money
+		passive:lose 1 money
 		req:15 dirt
 		
 	*paperclip
