@@ -1,13 +1,13 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.28<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.29<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
 	created:5/25/2021
 	updated:5/25/2021
 
 
 
-//add special currency from achievements and update gifts that boost production
+//finish super lab code
 
 
 //         finish making code for the factory upgrade
@@ -304,6 +304,9 @@ Buildings
 		cost:600000 money, 30000 smartness
 		passive:yield 800 money
 		req:estateup1
+	*superlab
+		name:super lab.
+		desc:This lab is Super. Its is very good, i Think! VEry good,<//><q>+600 MPS, +15 SPS, +2% money per level, +3% smartness per level,</q><//><q>Upgrades unlock at: 10</q>
 		
 
 Upgrades
@@ -507,6 +510,11 @@ Upgrades
 		cost:3e7 money, 1e6 smartness
 		req:10 estate
 		passive:multiply yield of estate by 1.5
+	*superlabup
+		name:SUPEr Labs!!!!
+		desc:We're the power. Use our lab and make it SUPER AND NICE. It gives boosts evyerhintg now. YEah<//><q>Unlocks a powerful new building</q>
+		cost:7.5e7 money, 75 research, 7.5e5 smartness
+		req:research8
 		
 Achievements
 	*money1achv
