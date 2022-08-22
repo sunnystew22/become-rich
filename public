@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.0</b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.1</b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -133,7 +133,7 @@ Resources
 Buildings
 	*dirt
 		name:Sell dirt!
-		desc:wows, dirt give money!  !<//><q>+0.5 MPS (money per second). Buying large amounts of this is required to unlock new features and progress the game.</q>
+		desc:wows, dirt give money!  !<//><q>+0.5 MPS (money per second). <b>Buying large amounts of this is required to unlock new features and progress the game.</b></q>
 		cost:10 money
 		passive:yield 0.5 money
 		cost increase:115%
@@ -149,9 +149,9 @@ Buildings
 		
 	*dog
 		name:walking the Dog
-		desc:you just take puppy and follow it around the street! 2 money per second sounds free money, yes?!!?!?!?<//><q>+2 MPS</q><//><q>Upgrades unlock at: 5,</q>
+		desc:you just take puppy and follow it around the street! 3 money per second sounds free money, yes?!!?!?!?<//><q>+3 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:150 money
-		passive:yield 2 money
+		passive:yield 3 money
 		req:5 dirt
 		
 	*cookie
@@ -170,9 +170,9 @@ Buildings
 		
 	*paperclip
 		name:Paperclip
-		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+8 MPS</q><//><q>Upgrades unlock at: 5,</q>
+		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+12 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:600 money
-		passive:yield 8 money
+		passive:yield 12 money
 		cost increase:130%
 		req:20 dirt
 		
@@ -194,9 +194,9 @@ Buildings
 		
 	*landscape
 		name:landscaping job  .
-		desc:go to yard and mess around with it for 25 per second! why do people pay that much!<//><q>+25 MPS</q><//><q>Upgrades unlock at: 5</q>
+		desc:go to yard and mess around with it for 30 per second! why do people pay that much!<//><q>+30 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:2000 money
-		passive:yield 25 money
+		passive:yield 30 money
 		req:30 dirt
 		
 	*school1
@@ -271,6 +271,12 @@ Buildings
 		
 
 Upgrades
+	*freemoney
+		name:300 dollars
+		desc:300 dollars<//><q>300 dollars</q>
+		on earn:yield 300 money
+		on earn:toast 300 dollars
+		req:500 money:earned
 	*dirtup
 		name:Dirt Working
 		desc:use the power Of dirt to boost click work by 2! YeSSSS!<//><q>+2 click money. Buy multiple (usually 5) of any building to unlock similar upgrades.</q>
@@ -469,6 +475,10 @@ Upgrades
 		passive:multiply yield of estate by 1.5
 		
 Achievements
+	*freemoneyachv
+		name:300 dollars
+		desc:300 dollars
+		req:freemoney
 	*money1achv
 		name:not rich.
 		desc:you only have 10 money. that's not rich.
