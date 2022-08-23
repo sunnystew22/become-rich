@@ -70,7 +70,7 @@ Buttons
 		desc:turn smartness into researches here!!! NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		on click:
 			if (smartness >= convertcost and money >= convertcost*10 and converttimer > 1e250)
-				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory))
+				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory)+(3*superlab))
 				lose convertcost smartness
 				lose convertcost*10 money
 				yield 100 convertcost
@@ -91,7 +91,7 @@ Buttons
 			end
 		passive:
 			if (smartness >= convertcost and money >= convertcost*20 and converttimer > 1e250 and autoflag = 1)
-				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory))
+				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory)+(3*superlab))
 				lose convertcost smartness
 				lose convertcost*20 money
 				yield 100 convertcost
@@ -209,7 +209,7 @@ Buildings
 		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+8 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:600 money
 		passive:yield 8 money
-		cost increase:130%
+		cost increase:125%
 		req:20 dirt
 		
 	*stealing
@@ -306,8 +306,10 @@ Buildings
 		req:estateup1
 	*superlab
 		name:super lab.
-		desc:This lab is Super. Its is very good, i Think! VEry good,<//><q>+600 MPS, +15 SPS, +2% money per level, +3% smartness per level,</q><//><q>Upgrades unlock at: 10</q>
-		
+		desc:This lab is Super. Its is very good, i Think! VEry good, we put chemical and It FUSE! Then we lab, good, good, GOOD. Yeah. How this work though?<//><q>+1000 MPS, +30 SPS, +2% money per level, +3% smartness per level, -3 research time per level</q><//><q>Upgrades unlock at: 10</q>
+		cost:5 research
+		req:superlabup1
+		cost increase:130%
 
 Upgrades
 	*dirtup
@@ -510,7 +512,7 @@ Upgrades
 		cost:3e7 money, 1e6 smartness
 		req:10 estate
 		passive:multiply yield of estate by 1.5
-	*superlabup
+	*superlabup1
 		name:SUPEr Labs!!!!
 		desc:We're the power. Use our lab and make it SUPER AND NICE. It gives boosts evyerhintg now. YEah<//><q>Unlocks a powerful new building</q>
 		cost:7.5e7 money, 75 research, 7.5e5 smartness
