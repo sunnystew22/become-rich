@@ -128,7 +128,7 @@ Resources
 	*money
 		name:moneys
 		desc:this is how much rich you are! wow!
-		passive:multiply yield of this by 1+(0.02*book1)+(0.01*estate)
+		passive:multiply yield of this by 1+(0.02*book1)+(0.01*estate)+(0.02*superlab)
 		show earned
 	*ep
 		name:EVIL points.
@@ -137,7 +137,7 @@ Resources
 	*smartness
 		name:smartness!
 		desc:i can be smart to do BIG Money!1
-		passive:multiply yield of this by 1+(0.05*book2)
+		passive:multiply yield of this by 1+(0.05*book2)+(0.03*superlab)
 		show earned
 	*research
 		name:researching pointers
@@ -308,6 +308,8 @@ Buildings
 		name:super lab.
 		desc:This lab is Super. Its is very good, i Think! VEry good, we put chemical and It FUSE! Then we lab, good, good, GOOD. Yeah. How this work though?<//><q>+1000 MPS, +30 SPS, +2% money per level, +3% smartness per level, -3 research time per level</q><//><q>Upgrades unlock at: 10</q>
 		cost:5 research
+passive:yield 1000 money
+passive:yield 30 smartness
 		req:superlabup1
 		cost increase:130%
 
@@ -517,7 +519,7 @@ Upgrades
 		desc:We're the power. Use our lab and make it SUPER AND NICE. It gives boosts evyerhintg now. YEah<//><q>Unlocks a powerful new building</q>
 		cost:7.5e7 money, 75 research, 7.5e5 smartness
 		req:research8
-		
+
 Achievements
 	*money1achv
 		name:not rich.
