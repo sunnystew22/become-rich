@@ -189,6 +189,7 @@ Buildings
 		cost:150 money
 		passive:yield 2 money
 		req:5 dirt
+		cost increase:115%
 		
 	*cookie
 		name:Cookie clicking
@@ -307,11 +308,11 @@ Buildings
 	*superlab
 		name:super lab.
 		desc:This lab is Super. Its is very good, i Think! VEry good, we put chemical and It FUSE! Then we lab, good, good, GOOD. Yeah. How this work though?<//><q>+1000 MPS, +30 SPS, +2% money per level, +3% smartness per level, -3 research time per level</q><//><q>Upgrades unlock at: 10</q>
-		cost:5 research
-passive:yield 1000 money
-passive:yield 30 smartness
+		cost:10 research
+		passive:yield 1000 money
+		passive:yield 30 smartness
 		req:superlabup1
-		cost increase:130%
+		cost increase:115%
 
 Upgrades
 	*dirtup
@@ -432,7 +433,7 @@ Upgrades
 		req:have research2
 	*research4
 		name:The Sus.
-		desc:We're sus, and we make Amongus.<//><q>Unlocks a new building (I'm sorry about the sheer amount of Amogi, this was made like over a year ago)</q>
+		desc:We're sus, and we make Amongus.<//><q>Unlocks a new building (im sorry about the Amoguses this was made like over a year ago)</q>
 		cost:7 research, 50000 money
 		on earn:toast amogus sUs!
 		req:have research3
@@ -481,16 +482,54 @@ Upgrades
 		on earn:yield 20 speedup
 		passive:multiply yield of moneybag by 3
 		req:research7
-		
-	*TEMPLATE
-		tag:geniustag
-		
 	*madlab
 		name:MAD SCienticts' LAB!
 		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
-		cost:1e8 money, 100 research
-		req:research8
+		cost:2e8 money, 200 research
+		req:10 superlabup1
 		
+	*TEMPLATE
+		tag:tier2
+	
+	*dirtup2
+		name:Ultimate Dirt Extracing
+		desc:use the Power OF COOL CONSTURCION MACHINES to get mroe dirt! YeSSSSSS!!!!!<//><q>Sell Dirt gives x200 money</q>
+		cost:3e7 money
+		passive:multiply yield of estate by 200
+		req:100 dirt, allup1
+	*cryptoup2
+		name:Cryptcurency work
+		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>+2 click money</q>
+		cost:75 money
+		passive:increase yield of moneybag by 2
+		req:100 cryptocurrency
+	*dogup2
+		name:Ultimate Petting.
+		desc:<u>Bring in all the pets. We must pet them all.</u><//><q></q>
+		cost:300 money
+		passive:increase yield of moneybag by 3
+		req:100 dog
+	*cookieup2
+		name:cookie Sell!
+		desc:cookie clicking didn't work. let's sell the cookie instead for 3 more click work! YESSSSSS<//><q>+3 click money</q>
+		cost:100 money
+		passive:increase yield of moneybag by 3
+		req:100 cookie
+	*stockup2
+		name:Market CRASH!!
+		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>You'll lose money, don't do this (unless you want the achievement)</q>
+		cost:1000 money
+		on earn:lose 100000 money
+		on earn:toast NOOOOOOOOOOOOOOOOŒ
+		req:100 stock
+		
+		
+		
+	
+	*TEMPLATE
+		tag:geniustag
+		
+
 		
 	
 	*supercomputerup
@@ -518,6 +557,11 @@ Upgrades
 		name:SUPEr Labs!!!!
 		desc:We're the power. Use our lab and make it SUPER AND NICE. It gives boosts evyerhintg now. YEah<//><q>Unlocks a powerful new building</q>
 		cost:7.5e7 money, 75 research, 7.5e5 smartness
+		req:research8
+	*allup1
+		name:MEGA! MONEY! UPGRADE!S
+		desc:This give all the upgrade to all the mony<//><q>Unlocks an upgrade for each unit from Sell Dirt to Super Labs. The respective units' upgrades can only be unlocked when leveled to 100</q>
+		cost:1e8 money, 1e6 smartness
 		req:research8
 
 Achievements
@@ -555,11 +599,11 @@ Achievements
 		req:1e8 money:earned
 	*net3achv
 		name:1Bil NetWorth.
-		desc:ok that's a lot of moneying. maybe ishould dontate to poor? don't know.also i think im famous
+		desc:Welcome to Become Rich! Here, you build your way to being a MILLIONARE in this very fun Idol Game! Very Wow! Such Yes!
 		req:1e9 money:earned
 	*net4achv
 		name:10Bil NetWorth.
-		desc:im sorry that's too much
+		desc:ok that's a lot of moneying. maybe ishould dontate  ? don't know.also i think im famous
 		req:1e10 money:earned
 	*net5achv
 		name:100Bil NetWorth.
@@ -567,7 +611,7 @@ Achievements
 		req:1e11 money:earned
 	*net6achv
 		name:trilion
-		desc:Welcome to Become Rich! Here, you build your way to being a BILLIONARE in this very fun idol game! Very Wow!
+		desc:
 		req:1e12 money:earned
 	*net7achv
 		name:-illion but the tri is replaceed with whatever word 4 is for.           i think it;s called squareillion
@@ -604,14 +648,14 @@ Achievements
 		name:brain Educationing
 		desc:You can be smart and Good to create Smartness with Think
 		req:1 school1
-	*evilachv
-		name:We The Eil
-		desc:We got Evil, We doing eivl
-		req:1 ep:earned
 	*collegeachv
 		name:GENUSNESS
 		desc:I'm Smartest Ever!!!!!!!!!!
 		req:research8
+	*evilachv
+		name:We The Eil
+		desc:We got Evil, We doing eivl
+		req:1 ep:earned
 		
 
 
