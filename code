@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.29<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>0.30<#fff700>b</#></b>! idk what that is!!!<//><//><b>Changelogs</b><//><u>Latest Update Notes(Version 0.22):</u>
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -495,7 +495,7 @@ Upgrades
 		name:Ultimate Dirt Extracing
 		desc:use the Power OF COOL CONSTURCION MACHINES to get mroe dirt! YeSSSSSS!!!!!<//><q>Sell Dirt gives x200 money</q>
 		cost:3e7 money
-		passive:multiply yield of estate by 200
+		passive:multiply yield of dirt by 200
 		req:100 dirt, allup1
 	*cryptoup2
 		name:Cryptcurency work
