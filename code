@@ -210,7 +210,6 @@ Buildings
 		desc:We buy some from office store, then sell it at higher price . is this how shoping works??<//><q>+8 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:600 money
 		passive:yield 8 money
-		cost increase:125%
 		req:20 dirt
 		
 	*stealing
@@ -494,21 +493,21 @@ Upgrades
 	*dirtup2
 		name:Ultimate Dirt Extracing
 		desc:use the Power OF COOL CONSTURCION MACHINES to get mroe dirt! YeSSSSSS!!!!!<//><q>Sell Dirt gives x200 money</q>
-		cost:3e7 money
+		cost:5e6 money
 		passive:multiply yield of dirt by 200
-		req:100 dirt, allup1
+		req:75 dirt, allup1
 	*cryptoup2
 		name:Cryptcurency work
-		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>+2 click money</q>
+		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>Walking the Dog gives +4 smartness per unit/q>
 		cost:75 money
 		passive:increase yield of moneybag by 2
-		req:100 cryptocurrency
+		req:75 cryptocurrency
 	*dogup2
 		name:Ultimate Petting.
 		desc:<u>Bring in all the pets. We must pet them all.</u><//><q></q>
-		cost:300 money
+		cost:2e7 money
 		passive:increase yield of moneybag by 3
-		req:100 dog
+		req:75 dog, allup1
 	*cookieup2
 		name:cookie Sell!
 		desc:cookie clicking didn't work. let's sell the cookie instead for 3 more click work! YESSSSSS<//><q>+3 click money</q>
@@ -560,7 +559,7 @@ Upgrades
 		req:research8
 	*allup1
 		name:MEGA! MONEY! UPGRADE!S
-		desc:This give all the upgrade to all the mony<//><q>Unlocks an upgrade for each unit from Sell Dirt to Super Labs. The respective units' upgrades can only be unlocked when leveled to 100</q>
+		desc:This give all the upgrade to all the mony<//><q>Unlocks an upgrade for each unit from Sell Dirt to Super Labs. The respective units' upgrades can only be unlocked when leveled to 75</q>
 		cost:1e8 money, 1e6 smartness
 		req:research8
 
