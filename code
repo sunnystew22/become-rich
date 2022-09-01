@@ -452,9 +452,9 @@ Upgrades
 		req:have research4
 	*school2up
 		name:cooler skool's scholarship
-		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4 (this may not give intended amount of SPS)</q>
-		cost:20000 smartness
-		passive:increase smartness yield of school2 by 1
+		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down and we get higher smart.<//><q>Cool Skool's negative MPS decreased from 50 to 10 and SPS increased by 50%</q>
+		cost:25000 smartness
+		passive:multiply smartness yield of school2 by 1.5
 		req:5 school2
 	*research6
 		name:Research. Factories.
@@ -498,13 +498,13 @@ Upgrades
 		req:75 dirt, allup1
 	*cryptoup2
 		name:Cryptcurency work
-		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>Walking the Dog gives +4 smartness per unit/q>
+		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>a</q>
 		cost:75 money
 		passive:increase yield of moneybag by 2
 		req:75 cryptocurrency
 	*dogup2
 		name:Ultimate Petting.
-		desc:<u>Bring in all the pets. We must pet them all.</u><//><q></q>
+		desc:<u>Bring in all the pets. We must pet them all.</u><//><q>Walking the Dog gives +4 smartness per unit</q>
 		cost:2e7 money
 		passive:increase yield of moneybag by 3
 		req:75 dog, allup1
