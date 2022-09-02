@@ -492,9 +492,9 @@ Upgrades
 	
 	*dirtup2
 		name:Ultimate Dirt Extracing
-		desc:use the Power OF COOL CONSTURCION MACHINES to get mroe dirt! YeSSSSSS!!!!!<//><q>Sell Dirt gives x200 money</q>
+		desc:use the Power OF COOL CONSTURCION MACHINES to get mroe dirt! YeSSSSSS!!!!!<//><q>Sell Dirt gives x100 money</q>
 		cost:5e6 money
-		passive:multiply yield of dirt by 200
+		passive:multiply yield of dirt by 100
 		req:75 dirt, allup1
 	*cryptoup2
 		name:Cryptcurency work
