@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
-	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.2(.1)</b>! idk what that is!!!
+	by:boshki0987 (sprites by Lexali5)
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.2(.1)</b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -142,6 +142,7 @@ Buildings
 		cost:10 money
 		passive:yield 0.5 money
 		cost increase:115%
+		icon:icons1[1,0]
 		
 	*cryptocurrency
 		name:investing cyrptocurrency
@@ -151,6 +152,7 @@ Buildings
 		passive:if (have supercomputerup2) yield 5 smartness
 		cost increase:160%
 		req:have dirt
+		icon:icons1[1,1]
 		
 	*dog
 		name:walking the Dog
@@ -158,12 +160,14 @@ Buildings
 		cost:150 money
 		passive:yield 3 money
 		req:5 dirt
+		icon:icons1[1,2]
 		
 	*cookie
 		name:Cookie clicking
 		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:200 money
 		req:10 dirt
+		icon:icons1[1,3]
 		
 	*stock
 		name:Stocking Markets!
@@ -172,6 +176,7 @@ Buildings
 		passive:if (have estateup2) yield 51 money
 		passive:lose 1 money
 		req:15 dirt
+		icon:icons1[1,4]
 		
 	*paperclip
 		name:Paperclip
@@ -180,6 +185,7 @@ Buildings
 		passive:yield 12 money
 		cost increase:130%
 		req:20 dirt
+		icon:icons1[1,5]
 		
 	*stealing
 		name:stealing?!!?!?
@@ -188,6 +194,7 @@ Buildings
 		on earn:lose 1000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
 		req:22 dirt
+		icon:icons1[1,6]
 		
 	*lottery
 		name:Lotery Ticket!
@@ -199,6 +206,7 @@ Buildings
 		end
 		req:25 dirt
 		cost increase:105%
+		icon:icons1[1,7]
 		
 	*landscape
 		name:landscaping job  .
@@ -206,6 +214,7 @@ Buildings
 		cost:2000 money
 		passive:yield 30 money
 		req:30 dirt
+		icon:icons1[1,8]
 	*school1
 		name:skool
 		desc:go to skools to increase my smartness every seconds. W0W! <//><q>+2 SPS (smartness per second)</q><//><q>Upgrades unlock at: 5, 10</q>
@@ -213,6 +222,7 @@ Buildings
 		cost increase:130%
 		passive:yield 2 smartness
 		req:35 dirt
+		icon:icons1[1,9]
 		
 	*book1
 		name:How2Rich!!!!
@@ -220,6 +230,7 @@ Buildings
 		cost:6000 money
 		req:37 dirt
 		req:50 smartness:earned
+		icon:icons1[1,10]
 		
 	*coding
 		name:coding making.
@@ -234,6 +245,7 @@ Buildings
 		desc:Books That Gives Me Smarters! MOre Smarting per LEvel.!<//><q>+5% smartness per level</q><//><q>Upgrades unlock at: 5</q>
 		cost:14000 money
 		req:5000 smartness:earned
+		icon:icons1[1,11]
 		
 	*wheel
 		name:reinventing the wheel
@@ -242,6 +254,7 @@ Buildings
 		passive:yield 150 money
 		passive:lose 0.5 smartness
 		req:have research2
+		icon:icons1[1,12]
 		
 	*sus
 		name:among Us rip Off.
@@ -249,6 +262,7 @@ Buildings
 		cost:50000 money
 		passive:yield 350 money
 		req:have research4
+		icon:icons1[1,13]
 
 	*school2
 		name:cool skool.
@@ -257,6 +271,7 @@ Buildings
 		passive:yield 6 smartness
 		passive:if (have school2up) lose 10 money else lose 50 money
 		req:50000 smartness:earned
+		icon:icons1[1,14]
 	*factory
 		name:Research Factory
 		desc:Mass produce for all of research. This will yes. Makes 2 less seconds for research per factory. Very expensiving, though .<//><q>Each factory will reduce research time by 2 seconds</q><//><q>Upgrades unlock at: 5</q>
