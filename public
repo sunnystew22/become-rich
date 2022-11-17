@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987 (sprites by Lexali5)
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>2.0</b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>2.0.1</b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
 	created:5/25/2021
 	updated:11/17/2022
 
@@ -52,6 +52,7 @@ Buttons
 			end
 		end
 		passive:multiply smartness yield of moneybag by 0.2
+		icon:icons1[0,0]
 		class:bigButton
 	*researchbutton
 		name:makeing RESERCH!
@@ -190,7 +191,7 @@ Buildings
 		
 	*stealing
 		name:stealing?!!?!?
-		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! don't do this actually i regret it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.! hmm, huh. maybe that NOt good idea!?!?!?!?! not sur,ws but well it seems bad so acutally DON"T DO!!!!!!!!! NOO!!!!!!!!! STOPSTOPSTOPSTOPSTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>+0 MPS, lose 1,000 money</q><//><q>Upgrades unlock at: 5,</q>
+		desc:well. maybe this is how we rich. we can earn some moneys, but, we probably get CAUGHT and have to pay thousands for fine!. ohhoohoho!!!! that not good!!!!!!!!!!!!! no,.no,.no!!!., not good at all! dont' do this actully i regrett it! stop! no! ohohoohohlhhoohok12ooi1djpif31fp9f1h3pu3f1hf3iuf3hufh13uiuhf13uhf13iuh1ffhiu1 that's be much money lost! but. i mgight be to yes. money must earn, and stealing is how we do.! hmm, huh. maybe that NOt good idea!?!?!?!?! not sur,ws but well it seems bad so acutally DON"T DO!!!!!!!!! NOO!!!!!!!!! STOPSTOPSTOPSTOPSTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>+0 MPS, lose 1,000 money</q><//><q>Upgrades unlock at: 5,</q>
 		cost:601 money
 		on earn:lose 1000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
@@ -209,6 +210,7 @@ Buildings
 			else if (chance(1%))
 			 yield 3e5 money
 			 toast yoU WNO!!!!1!!!!!!111@!!!! 3 HUNRER AED THOAUSANDS DOLAER!!@@@
+			 yield lotteryachv
 		end
 		req:25 dirt
 		cost increase:105%
@@ -256,7 +258,7 @@ Buildings
 		
 	*wheel
 		name:reinventing the wheel
-		desc:is this how i can strike rich. 1 less smartness per two second but 150 moneys per second. investeors say no, but i say yEs.<//><q>+150 MPS, -0.5 SPS</q><//><q>Upgrades unlock at: 5</q>
+		desc:is this how i can strike rich. 1 less smartness per two second but 150 moneys per second. investeors say no, but i say yEs.Whats a invetor<//><q>+150 MPS, -0.5 SPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:4000 money, 2500 smartness
 		passive:yield 150 money
 		passive:lose 0.5 smartness
@@ -354,7 +356,7 @@ Upgrades
 		cost:1200 money
 		on earn:yield 1100 money
 		on earn:yield 1 ep
-		on earn:toast success! we stole 1100 worth of moneys! That's a profit right???
+		on earn:toast success! we stole 1100 worth of moneys! That's a profiting right???
 		req:5 stealing
 	*evil1
 		name:EVIL Working.!
@@ -364,7 +366,7 @@ Upgrades
 		req:1 ep
 	*lotteryup	
 		name:lottery Making
-		desc:We Make the Loterys so We can Get The a Moneys For 4 clicking Works?<//><q>What</q>
+		desc:We Make the Loterys so We can Get The a Moneys For 4 clicked Working     ?<//><q>What</q>
 		cost:1500 money
 		passive:increase yield of moneybag by 4
 		req:50 lottery
@@ -442,14 +444,14 @@ Upgrades
 		req:5 sus
 	*research5
 		name:factory works.
-		desc:We have research factory to make. first, we will getting more clicking working moneying,. and, from basic setting uping, we get 10 less seconds of researches.<//><q>x5 click money, does not boost smartness. Reduces research time by 10 seconds. Unlocks new technology</q>
+		desc:We have research factory to make. first, we will getting more clicking working moneying,. and, from basic setting uping, we get 10 less seconds of researcheings.<//><q>x5 click money, does not boost smartness. Reduces research time by 10 seconds. Unlocks new technology</q>
 		cost:9 research, 60000 money
 		on earn:yield 10 speedup
 		passive:multiply money yield of moneybag by 5
 		req:have research4
 	*school2up
 		name:cooler skool's scholarship
-		desc:scholarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4 (this may not give intended amount of SPS)</q>
+		desc:scolarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4 (this may not give intended amount of SPS)</q>
 		cost:20000 smartness
 		passive:increase smartness yield of school2 by 1
 		req:5 school2
@@ -460,14 +462,14 @@ Upgrades
 		req:have research5
 	*factoryup
 		name:Moneying The REsearch.
-		desc:This can making the Work ! button green. When it green, that means if you click on it, it give  permenant less research second, but   stops being green. it's rebecomes green though. Also it gives has less researc seond when buyed/ SO, Yeah.<//><q>Every 15 minutes, the work button will become green. Pressing it when it's green will reduce research time by 3 seconds, and will turn green again after another 15 minutes.</q><//><q>Reduces research time by 15 seconds</q>
+		desc:This can making the Work ! button green.When it green, that means if you click on it, it give  permenant less research second, but   stops being green.it's rebecomes green though. Also it gives has less researc seond when buyed/ SO, Yeah.<//><q>Every 15 minutes, the work button will become green. Pressing it when it's green will reduce research time by 3 seconds, and will turn green again after another 15 minutes.</q><//><q>Reduces research time by 15 seconds</q>
 		cost:20 research, 500000 money, 50000 smartness
 		on earn:yield 15 speedup
 		on earn:worktimer is 900
 		req:5 factory
 	*research7
 		name:The Auto Researcher/
-		desc:It;s a button. Press it on to automatically research whnever you have the resources for it! Press it off, it stops. WARNINGS: watch out, research costs x2 money when auto researched !<//><q>Unlocks a toggle that makes research start automatically. This, however, will double the money cost of researching while enabled.</q>
+		desc:It;s a button. Press it on to automatically rearch whnever you have the resource for it! Press it off, it stops. WARNINGS: /!<//><q>Unlocks a toggle that makes research start automatically. This, however, will double the money cost of researching while enabled.</q>
 		cost:25 research, 3e6 money
 		req:have research6
 		on earn:show autoresearch
@@ -503,7 +505,7 @@ Upgrades
 		req:research8
 	*estateup2
 		name:Cool Market
-		desc:the stocks go up, the money go rise.<//><q>Property and estate gives +50% more money, stock markets give +50 MPS instead of -1 MPS</q>
+		desc:the stock go up, the money go rise.<//><q>Property and estate gives +50% more money, stock markets give +50 MPS instead of -1 MPS</q>
 		cost:3e7 money, 1e6 smartness
 		req:10 estate
 		passive:multiply yield of estate by 1.5
@@ -579,6 +581,9 @@ Achievements
 		desc:the stocks are gone forever. Look what you did. i am mad and angery
 		req:stockup
 		icon:icons1[15,2]
+	*lotteryachv
+		name:WE LUCKY AND MONEYEST OH YEAH YES
+		desc:you win the lotteys and earned.THREE 1,00 THOAUNSD , FREE BUCK<//>you win the lotteys and earned.THREE 1,00 THOAUNSD , FREE BUCK
 	*smartachv
 		name:brain Educationing
 		desc:You can be smart and Good to create Smartness with Think
