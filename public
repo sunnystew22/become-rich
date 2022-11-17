@@ -313,7 +313,7 @@ Upgrades
 		req:500 money:earned
 	*dirtup
 		name:Dirt Working
-		desc:use the power Of dirt to boost click work by 2! YeSSSS!<//><q>+2 click money. Buy multiple (usually 5) of any building to unlock similar upgrades.</q>
+		desc:use the power Of dirt to boost click work by 2! YeSSSS!<//><q>+2 click money (click money = boost to how much money you earn from clicking the work button). Buy multiple (usually 5) of any building to unlock similar upgrades.</q>
 		cost:25 money
 		passive:increase yield of moneybag by 2
 		req:5 dirt
@@ -429,7 +429,7 @@ Upgrades
 		req:have research2
 	*research4
 		name:The Sus.
-		desc:We're sus, and we make Amongus.<//><q>Unlocks a new building (I'm sorry about the sheer amount of Amogi, this was made like over a year ago)</q>
+		desc:We're sus, and we make Amongus.<//><q>Unlocks... something</q>
 		cost:7 research, 50000 money
 		on earn:toast amogus sUs!
 		req:have research3
