@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.2</b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.1</b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -10,7 +10,6 @@ Settings
 	building cost increase:120%
 	building cost refund:0.01%
 	background:https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1142839776%2F960x0.jpg%3Ffit%3Dscale
-	spritesheet:icons1, 48 by 48, https://file.garden/Y3WCFJOdi23QPQVx/richgame%20sprites
 
 CSS
 	.glowgreen
@@ -53,7 +52,6 @@ Buttons
 			end
 		end
 		passive:multiply smartness yield of moneybag by 0.2
-		class:bigbutton
 	*researchbutton
 		name:makeing RESERCH!
 		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness and [convertcost*10] money into RESEARCH!]
@@ -190,7 +188,9 @@ Buildings
 		name:Lotery Ticket!
 		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money<//><q>+0 MPS</q><//><q>Upgrades unlock at: 50,</q>
 		cost:5 money
-		on earn:toast well, better luck next time. Guess we didn't get money
+		on earn:
+			if (chance(90%)) toast well, better luck next time. Guess we didn't get money
+			else yield 30 money
 		req:25 dirt
 		cost increase:105%
 		
@@ -479,7 +479,7 @@ Upgrades
 Achievements
 	*freemoneyachv
 		name:300 dollars
-		desc:300 dollars<//><q>300 dollars</q>
+		desc:300 dollars
 		req:freemoney
 	*money1achv
 		name:not rich.
