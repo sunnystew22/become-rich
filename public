@@ -188,7 +188,9 @@ Buildings
 		name:Lotery Ticket!
 		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money<//><q>+0 MPS</q><//><q>Upgrades unlock at: 50,</q>
 		cost:5 money
-		on earn:toast well, better luck next time. Guess we didn't get money
+		on earn:
+			if (chance(90%)) toast well, better luck next time. Guess we didn't get money
+			else yield 30 money and toast you got MONEEEYSYSYSYS
 		req:25 dirt
 		cost increase:105%
 		
