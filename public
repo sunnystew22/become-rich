@@ -582,12 +582,12 @@ Achievements
 		name:We The Eil
 		desc:We got Evil, We doing eivl
 		req:1 ep:earned
-		icon:icons1[17,2]
+		icon:icons1[18,2]
 	*collegeachv
 		name:GENUSNESS
 		desc:I'm Smartest Ever!!!!!!!!!!
 		req:research8
-		icon:icons1[18,2]
+		icon:icons1[17,2]
 		
 
 
