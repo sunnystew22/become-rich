@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.2</b>! idk what that is!!!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>1.2(.1)</b>! idk what that is!!!
 	created:5/25/2021
 	updated:5/25/2021
 
@@ -94,6 +94,7 @@ Resources
 		desc:this is how much rich you are! wow!
 		passive:multiply yield of this by 1+(0.02*book1)+(0.01*estate)
 		show earned
+		icon:icons1 [0,0]
 	*ep
 		name:EVIL points.
 		desc:No, Im not Evil!!!#@@!#!#!@#!!!@!!!!!}! STOTP#@P#@P@!PP!@!@#P!@O#P@O@
