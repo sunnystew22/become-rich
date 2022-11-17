@@ -3,7 +3,7 @@ Let's make a game!
 	by:boshki0987 (sprites by Lexali5)
 	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>2.0</b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
 	created:5/25/2021
-	updated:5/25/2021
+	updated:11/17/2022
 
 
 Settings
@@ -52,7 +52,7 @@ Buttons
 			end
 		end
 		passive:multiply smartness yield of moneybag by 0.2
-		class:bigbutton
+		class:bigButton
 	*researchbutton
 		name:makeing RESERCH!
 		text:[?(converttimer < 1e250)|[converttimer] seconds until we earn RESEARCH!|Convert [convertcost] smartness and [convertcost*10] money into RESEARCH!]
@@ -523,42 +523,42 @@ Achievements
 		name:still not rich.
 		desc:you only have 100 money. that's not rich.
 		req:100 money
-		icon:icons1[2,2]
+		icon:icons1[1,2]
 	*money3achv
 		name:not rich at all.
 		desc:you only have 1000 money. that's not rich.
 		req:1000 money
-		icon:icons1[3,2]
+		icon:icons1[2,2]
 	*money4achv
 		name:really not rich.
 		desc:you only have 10000 money. that's not rich.
 		req:10000 money
-		icon:icons1[4,2]
+		icon:icons1[3,2]
 	*money5achv
 		name:too not rich.
 		desc:you only have 100000 money. that's not rich.
 		req:100000 money
-		icon:icons1[5,2]
+		icon:icons1[4,2]
 	*money6achv
 		name:WOAH DUDE! LET'S BE MILLION!!!!!!!!!
 		desc:WE MILLIONARE@
 		req:1000000 money
-		icon:icons1[6,2]
+		icon:icons1[5,2]
 	*net1achv
 		name:10Mil NetWorth.
 		desc:i found this thing called networth? what's it do? don't know. but im richer now, so oh yeah
 		req:1e7 money:earned
-		icon:icons1[7,2]
+		icon:icons1[6,2]
 	*net2achv
 		name:100Mil NetWorth.
 		desc:well i got more net worths, it's seems fun so i will get more
 		req:1e8 money:earned
-		icon:icons1[8,2]
+		icon:icons1[7,2]
 	*net3achv
 		name:1Bil NetWorth.
 		desc:ok that's a lot of moneying. maybe ishould dontate to poor? don't know.also i think im famous
 		req:1e9 money:earned
-		icon:icons1[9,2]
+		icon:icons1[8,2]
 	*smart1achv
 		name:Smartereer
 		desc:Woa, we got smartness,Yea,Yeah,Lots
