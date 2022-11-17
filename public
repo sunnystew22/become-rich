@@ -94,7 +94,7 @@ Resources
 		desc:this is how much rich you are! wow!
 		passive:multiply yield of this by 1+(0.02*book1)+(0.01*estate)
 		show earned
-		icon:icons1 [0,0]
+		icon:icons1[0,0]
 	*ep
 		name:EVIL points.
 		desc:No, Im not Evil!!!#@@!#!#!@#!!!@!!!!!}! STOTP#@P#@P@!PP!@!@#P!@O#P@O@
