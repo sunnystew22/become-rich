@@ -479,7 +479,7 @@ Upgrades
 		
 Achievements
 	*freemoneyachv
-		name:300 dollars
+		name:300 dollars<//><q>300 dollars</q>
 		desc:300 dollars
 		req:freemoney
 	*money1achv
