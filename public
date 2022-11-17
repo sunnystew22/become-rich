@@ -99,17 +99,20 @@ Resources
 		name:EVIL points.
 		desc:No, Im not Evil!!!#@@!#!#!@#!!!@!!!!!}! STOTP#@P#@P@!PP!@!@#P!@O#P@O@
 		show earned
+		icon:icons1[1,0]
 	*smartness
 		name:smartness!
 		desc:i can be smart to do BIG Money!1
 		passive:multiply yield of this by 1+(0.05*book2)
 		show earned
+		icon:icons1[2,0]
 	*research
 		name:researching pointers
 		desc:called research point, used to get bIg smart!
 		show earned
 		hidden
 		tag:researchtag
+		icon:icons1[3,0]
 	*convertcost
 		start with:100
 		hidden
