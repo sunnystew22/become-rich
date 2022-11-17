@@ -190,7 +190,7 @@ Buildings
 		cost:5 money
 		on earn:
 			if (chance(90%)) toast well, better luck next time. Guess we didn't get money
-			else yield 30 money
+			else yield 30 money and toast you got MONEEEYSYSYSYS
 		req:25 dirt
 		cost increase:105%
 		
