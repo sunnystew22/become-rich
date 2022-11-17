@@ -172,7 +172,7 @@ Buildings
 		
 	*stock
 		name:Stocking Markets!
-		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS (+50 MPS if upgraded)</q><//><q>Upgrades unlock at: 10,</q>
+		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS (+50 MPS if upgraded with the Cool Markets upgrade)</q><//><q>Upgrades unlock at: 10,</q>
 		cost:400 money
 		passive:if (have estateup2) yield 51 money
 		passive:lose 1 money
@@ -204,11 +204,11 @@ Buildings
 		on earn:
 			if (chance(90%)) toast well, better luck next time. Guess we didn't get mone
 			else if (chance(9%))
-			 yield 30 money
-			 toast yoU WNO!!!!! 30 do,laer!!!!
+			 yield 50 money
+			 toast yoU WNO!!!!! 50 do,laer!!!!
 			else if (chance(1%))
-			 yield 1e6 money
-			 toast yoU WNO!!!!1!!!!!!! 1 MILLOB N DOLAER!!!!1
+			 yield 3e5 money
+			 toast yoU WNO!!!!1!!!!!!111@!!!! 3 HUNRER AED THOAUSANDS DOLAER!!@@@
 		end
 		req:25 dirt
 		cost increase:105%
@@ -337,7 +337,7 @@ Upgrades
 		req:5 cookie
 	*stockup
 		name:Market CRASH!!
-		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>You'll lose money, don't do this (unless you want the achievement)</q>
+		desc:NO DO NOT CRASH THE MARKET!!!!!! I WILL LOSE ALL MONEYS!!!!! NOOOOOOO!!!!!!!!! STOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<//><q>You'll lose 100k, don't do this (unless you really want the achievement)</q>
 		cost:1000 money
 		on earn:lose 100000 money
 		on earn:toast NOOOOOOOOOOOOOOOOŒ
