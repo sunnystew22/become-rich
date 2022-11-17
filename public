@@ -161,14 +161,14 @@ Buildings
 		cost:150 money
 		passive:yield 3 money
 		req:5 dirt
-		icon:icons1[3,1]
+		icon:icons1[2,1]
 		
 	*cookie
 		name:Cookie clicking
 		desc:oh ! Well you just put mouse on cookie, then click! according to cookie game it makes me easy rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS</q><//><q>Upgrades unlock at: 5,</q>
 		cost:200 money
 		req:10 dirt
-		icon:icons1[4,1]
+		icon:icons1[3,1]
 		
 	*stock
 		name:Stocking Markets!
@@ -177,7 +177,7 @@ Buildings
 		passive:if (have estateup2) yield 51 money
 		passive:lose 1 money
 		req:15 dirt
-		icon:icons1[5,1]
+		icon:icons1[4,1]
 		
 	*paperclip
 		name:Paperclip
