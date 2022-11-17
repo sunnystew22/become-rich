@@ -192,6 +192,7 @@ Buildings
 		on earn:
 			if (chance(90%)) toast well, better luck next time. Guess we didn't get money
 			else yield 30 money
+		end
 		req:25 dirt
 		cost increase:105%
 		
@@ -201,7 +202,6 @@ Buildings
 		cost:2000 money
 		passive:yield 30 money
 		req:30 dirt
-		
 	*school1
 		name:skool
 		desc:go to skools to increase my smartness every seconds. W0W! <//><q>+2 SPS (smartness per second)</q><//><q>Upgrades unlock at: 5, 10</q>
