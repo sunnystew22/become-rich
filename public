@@ -245,6 +245,7 @@ Buildings
 		passive:yield 70 money
 		req:40 dirt
 		req:1000 smartness:earned
+		icon:icons1[11,0]
 		
 	*book2
 		name:How2Smart!!!!!!!!!
