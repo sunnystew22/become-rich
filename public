@@ -10,7 +10,7 @@ Settings
 	building cost increase:120%
 	building cost refund:0.01%
 	background:https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1142839776%2F960x0.jpg%3Ffit%3Dscale
-	spritesheet:icons1, 48 by 48, https://file.garden/Y3WCFJOdi23QPQVx/richgame%20sprites
+	spritesheet:icons1, 48 by 48, https://i.postimg.cc/RZm1Kg6n/fixed3.png
 CSS
 	.glowgreen
 	{
