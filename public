@@ -10,7 +10,7 @@ Settings
 	building cost increase:120%
 	building cost refund:0.01%
 	background:https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1142839776%2F960x0.jpg%3Ffit%3Dscale
-	spritesheet:icons1, 48 by 48, https://file.garden/Y3WCFJOdi23QPQVx/richgame%20sprites
+	spritesheet:icons1, 48 by 48, https://i.postimg.cc/RZm1Kg6n/fixed3.png
 CSS
 	.glowgreen
 	{
@@ -154,6 +154,7 @@ Buildings
 		req:have dirt
 		icon:icons1[1,1]
 		
+		
 	*dog
 		name:walking the Dog
 		desc:you just take puppy and follow it around the street! 3 money per second sounds free money, yes?!!?!?!?<//><q>+3 MPS</q><//><q>Upgrades unlock at: 5,</q>
@@ -185,7 +186,7 @@ Buildings
 		passive:yield 12 money
 		cost increase:130%
 		req:20 dirt
-		icon:icons1[5,1]
+		icon:icons1[6,1]
 		
 	*stealing
 		name:stealing?!!?!?
@@ -194,19 +195,24 @@ Buildings
 		on earn:lose 1000 money
 		on earn:toast oh!!!!! noo!!!!!!!!!! They found me stealing and have now to pay lots of money! nooooo!!!! no!!!!!!!!!!!!!!
 		req:22 dirt
-		icon:icons1[6,1]
+		icon:icons1[7,1]
 		
 	*lottery
 		name:Lotery Ticket!
 		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money<//><q>+0 MPS</q><//><q>Upgrades unlock at: 50,</q>
 		cost:5 money
 		on earn:
-			if (chance(90%)) toast well, better luck next time. Guess we didn't get money
-			else yield 30 money
+			if (chance(90%)) toast well, better luck next time. Guess we didn't get mone
+			else if (chance(9%))
+			 yield 30 money
+			 toast yoU WNO!!!!! 30 do,laer!!!!
+			else if (chance(1%))
+			 yield 1e6 money
+			 toast yoU WNO!!!!1!!!!!!! 1 MILLOB N DOLAER!!!!1
 		end
 		req:25 dirt
 		cost increase:105%
-		icon:icons1[7,1]
+		icon:icons1[8,1]
 		
 	*landscape
 		name:landscaping job  .
@@ -214,7 +220,7 @@ Buildings
 		cost:2000 money
 		passive:yield 30 money
 		req:30 dirt
-		icon:icons1[8,1]
+		icon:icons1[9,1]
 	*school1
 		name:skool
 		desc:go to skools to increase my smartness every seconds. W0W! <//><q>+2 SPS (smartness per second)</q><//><q>Upgrades unlock at: 5, 10</q>
@@ -222,7 +228,7 @@ Buildings
 		cost increase:130%
 		passive:yield 2 smartness
 		req:35 dirt
-		icon:icons1[9,1]
+		icon:icons1[10,1]
 		
 	*book1
 		name:How2Rich!!!!
@@ -230,7 +236,7 @@ Buildings
 		cost:6000 money
 		req:37 dirt
 		req:50 smartness:earned
-		icon:icons1[10,1]
+		icon:icons1[11,1]
 		
 	*coding
 		name:coding making.
@@ -239,13 +245,14 @@ Buildings
 		passive:yield 70 money
 		req:40 dirt
 		req:1000 smartness:earned
+		icon:icons1[11,0]
 		
 	*book2
 		name:How2Smart!!!!!!!!!
 		desc:Books That Gives Me Smarters! MOre Smarting per LEvel.!<//><q>+5% smartness per level</q><//><q>Upgrades unlock at: 5</q>
 		cost:14000 money
 		req:5000 smartness:earned
-		icon:icons1[11,1]
+		icon:icons1[12,1]
 		
 	*wheel
 		name:reinventing the wheel
@@ -254,7 +261,7 @@ Buildings
 		passive:yield 150 money
 		passive:lose 0.5 smartness
 		req:have research2
-		icon:icons1[12,1]
+		icon:icons1[13,1]
 		
 	*sus
 		name:among Us rip Off.
@@ -262,7 +269,7 @@ Buildings
 		cost:50000 money
 		passive:yield 350 money
 		req:have research4
-		icon:icons1[13,1]
+		icon:icons1[14,1]
 
 	*school2
 		name:cool skool.
@@ -271,12 +278,14 @@ Buildings
 		passive:yield 6 smartness
 		passive:if (have school2up) lose 10 money else lose 50 money
 		req:50000 smartness:earned
-		icon:icons1[14,1]
+		icon:icons1[15,1]
 	*factory
 		name:Research Factory
 		desc:Mass produce for all of research. This will yes. Makes 2 less seconds for research per factory. Very expensiving, though .<//><q>Each factory will reduce research time by 2 seconds</q><//><q>Upgrades unlock at: 5</q>
 		cost:150000 money
 		req:have research6
+		icon:icons1[16,1]
+		
 	*supercomputer
 		name:SuperDuperComputers           .
 		desc:the computer, makes lot of thinking and proceser. this will smart us for us<//><q>+25 SPS, +500 MPS (if upgraded)</q><//><q>Upgrades unlock at: 10</q>
@@ -284,12 +293,15 @@ Buildings
 		passive:yield 20 smartness
 		passive:if (have supercomputerup2) yield 500 money
 		req:have supercomputerup
+		icon:icons1[17,1]
+		
 	*estate
 		name:pROPERTY and eSTATE!
 		desc:I love money ($)<//><q>+800 MPS, +1% money per level</q><//><q>Upgrades unlock at: 10</q>
 		cost:600000 money, 30000 smartness
 		passive:yield 800 money
 		req:estateup1
+		icon:icons1[18,1]
 		
 
 Upgrades
@@ -501,70 +513,87 @@ Achievements
 		name:300 dollars
 		desc:300 dollars<//><q>300 dollars</q>
 		req:freemoney
+		icon:icons1[0,2]
 	*money1achv
 		name:not rich.
 		desc:you only have 10 money. that's not rich.
 		req:10 money
+		icon:icons1[1,2]
 	*money2achv
 		name:still not rich.
 		desc:you only have 100 money. that's not rich.
 		req:100 money
+		icon:icons1[2,2]
 	*money3achv
 		name:not rich at all.
 		desc:you only have 1000 money. that's not rich.
 		req:1000 money
+		icon:icons1[3,2]
 	*money4achv
 		name:really not rich.
 		desc:you only have 10000 money. that's not rich.
 		req:10000 money
+		icon:icons1[4,2]
 	*money5achv
 		name:too not rich.
 		desc:you only have 100000 money. that's not rich.
 		req:100000 money
+		icon:icons1[5,2]
 	*money6achv
 		name:WOAH DUDE! LET'S BE MILLION!!!!!!!!!
 		desc:WE MILLIONARE@
 		req:1000000 money
+		icon:icons1[6,2]
 	*net1achv
 		name:10Mil NetWorth.
 		desc:i found this thing called networth? what's it do? don't know. but im richer now, so oh yeah
 		req:1e7 money:earned
+		icon:icons1[7,2]
 	*net2achv
 		name:100Mil NetWorth.
 		desc:well i got more net worths, it's seems fun so i will get more
 		req:1e8 money:earned
+		icon:icons1[8,2]
 	*net3achv
 		name:1Bil NetWorth.
 		desc:ok that's a lot of moneying. maybe ishould dontate to poor? don't know.also i think im famous
 		req:1e9 money:earned
+		icon:icons1[9,2]
 	*smart1achv
 		name:Smartereer
 		desc:Woa, we got smartness,Yea,Yeah,Lots
 		req:1000 smartness
+		icon:icons1[12,2]
 	*smart2achv
 		name:Intelegeint
 		desc:Our Big Brain and Cool Skool make Intellegnet Intresting
 		req:1e6 smartness
+		icon:icons1[13,2]
 	*smart3achv
 		name:Geniuis
 		desc:WE'RE MASTERS OF THINKIG
 		req:1e9 smartness
+		icon:icons1[14,2]
 	*crashachv
 		name:Well
 		desc:the stocks are gone forever. Look what you did. i am mad and angery
 		req:stockup
+		icon:icons1[15,2]
 	*smartachv
 		name:brain Educationing
 		desc:You can be smart and Good to create Smartness with Think
 		req:1 school1
+		icon:icons1[16,2]
 	*evilachv
 		name:We The Eil
 		desc:We got Evil, We doing eivl
 		req:1 ep:earned
+		icon:icons1[18,2]
 	*collegeachv
 		name:GENUSNESS
 		desc:I'm Smartest Ever!!!!!!!!!!
 		req:research8
+		icon:icons1[17,2]
 		
 
 
