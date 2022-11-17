@@ -202,8 +202,13 @@ Buildings
 		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money<//><q>+0 MPS</q><//><q>Upgrades unlock at: 50,</q>
 		cost:5 money
 		on earn:
-			if (chance(90%)) toast well, better luck next time. Guess we didn't get money
-			else yield 30 money
+			if (chance(90%)) toast well, better luck next time. Guess we didn't get mone
+			else if (chance(9%))
+			 yield 30 money
+			 toast yoU WNO!!!!! 30 do,laer!!!!
+			else if (chance(1%))
+			 yield 1e6 money
+			 toast yoU WNO!!!!1!!!!!!! 1 MILLOB N DOLAER!!!!1
 		end
 		req:25 dirt
 		cost increase:105%
