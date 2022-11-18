@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987 (sprites by Lexali5)
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>2.0.2</b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>2.1<#fff700>b</#></b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
 	created:5/25/2021
 	updated:11/17/2022
 
@@ -525,16 +525,39 @@ Upgrades
 	*madlab
 		name:MAD SCienticts' LAB!
 		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
-		cost:2e8 money, 200 research
+		cost:3e8 money, 200 research
 		req:10 superlabup1
+		
+	*TEMPLATE
+		tag:tier2
+	
+	*dirtup2
+		name:Ultimate Dirt Extracing
+		desc:use the Power OF COOL CONSTURCION MACHINES to get mroe dirt! YeSSSSSS!!!!!<//><q>Sell Dirt gives x100 money</q>
+		cost:5e6 money
+		passive:multiply yield of dirt by 100
+		req:75 dirt, allup1
+		
+//the rest of tier2s are wip
+
+	*cryptoup2
+		name:Cryptcurency work
+		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>a</q>
+		cost:75 money
+		passive:increase yield of moneybag by 2
+		req:75 cryptocurrency
+	*dogup2
+		name:Ultimate Petting.
+		desc:<u>Bring in all the pets. We must pet them all.</u><//><q>Walking the Dog gives +4 smartness per unit</q>
+		cost:2e7 money
+		passive:increase yield of moneybag by 3
+		req:75 dog, allup1
 		
 	*TEMPLATE
 		tag:geniustag
 		
-
 		
 		
-	
 	*supercomputerup
 		name:Computering
 		desc:These Are FAST. I can BUy them For MAny moneys, And, THEY DO SMART FOR ME@!!!!#######<//><q>Unlocks a new building</q>
@@ -565,6 +588,12 @@ Upgrades
 		name:MEGA! MONEY! UPGRADE!S
 		desc:This give all the upgrade to all the mony<//><q>Unlocks an upgrade for each unit from Sell Dirt to Super Labs. The respective units' upgrades can only be unlocked when leveled to 75</q>
 		cost:1e8 money, 1e6 smartness
+		req:research8
+	*book3up
+		name:How2English!!!!!!!!!!!!!!!!!
+		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 30 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks. Goodbye... and see you very, very soon.<//><q>AAAAAAAh</q>
+		cost:2e8 money, 3e5 smartness
+		on earn:yield 30 speedup
 		req:research8
 		
 Achievements
