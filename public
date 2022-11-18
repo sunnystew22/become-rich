@@ -87,6 +87,33 @@ Buttons
 			end
 		end
 		hidden
+
+
+
+//debugs
+		
+	*debug1
+		name:x2 money
+		on click:yield money money
+	*debug2
+		name:x2 smartness
+		on click:yield smartness smartness
+	*debug3
+		name:Fast research
+		on click:converttimer is 0
+	*debug4
+		name:change speedup
+		on click:speedup is 25
+	*debug5
+		name:show autoresearcher
+		on click:show autoresearch
+		
+	
+	
+	on workboost:
+		yield 5 speedup
+		toast Research timed Descreasioned! 5second less,
+	end
 		
 Resources
 	*money
@@ -303,6 +330,14 @@ Buildings
 		passive:yield 800 money
 		req:estateup1
 		icon:icons1[18,1]
+	*superlab
+		name:super lab.
+		desc:This lab is Super.Its is very good, i Think! VEry good,Its moneys and smarts.; How do this work though?<//><q>+1000 MPS, +30 SPS, +2% money per level, +3% smartness per level, -3 research time per level</q><//><q>Upgrades unlock at: 10</q>
+		cost:10 research
+		passive:yield 1000 money
+		passive:yield 30 smartness
+		req:superlabup1
+		cost increase:115%
 		
 
 Upgrades
@@ -479,6 +514,11 @@ Upgrades
 		on earn:yield 20 speedup
 		passive:multiply yield of moneybag by 3
 		req:research7
+	*madlab
+		name:MAD SCienticts' LAB!
+		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
+		cost:2e8 money, 200 research
+		req:10 superlabup1
 		
 	*TEMPLATE
 		tag:geniustag
@@ -508,6 +548,16 @@ Upgrades
 		cost:3e7 money, 1e6 smartness
 		req:10 estate
 		passive:multiply yield of estate by 1.5
+	*superlabup1
+		name:SUPEr Labs!!!!
+		desc:We're the power. Use our lab and make it SUPER AND NICE. It gives boosts evyerhintg now. YEah<//><q>Unlocks a powerful new building</q>
+		cost:7.5e7 money, 75 research, 7.5e5 smartness
+		req:research8
+	*allup1
+		name:MEGA! MONEY! UPGRADE!S
+		desc:This give all the upgrade to all the mony<//><q>Unlocks an upgrade for each unit from Sell Dirt to Super Labs. The respective units' upgrades can only be unlocked when leveled to 75</q>
+		cost:1e8 money, 1e6 smartness
+		req:research8
 		
 Achievements
 	*freemoneyachv
@@ -557,9 +607,28 @@ Achievements
 		icon:icons1[7,2]
 	*net3achv
 		name:1Bil NetWorth.
-		desc:ok that's a lot of moneying. maybe ishould dontate to poor? don't know.also i think im famous
+		desc:Welcome to Become Rich! Here, you build your way to being a MILLIONARE in this very fun Idol Game! Very Wow! Such Yes!
 		req:1e9 money:earned
-		icon:icons1[8,2]
+	*net4achv
+		name:10Bil NetWorth.
+		desc:ok that's a lot of moneying. maybe ishould dontate  ? don't know.also i think im famous
+		req:1e10 money:earned
+	*net5achv
+		name:100Bil NetWorth.
+		desc:100 Bills???? WOw! That's more moneying than all of The atoms in the universe! WOW!
+		req:1e11 money:earned
+	*net6achv
+		name:trilion
+		desc:WE SO RICHESt, WE MAKED ALLTHE MONEIS AN WE'ILL MAKE MORE,mMORE!!. WE HaVE TRUE RICHNES AND NICE.  WE TRILLION,BIGGER THAN THE MONEY ANYONE HAD
+		req:1e12 money:earned
+	*net7achv
+		name:trillion but the tri is replaceed with whatever word 4 is for.           i think it;s called squareillion
+		desc:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$<//>                                         $$$$
+		req:1e15 money:earned
+	*net8achv
+		name:pentagonillion
+		desc:i am such a moneyer i am such a pro
+		req:1e18 money:earned
 	*smart1achv
 		name:Smartereer
 		desc:Woa, we got smartness,Yea,Yeah,Lots
