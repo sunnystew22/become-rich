@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987 (sprites by Lexali5)
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>2.0.1</b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>2.0.2</b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
 	created:5/25/2021
 	updated:11/17/2022
 
@@ -349,21 +349,24 @@ Upgrades
 		req:500 money:earned
 	*dirtup
 		name:Dirt Working
-		desc:use the power Of dirt to boost click work by 2! YeSSSS!<//><q>+2 click money (click money = boost to how much money you earn from clicking the work button). Buy multiple (usually 5) of any building to unlock similar upgrades.</q>
+		desc:use the power Of dirt to boost click work by 2! YeSSSS!<//><q>Selling Dirt gives +25% more money, +2 click money (click money = boost to how much money you earn from clicking the work button). Buy multiple (usually 5) of any building to unlock similar upgrades.</q>
 		cost:25 money
 		passive:increase yield of moneybag by 2
+		passive:multiply yield of dirt by 1.25
 		req:5 dirt
 	*cryptoup
 		name:Cryptcurency work
-		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>+2 click money</q>
+		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>Cryptocurrency gives +25% more money, +2 click money</q>
 		cost:75 money
 		passive:increase yield of moneybag by 2
+		passive:multiply yield of cryptocurrency by 1.25
 		req:5 cryptocurrency
 	*dogup
 		name:Pet the dogs.
-		desc:<u>We must pet the dogs.</u><//><q>+3 click money</q>
+		desc:<u>We must pet the dogs.</u><//><q>Petting the Dogs gives +25% more money, +3 click money</q>
 		cost:300 money
 		passive:increase yield of moneybag by 3
+		passive:multiply yield of dog by 1.25
 		req:5 dog
 	*cookieup
 		name:cookie Sell!
@@ -380,9 +383,10 @@ Upgrades
 		req:10 stock
 	*paperclipup	
 		name:clipping the paper !
-		desc:Use paperclips for better organizing making money boost!!!<//><q>+4 click money</q>
+		desc:Use paperclips for better organizing making money boost!!!<//><q>Paperclips give +25% more money, +4 click money</q>
 		cost:800 money
 		passive:increase yield of moneybag by 4
+		passive:multiply yield of paperclip by 1.25
 		req:5 paperclip
 	*stealingup
 		name:Pro stealing Plan.
@@ -406,9 +410,10 @@ Upgrades
 		req:50 lottery
 	*landscapeup	
 		name:scaping The Land.
-		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes   more click worth thoough !<//><q>+5 click money</q>
+		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes   more click worth thoough !<//><q>Landscaping gives +25% more money, +5 click money</q>
 		cost:2500 money
 		passive:increase yield of moneybag by 5
+		passive:multiply yield of landscape by 1.25
 		req:5 landscape
 	*school1up	
 		name:bigger brain.s
@@ -429,9 +434,10 @@ Upgrades
 		req:5 book1
 	*codingup	
 		name:MEGA coding!
-		desc:we can mega the codings to are make better coding yes and ad making for including more money! more click worth.<//><q>+6 click money</q>
+		desc:we can mega the codings to are make better coding yes and ad making for including more money! more click worth.<//><q>Coding gives +25% more money, +6 click money</q>
 		cost:30000 money
 		passive:increase yield of moneybag by 6
+		passive:multiply yield of coding by 1.25
 		req:5 coding
 	*book2up	
 		name:second reading glass.
@@ -452,10 +458,11 @@ Upgrades
 		req:have research1
 	*wheelup
 		name:WHEEL 2.0.
-		desc:THE BETTER WHEEL. IT GIVES 7 CLICK MONEYS AND 50 THOUSANDS BUCKS.<//><q>+7 click money, +50,000 money</q>
+		desc:THE BETTER WHEEL. IT GIVES 7 CLICK MONEYS AND 50 THOUSANDS BUCKS.<//><q>Reinventing the Wheel gives +25% more money, +7 click money, +50,000 money</q>
 		cost:8000 smartness
 		on earn:yield 50000 money
 		passive:increase yield of moneybag by 7
+		passive:multiply yield of wheel by 1.25
 		req:5 wheel
 	*research3
 		name:research works.
@@ -471,10 +478,11 @@ Upgrades
 		req:have research3
 	*susup
 		name:ripoff Pro skills.
-		desc:we better at ripping, so we off. 7 clicks works .<//><q>+7 click money</q>
+		desc:we better at ripping, so we off. 7 clicks works .<//><q>Among Us Ripoff gives +25% more money, +7 click money</q>
 		cost:70000 money, 5000 smartness
 		on earn:yield 2 ep
 		passive:increase yield of moneybag by 7
+		passive:multiply yield of sus by 1.25
 		req:5 sus
 	*research5
 		name:factory works.
