@@ -107,6 +107,9 @@ Buttons
 	*debug5
 		name:show autoresearcher
 		on click:show autoresearch
+	*debug6
+		name:x2 research
+		on click: yield research research
 		
 	
 	
