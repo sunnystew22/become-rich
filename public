@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987 (sprites by Lexali5)
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>2.1<#fff700>b</#></b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>3.0<#fff700>b</#></b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
 	created:5/25/2021
 	updated:11/17/2022
 
@@ -70,7 +70,7 @@ Buttons
 	*autoresearch
 		name:aUTO RESEARCH
 		text:[?(autoflag = 0)|Click TO Turn On...... Auto-RESarching!|turn off autoresearch.]
-		desc:AutoResearch maeks you search for all of The re!!!!@ BUT AUTO! Wanrings: It is twice The MOney To research when auto, ,Though,
+		desc:AutoResearch maeks you search for all of The re!!!!@ BUT AUTO! Wanrings: It is twice The MOney To search The re when auto, ,Though,
 		on click:
 			if (autoflag = 0)
 				autoflag is 1
@@ -183,7 +183,6 @@ Buildings
 		cost increase:160%
 		req:have dirt
 		icon:icons1[1,1]
-		
 		
 	*dog
 		name:walking the Dog
@@ -544,11 +543,11 @@ Upgrades
 //the rest of tier2s are wip
 
 	*cryptoup2
-		name:Cryptcurency work
-		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>a</q>
-		cost:75 money
+		name:Nft Mass Produceion
+		desc:Make imagez and peoples buy them for Bilions of Bucks{. We will Nf the T,Sounds like good to me,<//><q>a</q>
+		cost:1e15 money
 		passive:increase yield of moneybag by 2
-		req:75 cryptocurrency
+		req:75 cryptocurrency, allup1
 	*dogup2
 		name:Ultimate Petting.
 		desc:<u>Bring in all the pets. We must pet them all.</u><//><q>Walking the Dog gives +4 smartness per unit</q>
@@ -594,7 +593,7 @@ Upgrades
 		req:research8
 	*book3up
 		name:How2English!!!!!!!!!!!!!!!!!
-		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 30 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks. Goodbye... and see you very, very soon.<//><q>AAAAAAAh</q>
+		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 30 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
 		cost:2e8 money, 3e5 smartness
 		on earn:yield 30 speedup
 		req:research8
@@ -649,18 +648,22 @@ Achievements
 		name:1Bil NetWorth.
 		desc:Welcome to Become Rich! Here, you build your way to being a MILLIONARE in this very fun Idol Game! Very Wow! Such Yes!
 		req:1e9 money:earned
+		icon:icons1[8,2]
 	*net4achv
 		name:10Bil NetWorth.
 		desc:ok that's a lot of moneying. maybe ishould dontate  ? don't know.also i think im famous
 		req:1e10 money:earned
+		icon:icons1[9,2]
 	*net5achv
 		name:100Bil NetWorth.
 		desc:100 Bills???? WOw! That's more moneying than all of The atoms in the universe! WOW!
 		req:1e11 money:earned
+		icon:icons1[10,2]
 	*net6achv
 		name:trilion
 		desc:WE SO RICHESt, WE MAKED ALLTHE MONEIS AN WE'ILL MAKE MORE,mMORE!!. WE HaVE TRUE RICHNES AND NICE.  WE TRILLION,BIGGER THAN THE MONEY ANYONE HAD
 		req:1e12 money:earned
+		icon:icons1[10,2]
 	*net7achv
 		name:trillion but the tri is replaceed with whatever word 4 is for.           i think it;s called squareillion
 		desc:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$<//>                                         $$$$
@@ -669,6 +672,7 @@ Achievements
 		name:pentagonillion
 		desc:i am such a moneyer i am such a pro
 		req:1e18 money:earned
+//next name: "sixagonillion"???
 	*smart1achv
 		name:Smartereer
 		desc:Woa, we got smartness,Yea,Yeah,Lots
@@ -692,21 +696,23 @@ Achievements
 	*lotteryachv
 		name:WE LUCKY AND MONEYEST OH YEAH YES
 		desc:you win the lotteys and earned.THREE 1,00 THOAUNSD , FREE BUCK<//>you win the lotteys and earned.THREE 1,00 THOAUNSD , FREE BUCK
+		icon:icons1[0,0]
+//placeholder icon
 	*smartachv
 		name:brain Educationing
 		desc:You can be smart and Good to create Smartness with Think
 		req:1 school1
 		icon:icons1[16,2]
-	*evilachv
-		name:We The Eil
-		desc:We got Evil, We doing eivl
-		req:1 ep:earned
-		icon:icons1[18,2]
 	*collegeachv
 		name:GENUSNESS
 		desc:I'm Smartest Ever!!!!!!!!!!
 		req:research8
 		icon:icons1[17,2]
+	*evilachv
+		name:We The Eil
+		desc:We got Evil, We doing eivl
+		req:1 ep:earned
+		icon:icons1[18,2]
 		
 
 
