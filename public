@@ -52,6 +52,7 @@ Buttons
 			end
 		end
 		passive:multiply smartness yield of moneybag by 0.2
+		icon:https://file.garden/Y3WCFJOdi23QPQVx/workbutton
 		class:bigButton
 	*researchbutton
 		name:makeing RESERCH!
