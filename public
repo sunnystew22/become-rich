@@ -320,7 +320,7 @@ Buildings
 	*supercomputer
 		name:SuperDuperComputers           .
 		desc:the computer, makes lot of thinking and proceser. this will smart us for us<//><q>+25 SPS, +500 MPS (if upgraded)</q><//><q>Upgrades unlock at: 10</q>
-		cost:750000 money, 2 research
+		cost:1.5e6 money, 2 research
 		passive:yield 20 smartness
 		passive:if (have supercomputerup2) yield 500 money
 		req:have supercomputerup
@@ -329,7 +329,7 @@ Buildings
 	*estate
 		name:pROPERTY and eSTATE!
 		desc:I love money ($)<//><q>+800 MPS, +1% money per level</q><//><q>Upgrades unlock at: 10</q>
-		cost:600000 money, 30000 smartness
+		cost:1e6 money, 30000 smartness
 		passive:yield 800 money
 		req:estateup1
 		icon:icons1[18,1]
