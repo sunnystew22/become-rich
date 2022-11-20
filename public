@@ -134,7 +134,7 @@ Resources
 	*smartness
 		name:smartness!
 		desc:i can be smart to do BIG Money!1
-		passive:multiply yield of this by 1+(0.05*book2)
+		passive:multiply yield of this by 1+(0.04*book2)
 		show earned
 		icon:icons1[2,0]
 	*research
@@ -280,7 +280,7 @@ Buildings
 		
 	*book2
 		name:How2Smart!!!!!!!!!
-		desc:Books That Gives Me Smarters! MOre Smarting per LEvel.!<//><q>+5% smartness per level</q><//><q>Upgrades unlock at: 5</q>
+		desc:Books That Gives Me Smarters! MOre Smarting per LEvel.!<//><q>+4% smartness per level</q><//><q>Upgrades unlock at: 5</q>
 		cost:14000 money
 		req:5000 smartness:earned
 		icon:icons1[12,1]
