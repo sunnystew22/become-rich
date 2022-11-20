@@ -52,7 +52,7 @@ Layout
 		header:Things that creates MONEY!
 		tooltip origin:left
 	*upgrades
-		contains:Upgrades to our Rich.
+		contains:Upgrades
 		costs:hide
 		names:hide
 	*geniusups
