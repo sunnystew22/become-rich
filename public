@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987 (sprites by Lexali5)
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>3.0.2<#fff700>b</#></b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>3.0.3<#fff700>b</#></b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
 	created:5/25/2021
 	updated:11/17/2022
 
@@ -470,19 +470,19 @@ Upgrades
 	*research3
 		name:research works.
 		desc:we use smarter research to make more intellegent works.<//><q>x10 click money, boosts smartness</q>
-		cost:5 research, 40000 money
+		cost:5 research, 50000 money
 		passive:multiply yield of moneybag by 10
 		req:have research2
 	*research4
 		name:The Sus.
 		desc:We're sus, and we make Amongus.<//><q>Unlocks... something</q>
-		cost:7 research, 50000 money
+		cost:7 research, 100000 money
 		on earn:toast amogus sUs!
 		req:have research3
 	*susup
 		name:ripoff Pro skills.
 		desc:we better at ripping, so we off. 7 clicks works .<//><q>Among Us Ripoff gives +25% more money, +7 click money</q>
-		cost:70000 money, 5000 smartness
+		cost:200000 money, 5000 smartness
 		on earn:yield 2 ep
 		passive:increase yield of moneybag by 7
 		passive:multiply yield of sus by 1.25
@@ -490,7 +490,7 @@ Upgrades
 	*research5
 		name:factory works.
 		desc:We have research factory to make. first, we will getting more clicking working moneying,. and, from basic setting uping, we get 10 less seconds of researcheings.<//><q>x5 click money, does not boost smartness. Reduces research time by 10 seconds. Unlocks new technology</q>
-		cost:9 research, 60000 money
+		cost:9 research, 25000 money
 		on earn:yield 10 speedup
 		passive:multiply money yield of moneybag by 5
 		req:have research4
@@ -503,32 +503,32 @@ Upgrades
 	*research6
 		name:Research. Factories.
 		desc:This is a new era of re-search. We will search for all of the re.<//><q>Unlocks a new building</q>
-		cost:15 research, 100000 money
+		cost:15 research, 400000 money
 		req:have research5
 	*factoryup
 		name:Moneying The REsearch.
 		desc:This can making the Work ! button green.When it green, that means if you click on it, it give  permenant less research second, but   stops being green.it's rebecomes green though. Also it gives has less researc seond when buyed/ SO, Yeah.<//><q>Every 15 minutes, the work button will become green. Pressing it when it's green will reduce research time by 3 seconds, and will turn green again after another 15 minutes.</q><//><q>Reduces research time by 15 seconds</q>
-		cost:20 research, 500000 money, 50000 smartness
+		cost:20 research, 1e6 money, 50000 smartness
 		on earn:yield 15 speedup
 		on earn:worktimer is 900
 		req:5 factory
 	*research7
 		name:The Auto Researcher/
 		desc:It;s a button. Press it on to automatically rearch whnever you have the resource for it! Press it off, it stops. WARNINGS: /!<//><q>Unlocks a toggle that makes research start automatically. This, however, will double the money cost of researching while enabled.</q>
-		cost:25 research, 3e6 money
+		cost:25 research, 5e6 money
 		req:have research6
 		on earn:show autoresearch
 	*research8
 		name:COLLeg,e..... FOR GENIUS
 		desc:We'll intellegnce from this. This School will Cool and WE WILL YES!!!!<//><q>x3 click money, affects smartness. Research time is 20 seconds shorter. Unlocks more upgrades</q>
-		cost: 50 research, 1e7 money, 3e5 smartness
+		cost: 50 research, 2e7 money, 3e5 smartness
 		on earn:yield 20 speedup
 		passive:multiply yield of moneybag by 3
 		req:research7
 	*madlab
 		name:MAD SCienticts' LAB!
 		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
-		cost:3e8 money, 200 research
+		cost:1e9 money, 200 research
 		req:10 superlabup1
 		
 	*TEMPLATE
@@ -553,7 +553,7 @@ Upgrades
 	*dogup2
 		name:Ultimate Petting.
 		desc:<u>Bring in all the pets. We must pet them all.</u><//><q>Walking the Dog gives +4 smartness per unit</q>
-		cost:2e7 money
+		cost:5e7 money
 		passive:increase yield of moneybag by 3
 		req:75 dog, allup1
 		
@@ -565,38 +565,38 @@ Upgrades
 	*supercomputerup
 		name:Computering
 		desc:These Are FAST. I can BUy them For MAny moneys, And, THEY DO SMART FOR ME@!!!!#######<//><q>Unlocks a new building</q>
-		cost:1.5e7 money, 25 research
+		cost:3e7 money, 25 research
 		req:research8
 	*supercomputerup2
 		name:cyprtoCurrencying
 		desc:You can use Compute to Smart. But what else?????/ You can mine bitscoin.Dont know what that is<//><q>Supercomputers will yield +500 MPS. Investing Cryptocurrency will yield +5 SPS per building.</q>
-		cost:2e7 money, 25 research
+		cost:5e7 money, 25 research
 		req:10 supercomputer
 	*estateup1
 		name:lands and HOuse.!
 		desc:I buy property and selL it for more! WOW<//><q>Unlocks a new building</q>
-		cost:1e7 money, 5e5 smartness
+		cost:4e7 money, 5e5 smartness
 		req:research8
 	*estateup2
 		name:Cool Market
 		desc:the stock go up, the money go rise.<//><q>Property and estate gives +50% more money, stock markets give +50 MPS instead of -1 MPS</q>
-		cost:3e7 money, 1e6 smartness
+		cost:7.5e7 money, 1e6 smartness
 		req:10 estate
 		passive:multiply yield of estate by 1.5
 	*superlabup1
 		name:SUPEr Labs!!!!
 		desc:We're the power. Use our lab and make it SUPER AND NICE. It gives boosts evyerhintg now. YEah<//><q>Unlocks a powerful new building</q>
-		cost:7.5e7 money, 75 research, 7.5e5 smartness
+		cost:1e8 money, 75 research, 7.5e5 smartness
 		req:research8
 	*allup1
 		name:MEGA! MONEY! UPGRADE!S
 		desc:This give all the upgrade to all the mony<//><q>Unlocks an upgrade for each unit from Sell Dirt to Super Labs. The respective units' upgrades can only be unlocked when leveled to 75</q>
-		cost:1e8 money, 1e6 smartness
+		cost:2e8 money, 1e6 smartness
 		req:research8
 	*book3up
 		name:How2English!!!!!!!!!!!!!!!!!
 		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 30 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
-		cost:2e8 money, 3e5 smartness
+		cost:5e8 money, 3e5 smartness
 		on earn:yield 30 speedup
 		req:research8
 		
