@@ -469,9 +469,9 @@ Upgrades
 		req:5 wheel
 	*research3
 		name:research works.
-		desc:we use smarter research to make more intellegent works. x3 click work moneying.<//><q>x3 click money, does not boost smartness</q>
+		desc:we use smarter research to make more intellegent works.<//><q>x10 click money, boosts smartness</q>
 		cost:5 research, 40000 money
-		passive:multiply money yield of moneybag by 3
+		passive:multiply yield of moneybag by 10
 		req:have research2
 	*research4
 		name:The Sus.
