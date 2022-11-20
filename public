@@ -1,7 +1,7 @@
 Let's make a game!
 	name:become Rich !!!!
 	by:boshki0987 (sprites by Lexali5)
-	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>3.0<#fff700>b</#></b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
+	desc:oh nose! you are not money! What do you do to rich? become Rich!!!<//>also we are in version <b>3.0.1<#fff700>b</#></b>! idk what that is!!!<//><//>Special thanks to Lexali5 for all of the game's icons! Lottery has been made to be slightly less rigged thanks to Rein and Lexali!
 	created:5/25/2021
 	updated:11/17/2022
 
@@ -234,11 +234,11 @@ Buildings
 		on earn:
 			if (chance(90%)) toast well, better luck next time. Guess we didn't get mone
 			else if (chance(9%))
-			 yield 50 money
-			 toast yoU WNO!!!!! 50 do,laer!!!!
+			 yield 25 money
+			 toast yoU WNO!!!!! 20 do,laer!!!!
 			else if (chance(1%))
-			 yield 3e5 money
-			 toast yoU WNO!!!!1!!!!!!111@!!!! 3 HUNRER AED THOAUSANDS DOLAER!!@@@
+			 yield 1e5 money
+			 toast yoU WNO!!!!1!!!!!!111@!!!! 100 HUNRER AED THOAUSANDS DOLAER!!@@@
 			 yield lotteryachv
 		end
 		req:25 dirt
@@ -353,14 +353,14 @@ Upgrades
 	*dirtup
 		name:Dirt Working
 		desc:use the power Of dirt to boost click work by 2! YeSSSS!<//><q>Selling Dirt gives +25% more money, +2 click money (click money = boost to how much money you earn from clicking the work button). Buy multiple (usually 5) of any building to unlock similar upgrades.</q>
-		cost:25 money
+		cost:30 money
 		passive:increase yield of moneybag by 2
 		passive:multiply yield of dirt by 1.25
 		req:5 dirt
 	*cryptoup
 		name:Cryptcurency work
 		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>Cryptocurrency gives +25% more money, +2 click money</q>
-		cost:75 money
+		cost:100 money
 		passive:increase yield of moneybag by 2
 		passive:multiply yield of cryptocurrency by 1.25
 		req:5 cryptocurrency
@@ -387,7 +387,7 @@ Upgrades
 	*paperclipup	
 		name:clipping the paper !
 		desc:Use paperclips for better organizing making money boost!!!<//><q>Paperclips give +25% more money, +4 click money</q>
-		cost:800 money
+		cost:1000 money
 		passive:increase yield of moneybag by 4
 		passive:multiply yield of paperclip by 1.25
 		req:5 paperclip
@@ -401,9 +401,9 @@ Upgrades
 		req:5 stealing
 	*evil1
 		name:EVIL Working.!
-		desc:be evil and scam for 6 click works!<//><q>+6 click money</q>
-		cost:1800 money, 1 ep
-		passive:increase yield of moneybag by 6
+		desc:be evil and scam for 10 click works!<//><q>+10 click money</q>
+		cost:2000 money, 1 ep
+		passive:increase yield of moneybag by 10
 		req:1 ep
 	*lotteryup	
 		name:lottery Making
@@ -414,14 +414,14 @@ Upgrades
 	*landscapeup	
 		name:scaping The Land.
 		desc:instead of landing the scape, we scape the land. What!?!?/1/1/1/1. it makes   more click worth thoough !<//><q>Landscaping gives +25% more money, +5 click money</q>
-		cost:2500 money
+		cost:5000 money
 		passive:increase yield of moneybag by 5
 		passive:multiply yield of landscape by 1.25
 		req:5 landscape
 	*school1up	
 		name:bigger brain.s
 		desc:well. You gets  smart for every moneys you get from click work.<//><q>Earn smartness per click work equal 20% of click money (rounded)</q>
-		cost:8000 money
+		cost:15000 money
 		req:5 school1
 	*researchup
 		name:reaserch lab!
@@ -432,27 +432,27 @@ Upgrades
 	*book1up	
 		name:reading glass.
 		desc:so. WE geT reading glasses to read more better. 5 more click works now ! why is this so expesnive<//><q>+5 click money</q>
-		cost:20000 money
+		cost:30000 money
 		passive:increase yield of moneybag by 5
 		req:5 book1
 	*codingup	
 		name:MEGA coding!
 		desc:we can mega the codings to are make better coding yes and ad making for including more money! more click worth.<//><q>Coding gives +25% more money, +6 click money</q>
-		cost:30000 money
+		cost:75000 money
 		passive:increase yield of moneybag by 6
 		passive:multiply yield of coding by 1.25
 		req:5 coding
 	*book2up	
 		name:second reading glass.
 		desc:so, nOW WE geT reading MORE glassses to read EVEN more bettEr. 2 more click works nows1@!@!!!@!@!#!@}132$!@$!<//><q>+6 click money</q>
-		cost:45000 money
+		cost:100000 money
 		passive:increase yield of moneybag by 6
 		req:5 book2
 	*research1
 		name:smart works.
-		desc:we use our smart research to make smart works. MULTPILY x2 click work moneys.<//><q>x2 click money, does not boost smartness</q>
+		desc:we use our smart research to make smart works. MULTPILY x5 click work moneys.<//><q>x5 click money, does not boost smartness</q>
 		cost:1 research, 20000 money
-		passive:multiply money yield of moneybag by 2
+		passive:multiply money yield of moneybag by 5
 		req:1 research
 	*research2
 		name:wheel inventions.
