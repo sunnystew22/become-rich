@@ -36,6 +36,29 @@ CSS
 		color: yellow;
 		border-color: yellow;
 	}
+	
+Layout
+	*main
+		contains:res, buttons
+	*res
+		contains:Resources
+		class:fullWidth
+	*buttons
+		contains:Buttons
+	*store
+		contains:units, upgrades
+	*units
+		contains:tag:object, tag:objectbutton
+		header:Things that creates MONEY!
+		tooltip origin:left
+	*upgrades
+		contains:Upgrades to our Rich.
+		costs:hide
+		names:hide
+	*geniusups
+		in:upgrades
+		contains:tag:geniustag
+		header:GENSIUS Upgrådes
 
 Buttons
 	*moneybag
@@ -496,9 +519,9 @@ Upgrades
 		req:have research4
 	*school2up
 		name:cooler skool's scholarship
-		desc:scolarship means SAVE MONEY and BE SMARTER. cool skool's cost down to 10 from second and we get 1 higher smart per second, for 4.<//><q>Cool Skool's negative MPS decreased from 50 to 10, and each building's SPS increased from 3 to 4 (this may not give intended amount of SPS)</q>
+		desc:scolarship means SAVE MONEY and BE SMARTER. cool skool's cost down and we get higher smart per secondm,<//><q>Negative MPS decreased from 50 to 10 and +50% SPS</q>
 		cost:20000 smartness
-		passive:increase smartness yield of school2 by 1
+		passive:multiply smartness yield of school2 by 1.5
 		req:5 school2
 	*research6
 		name:Research. Factories.
@@ -533,6 +556,7 @@ Upgrades
 		
 	*TEMPLATE
 		tag:tier2
+		tage:geniustag
 	
 	*dirtup2
 		name:Ultimate Dirt Extracing
