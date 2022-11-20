@@ -37,6 +37,7 @@ CSS
 		border-color: yellow;
 	}
 	
+//
 Layout
 	*main
 		contains:res, buttons
@@ -48,7 +49,7 @@ Layout
 	*store
 		contains:units, upgrades
 	*units
-		contains:tag:object, tag:objectbutton
+		contains:BulkDisplay, Buildings
 		header:Things that creates MONEY!
 		tooltip origin:left
 	*upgrades
