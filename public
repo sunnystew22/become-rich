@@ -37,30 +37,6 @@ CSS
 		border-color: yellow;
 	}
 	
-//
-Layout
-	*main
-		contains:res, buttons
-	*res
-		contains:Resources
-		class:fullWidth
-	*buttons
-		contains:Buttons
-	*store
-		contains:units, upgrades
-	*units
-		contains:BulkDisplay, Buildings
-		header:Things that creates MONEY!
-		tooltip origin:left
-	*upgrades
-		contains:Upgrades
-		costs:hide
-		names:hide
-	*geniusups
-		in:upgrades
-		contains:tag:geniustag
-		header:GENSIUS Upgrådes
-
 Buttons
 	*moneybag
 		name:Work !
