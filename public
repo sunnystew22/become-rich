@@ -60,7 +60,7 @@ Buttons
 		desc:turn smartness into researches here!!! NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		on click:
 			if (smartness >= convertcost and money >= convertcost*10 and converttimer > 1e250)
-				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory))
+				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory)+(4*superlab))
 				lose convertcost smartness
 				lose convertcost*10 money
 				yield 100 convertcost
@@ -315,6 +315,7 @@ Buildings
 		desc:Mass produce for all of research. This will yes. Makes 2 less seconds for research per factory. Very expensiving, though .<//><q>Each factory will reduce research time by 2 seconds</q><//><q>Upgrades unlock at: 5</q>
 		cost:150000 money
 		req:have research6
+		cost increase:115%
 		icon:icons1[16,1]
 		
 	*supercomputer
@@ -335,12 +336,13 @@ Buildings
 		icon:icons1[18,1]
 	*superlab
 		name:super lab.
-		desc:This lab is Super.Its is very good, i Think! VEry good,Its moneys and smarts.; How do this work though?<//><q>+1000 MPS, +30 SPS, +2% money per level, +3% smartness per level, -3 research time per level</q><//><q>Upgrades unlock at: 10</q>
+		desc:This lab is Super.Its is very good, i Think! VEry good,Its moneys and smarts.; How do this work though?<//><q>+1000 MPS, +30 SPS, +2% money per level, +3% smartness per level, -4 research time per level</q><//><q>Upgrades unlock at: 10</q>
 		cost:10 research
 		passive:yield 1000 money
 		passive:yield 30 smartness
 		req:superlabup1
-		cost increase:115%
+		cost increase:110%
+		icon:icons1[19,1]
 		
 
 Upgrades
@@ -528,7 +530,7 @@ Upgrades
 	*madlab
 		name:MAD SCienticts' LAB!
 		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
-		cost:1e9 money, 200 research
+		cost:1e9 money, 100 research
 		req:10 superlabup1
 		
 	*TEMPLATE
@@ -549,13 +551,13 @@ Upgrades
 		desc:Make imagez and peoples buy them for Bilions of Bucks{. We will Nf the T,Sounds like good to me,<//><q>a</q>
 		cost:1e15 money
 		passive:increase yield of moneybag by 2
-		req:75 cryptocurrency, allup1
+		req:7500 cryptocurrency, allup1
 	*dogup2
 		name:Ultimate Petting.
 		desc:<u>Bring in all the pets. We must pet them all.</u><//><q>Walking the Dog gives +4 smartness per unit</q>
 		cost:5e7 money
 		passive:increase yield of moneybag by 3
-		req:75 dog, allup1
+		req:7500 dog, allup1
 		
 	*TEMPLATE
 		tag:geniustag
