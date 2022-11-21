@@ -547,7 +547,7 @@ Upgrades
 	*madlab
 		name:MAD SCienticts' LAB!
 		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
-		cost:5e9 money, 100 research
+		cost:5e8 money, 100 research, 2 ep
 		req:10 superlab
 		class:glowred halffit
 		
