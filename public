@@ -556,6 +556,7 @@ Upgrades
 	*TEMPLATE
 		tag:tier2
 		tag:geniustag
+		class:halffit
 	
 	*dirtup2
 		name:Ultimate Dirt Extracing
@@ -581,6 +582,7 @@ Upgrades
 		
 	*TEMPLATE
 		tag:geniustag
+		class:halffit
 		
 		
 		
