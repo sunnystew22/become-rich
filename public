@@ -580,23 +580,23 @@ Upgrades
 	*estateup2
 		name:Cool Market
 		desc:the stock go up, the money go rise.<//><q>Property and estate gives +50% more money, stock markets give +50 MPS instead of -1 MPS</q>
-		cost:7.5e7 money, 2e6 smartness
+		cost:7.5e7 money, 1e6 smartness
 		req:10 estate
 		passive:multiply yield of estate by 1.5
 	*superlabup1
 		name:SUPEr Labs!!!!
 		desc:We're the power. Use our lab and make it SUPER AND NICE. It gives boosts evyerhintg now. YEah<//><q>Unlocks a powerful new building</q>
-		cost:1e8 money, 75 research, 5e6 smartness
+		cost:1e8 money, 75 research, 3e6 smartness
 		req:research8
 	*allup1
 		name:MEGA! MONEY! UPGRADE!S
 		desc:This give all the upgrade to all the mony<//><q>Unlocks an upgrade for each unit from Sell Dirt to Super Labs. The respective units' upgrades can only be unlocked when leveled to 75</q>
-		cost:2e8 money, 3e6 smartness
+		cost:2e8 money, 1.5e6 smartness
 		req:research8
 	*book3up
 		name:How2English!!!!!!!!!!!!!!!!!
 		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 30 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
-		cost:5e8 money, 1e7 smartness
+		cost:5e8 money, 5e7 smartness
 		on earn:yield 30 speedup
 		req:research8
 		
