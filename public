@@ -549,8 +549,8 @@ Upgrades
 	*madlab
 		name:MAD SCienticts' LAB!
 		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
-		cost:1e9 money, 100 research
-		req:10 superlabup1
+		cost:5e9 money, 100 research
+		req:10 superlab
 		class:glowred
 		
 	*TEMPLATE
@@ -617,8 +617,8 @@ Upgrades
 		req:research8
 	*book3up
 		name:How2English!!!!!!!!!!!!!!!!!
-		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 50 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
-		cost:5e8 money, 5e6 smartness
+		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 50 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (250,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
+		cost:2.5e8 money, 5e6 smartness
 		on earn:yield 50 speedup
 		req:research8
 		
