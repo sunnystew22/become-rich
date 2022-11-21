@@ -174,9 +174,6 @@ Resources
 
 Buildings
 
-	*TEMPLATE
-		class:halffit
-
 	*dirt
 		name:Sell dirt!
 		desc:wows, dirt give money!  !<//><q>+0.5 MPS (money per second). <b>Buying large amounts of this is required to unlock new features and progress the game.</b></q>
@@ -356,6 +353,10 @@ Buildings
 		
 
 Upgrades
+
+	*TEMPLATE
+		class:halffit
+
 	*freemoney
 		name:300 dollars
 		desc:300 dollars<//><q>300 dollars</q>
