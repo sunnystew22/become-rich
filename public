@@ -16,7 +16,7 @@ CSS
 
 	.halffit
 	{
-		width: 40%;
+		width: 48%;
 	}
 	.glowgreen
 	{
@@ -34,15 +34,18 @@ CSS
 	}
 	.glowlightblue
 	{
-		color: powderblue;
+		border-color: powderblue;
+		box-shadow: 0px 0px 15px powderblue;
 	}
 	.glowpink
 	{
-		color: orchid;
+		border-color: orchid;
+		box-shadow: 0px 0px 15px orchid;
 	}
 	.glowred
 	{
-		color: red;
+		border-color: red;
+		box-shadow: 0px 0px 15px red;
 	}
 
 Buttons
