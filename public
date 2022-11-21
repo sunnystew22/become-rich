@@ -35,17 +35,14 @@ CSS
 	.glowlightblue
 	{
 		border-color: powderblue;
-		box-shadow: 0px 0px 15px powderblue;
 	}
 	.glowpink
 	{
 		border-color: orchid;
-		box-shadow: 0px 0px 15px orchid;
 	}
 	.glowred
 	{
 		border-color: red;
-		box-shadow: 0px 0px 15px red;
 	}
 
 Buttons
@@ -113,6 +110,7 @@ Buttons
 	*debug3
 		name:Fast research
 		on click:converttimer is 0
+		hidden
 	*debug4
 		name:change speedup
 		on click:speedup is 25
@@ -448,7 +446,7 @@ Upgrades
 		cost:50000 money
 		on earn:show tag:researchtag
 		req:10 school1
-		class:glowlightblue
+		class:glowlightblue, halffit
 	*book1up	
 		name:reading glass.
 		desc:so. WE geT reading glasses to read more better. 5 more click works now ! why is this so expesnive<//><q>+5 click money</q>
@@ -515,7 +513,7 @@ Upgrades
 		passive:multiply money yield of moneybag by 5
 		req:have research4
 	*school2up
-		name:cooler skool's scholarship
+		name:CoolerSkool scholarship
 		desc:scolarship means SAVE MONEY and BE SMARTER. cool skool's cost down and we get higher smart per secondm,<//><q>Negative MPS decreased from 50 to 10 and +50% SPS</q>
 		cost:20000 smartness
 		passive:multiply smartness yield of school2 by 1.5
@@ -545,13 +543,13 @@ Upgrades
 		on earn:yield 20 speedup
 		passive:multiply yield of moneybag by 3
 		req:research7
-		class:glowpink
+		class:glowpink, halffit
 	*madlab
 		name:MAD SCienticts' LAB!
 		desc:Im mad, and IM SCIENCE@. Wait IM NOT EIVL<//><q>Creates a building that grants +0.01 EPS (evil points per second) and -0.01 RPS (research points per second). Point conversion only works if there are sufficient research points</q>
 		cost:5e9 money, 100 research
 		req:10 superlab
-		class:glowred
+		class:glowred, halffit
 		
 	*TEMPLATE
 		tag:tier2
@@ -613,12 +611,12 @@ Upgrades
 		cost:1e8 money, 75 research, 3e6 smartness
 		req:research8
 	*allup1
-		name:MEGA! MONEY! UPGRADE!S
+		name:MEGA!MONEY!UPGRADE!S
 		desc:This give all the upgrade to all the mony<//><q>Unlocks an upgrade for each unit from Sell Dirt to Super Labs. The respective units' upgrades can only be unlocked when leveled to 75</q>
 		cost:2e8 money, 1.5e6 smartness
 		req:research8
 	*book3up
-		name:How2English!!!!!!!!!!!!!!!!!
+		name:How2English!!!!
 		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 50 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (250,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
 		cost:2.5e8 money, 5e6 smartness
 		on earn:yield 50 speedup
