@@ -11,7 +11,13 @@ Settings
 	building cost refund:0.01%
 	background:https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1142839776%2F960x0.jpg%3Ffit%3Dscale
 	spritesheet:icons1, 48 by 48, https://i.postimg.cc/RZm1Kg6n/fixed3.png
+	
 CSS
+
+	.halffit
+	{
+		width: 50%;
+	}
 	.glowgreen
 	{
 		color: green;
@@ -60,7 +66,7 @@ Buttons
 		desc:turn smartness into researches here!!! NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		on click:
 			if (smartness >= convertcost and money >= convertcost*10 and converttimer > 1e250)
-				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory)+(4*superlab))
+				converttimer is (pow(convertcost,0.5))-(speedup+(2*factory)+(5*superlab))
 				lose convertcost smartness
 				lose convertcost*10 money
 				yield 100 convertcost
@@ -167,6 +173,10 @@ Resources
 		hidden
 
 Buildings
+
+	*TEMPLATE
+		class:halffit
+
 	*dirt
 		name:Sell dirt!
 		desc:wows, dirt give money!  !<//><q>+0.5 MPS (money per second). <b>Buying large amounts of this is required to unlock new features and progress the game.</b></q>
@@ -336,8 +346,8 @@ Buildings
 		icon:icons1[18,1]
 	*superlab
 		name:super lab.
-		desc:This lab is Super.Its is very good, i Think! VEry good,Its moneys and smarts.; How do this work though?<//><q>+1000 MPS, +30 SPS, +2% money per level, +3% smartness per level, -4 research time per level</q><//><q>Upgrades unlock at: 10</q>
-		cost:10 research
+		desc:This lab is Super.Its is very good, i Think! VEry good,Its moneys and smarts.; How do this work though?<//><q>+1000 MPS, +30 SPS, +2% money per level, +3% smartness per level, -5 research time per level</q><//><q>Upgrades unlock at: 10</q>
+		cost:5 research
 		passive:yield 1000 money
 		passive:yield 30 smartness
 		req:superlabup1
@@ -597,9 +607,9 @@ Upgrades
 		req:research8
 	*book3up
 		name:How2English!!!!!!!!!!!!!!!!!
-		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 30 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
+		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 50 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
 		cost:5e8 money, 5e6 smartness
-		on earn:yield 30 speedup
+		on earn:yield 50 speedup
 		req:research8
 		
 Achievements
