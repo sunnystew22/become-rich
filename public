@@ -202,9 +202,9 @@ Buildings
 		
 	*stock
 		name:Stocking Markets!
-		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS (+50 MPS if upgraded with the Cool Markets upgrade)</q><//><q>Upgrades unlock at: 10,</q>
+		desc:well, it's called stock market but i don't see any markets here. oh.........................................................<//><q>-1 MPS (+100 MPS if upgraded with the Cool Markets upgrade)</q><//><q>Upgrades unlock at: 10,</q>
 		cost:400 money
-		passive:if (have estateup2) yield 51 money
+		passive:if (have estateup2) yield 101 money
 		passive:lose 1 money
 		req:15 dirt
 		icon:icons1[4,1]
@@ -579,7 +579,7 @@ Upgrades
 		req:research8
 	*estateup2
 		name:Cool Market
-		desc:the stock go up, the money go rise.<//><q>Property and estate gives +50% more money, stock markets give +50 MPS instead of -1 MPS</q>
+		desc:the stock go up, the money go rise.<//><q>Property and estate gives +50% more money, stock markets give +100 MPS instead of -1 MPS</q>
 		cost:7.5e7 money, 1e6 smartness
 		req:10 estate
 		passive:multiply yield of estate by 1.5
@@ -596,7 +596,7 @@ Upgrades
 	*book3up
 		name:How2English!!!!!!!!!!!!!!!!!
 		desc:Greetings and salutations. The purchasing of this upgrade will allow me to speak in near-perfect English. No longer will my speaking be difficult to understand. Additionally, all research times will be 30 seconds shorter, making RPs (research points) significantly easier to obtain. These extremely useful benefits come at the low, low cost of 200 million (200,000,000) dollars ($). I hope you will consider this offer that will benefit the both of us very much. You have my thanks.<//><q>AAAAAAAh</q>
-		cost:5e8 money, 5e7 smartness
+		cost:5e8 money, 5e6 smartness
 		on earn:yield 30 speedup
 		req:research8
 		
