@@ -216,7 +216,8 @@ Buildings
 		desc:if we get a ticket then we have a chance of earning bIg bucks.<//><q>May or may not give you boatloads of money<//><q>+0 MPS</q><//><q>Upgrades unlock at: 50,</q>
 		cost:5 money
 		on earn:
-			if (chance(90%)) toast well, better luck next time. Guess we didn't get mone
+			if (chance(100%)) toast well, better luck next time. Guess we didn't get mone
+//igm sucks so this is disabled for now
 			else if (chance(9%))
 			 yield 20 money
 			 toast yoU WNO!!!!! 20 do,laer!!!!
@@ -351,7 +352,7 @@ Upgrades
 	*cryptoup
 		name:Cryptcurency work
 		desc:sell your cyrtoping currencys for 2 more click work! YeSSSS!<//><q>Cryptocurrency gives +25% more money, +2 click money</q>
-		cost:100 money
+		cost:500 money
 		passive:increase yield of moneybag by 2
 		passive:multiply yield of cryptocurrency by 1.25
 		req:5 cryptocurrency
@@ -378,7 +379,7 @@ Upgrades
 	*paperclipup	
 		name:clipping the paper !
 		desc:Use paperclips for better organizing making money boost!!!<//><q>Paperclips give +25% more money, +4 click money</q>
-		cost:1000 money
+		cost:3000 money
 		passive:increase yield of moneybag by 4
 		passive:multiply yield of paperclip by 1.25
 		req:5 paperclip
