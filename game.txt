@@ -48,7 +48,6 @@ Buttons
 		desc:Ohh! You must work to get money. Click to earn money for investing. Investing good!!! Why? Because it's free money! Why? You put money in, and if you're lucky, you get MONEY!!!!!!!!!
 		on click:yield 1 money
 		on click:if (have school1up) yield 2 smartness
-		on click:
 		passive:multiply smartness yield of moneybag by 0.2
 		icon:https://file.garden/Y3WCFJOdi23QPQVx/workbutton
 		class:bigButton
