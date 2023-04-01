@@ -148,8 +148,8 @@ Buildings
 		icon:icons1[11,1]
 		
 	*coding
-		name:coding making.
-		desc:make code stuff, put ads, RICH as much as yes!<//><q>+70 MPS</q><//><q>Upgrades unlock at: 5</q>
+		name:Making code
+		desc:Make code stuff, put ads, RICH as much as yes!<//><q>+70 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:10000 money, 500 smartness
 		passive:yield 70 money
 		req:40 dirt
@@ -158,14 +158,14 @@ Buildings
 		
 	*book2
 		name:How2Smart!!!!!!!!!
-		desc:Books That Gives Me Smarters! MOre Smarting per LEvel.!<//><q>+3% smartness per level</q><//><q>Upgrades unlock at: 5</q>
+		desc:A book that gives me smartness! Getting more smart per level!<//><q>+3% smartness per level</q><//><q>Upgrades unlock at: 5</q>
 		cost:14000 money
 		req:5000 smartness:earned
 		icon:icons1[12,1]
 		
 	*wheel
-		name:reinventing the wheel
-		desc:is this how i can strike rich. 1 less smartness per two second but 150 moneys per second. investeors say no, but i say yEs.Whats a invetor<//><q>+150 MPS, -0.5 SPS</q><//><q>Upgrades unlock at: 5</q>
+		name:Reinventing the wheel
+		desc:Is this how i can strike rich? 1 less smartness per two second but 150 money per second. Investors say no, but I say yes. What's an inventor?<//><q>+150 MPS, -0.5 SPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:4000 money, 2500 smartness
 		passive:yield 150 money
 		passive:lose 0.5 smartness
@@ -173,16 +173,16 @@ Buildings
 		icon:icons1[13,1]
 		
 	*sus
-		name:among Us rip Off.
-		desc:it's popular game, i ripoff and make popular game again. i charge extra moneys.   they're problem if they're getting ideas stolen from.<//><q>+350 MPS</q><//><q>Upgrades unlock at: 5</q>
+		name:Among Us ripoff
+		desc:It's a popular game, I rip it off and make a popular game again. I charge extra money. They're the problem if they're getting ideas stolen from.<//><q>+350 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:50000 money
 		passive:yield 350 money
 		req:have research4
 		icon:icons1[14,1]
 
 	*school2
-		name:cool skool.
-		desc:new skool is pretty cool. it gives 6 smartness per second, but it costs 50 money per second. :sunglasses:<//><q>+6 SPS, -50 MPS</q><//><q>Upgrades unlock at: 5</q>
+		name:Cool School
+		desc:New school is pretty cool. It gives 6 smartness per second, but it costs 50 money per second. 😎<//><q>+6 SPS, -50 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:75000 money, 500 smartness
 		passive:yield 6 smartness
 		passive:if (have school2up) lose 10 money else lose 50 money
