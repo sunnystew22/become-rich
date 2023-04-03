@@ -70,6 +70,12 @@ Resources
 		passive:multiply yield of this by 1+(0.03*book2)
 		show earned
 		icon:icons1[2,0]
+		
+	*researchPoints
+	name:Research points [BETA]
+	desc:[BETA]
+	show earned
+	icon:icons1[3,0]
 Buildings
 
 	*dirt
@@ -100,7 +106,7 @@ Buildings
 		
 	*cookie
 		name:Cookie clicking
-		desc:Oh! Well you just put mouse on cookie, then click! According to the cookie game it makes me easily rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS</q><//><q>Upgrades unlock at: 5</q>
+		desc:Oh! Well you just put mouse on cookie, then click! According to the cookie game it easily makes me rich!!!!!!!!!!!!!!!!!<//><q>+0 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:200 money
 		req:10 dirt
 		icon:icons1[3,1]
@@ -116,7 +122,7 @@ Buildings
 		
 	*paperclip
 		name:Paperclip
-		desc:We buy some from office store, then sell it at a higher price. Is this how shopping works??<//><q>+12 MPS</q><//><q>Upgrades unlock at: 5</q>
+		desc:We buy some from the office store, then sell it at a higher price. Is this how shopping works??<//><q>+12 MPS</q><//><q>Upgrades unlock at: 5</q>
 		cost:600 money
 		passive:yield 12 money
 		cost increase:130%
